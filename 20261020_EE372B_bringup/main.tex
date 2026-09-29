@@ -1,0 +1,699 @@
+\documentclass[aspectratio=169, t, 9pt]{beamer} % 16:9 ratio, t: top alignment, 9pt: default text size
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Titlepage information
+\title[CMOS+X] %optional
+{}
+
+% \subtitle{Status report and feedback}
+\subtitle{Cryo-CMOS power management and silicon bring-up considerations}
+
+\author[] % (optional, for multiple authors)
+% {A.~Alpha\inst{1} \and B.~Bravo\inst{2} \\ On behalf of Institute X, Institute Y, Institute Z}
+{Llorenç Fanals-i-Batllori\inst{1,\textdagger} \\ \inst{1}SLAC National Accelerator Laboratory \\ \inst{\textdagger}\href{mailto:fanals@slac.stanford.edu}{fanals@slac.stanford.edu}}
+
+\institute[SLAC] % (optional)
+{
+  \inst{1}%
+  Faculty of Foo\\
+  Bar University
+  \and
+  \inst{2}%
+  Faculty of Baz\\
+  Quz University
+}
+
+% \date{\today}% (optional)
+\date{2026/10/20}% (optional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[default]{lato} % set Lato as the default font
+\usepackage{svg} % includesvg{foo.svg}
+\usepackage{tikz} % graphics
+\usepackage{circuitikz} % circuits
+\usetikzlibrary{decorations.pathreplacing} % brackets
+\usetikzlibrary{arrows.meta,shapes} % signal arrow
+\usepackage{makecell}
+\usetikzlibrary{arrows}
+\usepackage{siunitx} % SI units
+\sisetup{per-mode=fraction}
+\DeclareSIUnit{\square}{\ensuremath{\square}}
+\usepackage{graphicx,transparent} % graphics
+\usepackage{pgfplots} % tikz plots
+\usepgfplotslibrary{colorbrewer} % cycle color
+\usepackage{filecontents} % read csvs
+\usepackage[natbib=true,backend=bibtex,sorting=none]{biblatex}
+\bibliography{./bibliography.bib}
+\usepackage{hyperref} % mailto
+\usepackage{listings}
+\usepackage[para]{threeparttable}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    frame=single,
+    backgroundcolor=\color{gray!10},
+}
+
+
+% Import template
+\input{./template/template.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\begin{frame}[Titlepage, plain, noframenumbering]
+\titlepage
+\end{frame}
+
+\begin{frame}{Introduction}
+  \begin{columns}
+      \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item Llorenç Fanals-i-Batllori.
+            \item BSc EE Universitat the Girona, Spain (9.52/10), MSc EE UPC Barcelona, Spain (9.69/10).
+            \item Mixed-signal Design Verification Engineer at Apple, UK.
+            \item Mixed-signal ASIC Design Engineer at SLAC/Stanford.
+        \end{itemize}
+      \end{column}
+      \begin{column}{0.5\textwidth}
+        \begin{figure} \centering
+            \includegraphics[width=0.8\textwidth]{./images/portrait_.jpeg}
+        \end{figure}
+      \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[SloganTitleUnderline]{Table of contents}
+    \LARGE \tableofcontents%[section]
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 1: Cryogenic systems
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cryogenic systems}
+\begin{frame}[SectionTitlepage]{Cryo-CMOS power management}
+\end{frame}
+
+\begin{frame}{Cryo-CMOS power management}
+\end{frame}
+
+\subsection{Cryo-CMOS power management sub}
+\begin{frame}[SectionTitlepage]{Cryo-CMOS power management}
+\end{frame}
+
+
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % 1: Silicon bring-up
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % \section{Silicon bring-up}
+% % \begin{frame}[SectionTitlepage]{Silicon bring-up}
+% % \end{frame}
+% 
+% \begin{frame}{Silicon bring-up}
+%     You just received your ASICs. Now what?
+% %     \begin{enumerate}
+% %         \item PCB design.
+% %         \item Packaging (wire bonding).
+% %         \item Sanity checks.
+% %         \item Power-up.
+% %         \item Characterization.
+% %     \end{enumerate}
+% \end{frame}
+% 
+% \begin{frame}{Hand it off?}
+%     \begin{figure} \centering
+%         \includegraphics[width=0.8\textwidth]{./images/SiVal2.png}
+%     \end{figure}
+% \end{frame}
+% 
+% \begin{frame}{Silicon bring-up}
+%     You just received your ASICs. Now what?
+%     \begin{enumerate}
+%         \item PCB design.
+%         \item Packaging (wire bonding).
+%         \item Embedded system.
+%         \item Sanity checks.
+%         \item Power-up.
+%         \item Characterization.
+%     \end{enumerate}
+% \end{frame}
+% 
+% \begin{frame}{Do it yourself!}
+%     \begin{figure} \centering
+%         \includegraphics[width=0.55\textwidth]{./figures/big.pdf}
+%     \end{figure}
+% \end{frame}
+% 
+% \begin{frame}{General advice}
+%     \begin{itemize}
+%         \item Document.
+%         \item Use version control (git).
+%         \item Use redundancy, avoid a single point of failure.
+%         \item Print in paper your pinout (ASIC and PCB).
+%         \item Wear an ESD bracelet.
+%     \end{itemize}
+% \end{frame}
+% 
+% 
+% 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{PCB design}
+% \begin{frame}[SectionTitlepage]{PCB design}
+% \end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}{PCB design}
+%     \begin{figure} \centering
+%         \includegraphics[width=0.55\textwidth]{./figures/bigh_pcb.pdf}
+%     \end{figure}
+% \end{frame}
+% 
+% \begin{frame}{PCB design}
+%     Potentials software to use:
+%     \begin{itemize}
+%         \item Altium: profressional-grade, needs a license.
+%         \item KiCad: "hobbyist" software but extremely capable as of 2026.
+%         \item EasyEDA: limited capabilities but smooth integration with PCB manufacturer.
+%     \end{itemize}
+%   \begin{columns}
+%       \begin{column}{0.3\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./images/altium.jpg}
+%         \end{figure}
+%       \end{column}
+%       \begin{column}{0.3\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./images/kicad.jpg}
+%         \end{figure}
+%       \end{column}
+%       \begin{column}{0.3\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./images/easyeda.png}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% 
+% \end{frame}
+% 
+% 
+% \begin{frame}{PCB design I}
+%   \vspace{-0.3cm}
+%   \begin{columns}
+%       \hspace{0.4cm}
+%       \begin{column}{0.45\textwidth}
+%         Obtain the sheet resistance of the conducting metal, in \SI{}{\ohm\per\square}.
+%         \begin{enumerate}
+%             \item Design to minimize voltage drop $IR$ on nets that carry current.
+%             \item Nets driving a high-impedance pin (transistor gate) are much more relaxed. Make them minimum dimensions ($\sim$ 4 mil).
+%         \end{enumerate}
+%       \end{column}
+%       \begin{column}{0.52\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./figures/big_pcb.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% \begin{frame}{PCB design II}
+%   \vspace{-0.3cm}
+%   \begin{columns}
+%       \hspace{0.4cm}
+%       \begin{column}{0.45\textwidth}
+%         \begin{enumerate}
+%             \setcounter{enumi}{2}
+%             \item Use decoupling capacitors between supply and ground. Use different cap values to improve the frequency response (or not \cite{rosenberg_decoupling}).
+%             \item Use jumpers to increase flexibility during testing.
+%             \item Or 0-Ohm resistors.
+%             \item Place extensive test points. There must be a good reason for a PCB net to not be exposed/measurable. Label them.
+%         \end{enumerate}
+%       \end{column}
+%       \begin{column}{0.52\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./figures/big_pcb.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% \begin{frame}{PCB design III}
+%   \vspace{-0.3cm}
+%   \begin{columns}
+%       \hspace{0.4cm}
+%       \begin{column}{0.45\textwidth}
+%         \begin{enumerate}
+%             \setcounter{enumi}{6}
+%             \item You can place an array of binary-weighted resistors and small $R_{DS}$ MOSFETs to realize a tunable load. The gate voltages may need a level shifter (LS). Be aware of the GPIO latency.
+%             \item Use metals at different levels in an orthogonal fashion.
+%             \item Level shifters (LS) are needed to accommodate the ASIC voltage domain to that of the GPIOs, and viceversa.
+%         \end{enumerate}
+%       \end{column}
+%       \begin{column}{0.52\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./figures/big_pcb.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% \begin{frame}{PCB design IV}
+%   \vspace{-0.3cm}
+%   \begin{columns}
+%       \hspace{0.4cm}
+%       \begin{column}{0.45\textwidth}
+%         \begin{enumerate}
+%             \setcounter{enumi}{9}
+%             \item Place mounting holes both at the PCB level and around the ASIC.
+%             \item Give a separation between PCB pads and ASIC of \SI{300}{\um} at least. A special surface finish may be needed.
+%         \end{enumerate}
+%       \end{column}
+%       \begin{column}{0.52\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./figures/big_pcb.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% \begin{frame}{PCB design: example I (Andrew Young)}
+%     \vspace{-0.6cm}
+%   \begin{columns}
+%       \hspace{0.4cm}
+%       \begin{column}{0.45\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[height=0.8\textheight]{./images/C4Q1_carrier_render.png}
+%         \end{figure}
+%       \end{column}
+%       \begin{column}{0.45\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[height=0.8\textheight]{./images/C4Q1_carrier_pic.jpg}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% \begin{frame}{PCB design: example II (Joan Serrano Aporta)}
+%     \begin{figure} \centering
+%         \includegraphics[width=0.8\textwidth]{./images/pcb_C4Q1_interface_jlcpcb.png}
+%     \end{figure}
+% \end{frame}
+% 
+% \begin{frame}{PCB design: example II (Joan Serrano Aporta)}
+%     \vspace{-0.5cm}
+%   \begin{columns}
+%       \hspace{0.4cm}
+%       \begin{column}{0.45\textwidth}
+%           \begin{itemize}
+%             \item Total cost: $\sim 350 \$$, 5 boards, entirely populated.
+%             \item Turnaround time: 1 week.
+%             \item No issues observed.
+%           \end{itemize}
+%       \end{column}
+%       \begin{column}{0.45\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./images/pcb_C4Q1_interface_pic_one.png}
+%         \end{figure}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./images/pcb_C4Q1_interface_pic_two.png}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% 
+% 
+% 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Packaging (wire bonding)}
+% \begin{frame}[SectionTitlepage]{Packaging (wire bonding)}
+% \end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}{Packaging (wire bonding)}
+%     \begin{figure} \centering
+%         \includegraphics[width=0.55\textwidth]{./figures/bigh_bond.pdf}
+%     \end{figure}
+% \end{frame}
+% 
+% \begin{frame}{ESD bracelet}
+%   \begin{columns}
+%       \begin{column}{0.45\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./figures/esd_bracelet.pdf}
+%         \end{figure}
+%       \end{column}
+%       \begin{column}{0.52\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./images/esd_bracelet.jpg}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% \begin{frame}{ESD bracelet}
+%   \begin{columns}
+%       \begin{column}{0.45\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./figures/esd_bracelet.pdf}
+%         \end{figure}
+%       \end{column}
+%       \begin{column}{0.52\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./figures/hbm.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% 
+% \begin{frame}{Packaging (wire bonding)}
+%   \vspace{-0.3cm}
+%   \begin{columns}
+%       \hspace{0.4cm}
+%       \begin{column}{0.45\textwidth}
+%         \begin{enumerate}
+%             \item Give clear indications of the ASIC orientation. A logo or a disctinctive feature can be extremely helpful.
+%             \item Be aware of the $\sim \SI{1}{\nH\per\mm}$ series inductance. Keep supply and analog bonds as short as possible.
+%             \item Provide sufficient spacing between PCB pads and ASIC pads.
+%             \item Make the PCB pad large enough while meeting DRC rules.
+%         \end{enumerate}
+%       \end{column}
+%       \begin{column}{0.52\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./figures/big_wirebonding.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% \begin{frame}{Wire bonding: example I (Matt Cherry)}
+%     \begin{figure} \centering
+%         \includegraphics[width=0.3\textwidth]{./images/C4Q1_22_.jpg}
+%     \end{figure}
+% \end{frame}
+% 
+% \begin{frame}{Wire bonding: example II (Matt Cherry)}
+%     \begin{figure} \centering
+%         \includegraphics[width=0.8\textwidth]{./images/C4Q1_28_.jpg}
+%     \end{figure}
+% \end{frame}
+% 
+% 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Embedded system}
+% \begin{frame}[SectionTitlepage]{Embedded system}
+% \end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% \begin{frame}{Embedded system}
+%     \begin{figure} \centering
+%         \includegraphics[width=0.55\textwidth]{./figures/bigh_embedded.pdf}
+%     \end{figure}
+% \end{frame}
+% 
+% \begin{frame}{Raspberry Pi}
+%     \begin{figure} \centering
+%         \includegraphics[width=0.5\textwidth]{./images/RPi_buy.png}
+%     \end{figure}
+%     \begin{itemize}
+%         \item A Linux system with GPIOs for $20 \$$.
+%         \item Can run Claude on it!
+%         \item Do not use for deterministic / precise timing operations.
+%         \item Be careful about noise.
+%     \end{itemize}
+% \end{frame}
+% 
+% \begin{frame}{Raspberry Pi interface}
+%     \texttt{picocom -b 115200 /dev/cu.usbmodem11103}
+%     \begin{figure} \centering
+%         \includegraphics[width=0.28\textwidth]{./images/RPi_menu.png}
+%     \end{figure}
+% \end{frame}
+% 
+% \begin{frame}{Arduino}
+%     \begin{figure} \centering
+%         \includegraphics[width=0.3\textwidth]{./images/arduino_nano.jpg}
+%     \end{figure}
+%     \begin{itemize}
+%         \item A microcontroller.
+%         \item C code gets mapped into assembly, so real-time operation.
+%         \item Not interactive by default.
+%     \end{itemize}
+% \end{frame}
+% 
+% \begin{frame}{LabVIEW-based DAQ}
+% \vspace{-0.8cm}
+%   \begin{columns}
+%       \begin{column}{0.3\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./images/NI_IO.png}
+%         \end{figure}
+%       \end{column}
+%       \begin{column}{0.7\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.99\textwidth]{./images/LabView.png}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+%     \begin{itemize}
+%         \item Expensive.
+%         \item Could digitize the LDO output.
+%         \item Can synchronize events.
+%     \end{itemize}
+% \end{frame}
+% 
+% 
+% 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Sanity checks}
+% \begin{frame}[SectionTitlepage]{Sanity checks}
+% \end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% \begin{frame}{Sanity checks}
+%     \begin{figure} \centering
+%         \includegraphics[width=0.55\textwidth]{./figures/big.pdf}
+%     \end{figure}
+% \end{frame}
+% 
+% \begin{frame}{Sanity checks: short detection via multimeter}
+%     \begin{figure} \centering
+%         \includegraphics[width=0.55\textwidth]{./figures/multimeter.pdf}
+%     \end{figure}
+%     This can stress and damage the ASIC pads!
+% \end{frame}
+% 
+% \begin{frame}{Sanity checks: short detection via power supply}
+%     \begin{figure} \centering
+%         \includegraphics[width=0.55\textwidth]{./figures/power_supply_limit.pdf}
+%     \end{figure}
+%     To ensure the current protection works, short the supply and monitor the current.
+% \end{frame}
+% 
+% \begin{frame}{Sanity checks: short detection via power supply}
+%     \vspace{-0.5cm}
+%   \begin{columns}
+%       \begin{column}{0.45\textwidth}
+%         \begin{itemize}
+%             \item Monitor the current on the power supply.
+%             \item This also indicates if any VSS is open.
+%             \item Connections are actually done to the test points!
+%         \end{itemize}
+%       \end{column}
+%       \begin{column}{0.52\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./figures/short_check1.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% \begin{frame}{Sanity checks: short detection via power supply}
+%     \vspace{-0.5cm}
+%   \begin{columns}
+%       \begin{column}{0.45\textwidth}
+%         \begin{itemize}
+%             \item Monitor the current on the power supply.
+%             \item This also indicates if any VSS is open.
+%             \item Connections are actually done to the test points!
+%             \item Cycle through all the pads.
+%         \end{itemize}
+%       \end{column}
+%       \begin{column}{0.52\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./figures/short_check2.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% 
+% 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Power-up}
+% \begin{frame}[SectionTitlepage]{Power-up}
+% \end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% \begin{frame}{Power-up I}
+%   \vspace{-0.3cm}
+%   \begin{columns}
+%       \hspace{0.4cm}
+%       \begin{column}{0.45\textwidth}
+%         \begin{enumerate}
+%             \item Connect the power supply with a conservative maximum current and nominal voltage.
+%             \item Measure all the test points and internal nets.
+%             \item Power your CPU.
+%             \item Perform read and write operations to your embedded system.
+%         \end{enumerate}
+%       \end{column}
+%       \begin{column}{0.52\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./figures/big_powerup.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% \begin{frame}{Power-up II}
+%   \vspace{-0.3cm}
+%   \begin{columns}
+%       \hspace{0.4cm}
+%       \begin{column}{0.45\textwidth}
+%         \begin{enumerate}
+%             \setcounter{enumi}{4}
+%             \item Raise the current limit.
+%             \item Exercise different loads and ensure a proper behavior.
+%         \end{enumerate}
+%       \end{column}
+%       \begin{column}{0.52\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.9\textwidth]{./figures/big_powerup.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% 
+% 
+% 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Characterization}
+% \begin{frame}[SectionTitlepage]{Characterization}
+% \end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% \begin{frame}{Characterization: $I_Q$}
+%   \vspace{-0.7cm}
+%   \begin{columns}
+%       \hspace{0.4cm}
+%       \begin{column}{0.4\textwidth}
+%         \begin{enumerate}
+%             \item Ensure the output is floating (no load).
+%             \item Pick a suitable resistor to get a measurable voltage drop, but not too large to power off the LDO.
+%         \end{enumerate}
+%       \end{column}
+%       \begin{column}{0.55\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.95\textwidth]{./figures/meas_iq.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% \begin{frame}{Characterization: noise}
+%   \vspace{-0.7cm}
+%   \begin{columns}
+%       \hspace{0.4cm}
+%       \begin{column}{0.4\textwidth}
+%         \begin{enumerate}
+%             \item Perform an FFT on the transient waveform, report the voltage spectral density.
+%         \end{enumerate}
+%       \end{column}
+%       \begin{column}{0.53\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.95\textwidth]{./figures/meas_noise.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% \begin{frame}{Characterization: minimum dropout \cite{Kim_SSCM}}
+%   \vspace{-0.7cm}
+%   \begin{columns}
+%       \hspace{0.4cm}
+%       \begin{column}{0.35\textwidth}
+%         \begin{enumerate}
+%             \item Sweep $V_{in}$
+%             \item Sweep $I_\text{load}$.
+%             \item Measure $V_{out}$.
+%         \end{enumerate}
+%       \end{column}
+%       \begin{column}{0.6\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.95\textwidth]{./figures/meas_loadVout.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% \begin{frame}{Characterization: load regulation}
+%   \vspace{-0.7cm}
+%   \begin{columns}
+%       \hspace{0.4cm}
+%       \begin{column}{0.35\textwidth}
+%         \begin{enumerate}
+%             \item Measure in advance the loads precisely.
+%             \item Toggle the load.
+%             \item Capture the transient response. Can use the trigger signal.
+%         \end{enumerate}
+%       \end{column}
+%       \begin{column}{0.6\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.95\textwidth]{./figures/meas_transient.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% \begin{frame}{Characterization: line regulation (PSRR)}
+%   \vspace{-0.7cm}
+%   \begin{columns}
+%       \hspace{0.4cm}
+%       \begin{column}{0.4\textwidth}
+%         \begin{enumerate}
+%             \item Add an AC component on $V_{in}$
+%             \item Measure the spectrum on $V_{out}$.
+%         \end{enumerate}
+%       \end{column}
+%       \begin{column}{0.55\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.95\textwidth]{./figures/meas_PSRR.pdf}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
+% 
+% 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[allowframebreaks]{References}
+    \printbibliography
+\end{frame}
+
+
+\end{document}
