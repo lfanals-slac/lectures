@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated as
-% required.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
 %
 \begingroup
 \makeatletter
@@ -16,5 +16,572 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global}\enddatalist
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Andrade2021}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{hash=2c1a0e5a606db017c1c450684c83c102}{%
+           family={Andrade-Miceli},
+           familyi={A\bibinithyphendelim M\bibinitperiod},
+           given={Dennis},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4b3ddb4d444c211245167e92b576aab4}{%
+           family={Esmailiyan},
+           familyi={E\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fae2dbf44706c03b0609e6e1d7766429}{%
+           family={Bisiaux},
+           familyi={B\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d0b0fd0eefeba24e1ba346d1e7b1c954}{%
+           family={Blokhina},
+           familyi={B\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod}}}%
+        {{hash=76844708c567daff960915d4aacd3a05}{%
+           family={Siriburanon},
+           familyi={S\bibinitperiod},
+           given={Teerachot},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ffbcec82817fb5a6264623c2669d6f44}{%
+           family={Bashir},
+           familyi={B\bibinitperiod},
+           given={Imran},
+           giveni={I\bibinitperiod}}}%
+        {{hash=6f0c732da85d1a1544f6a642ddc45a34}{%
+           family={Asker},
+           familyi={A\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5d3e6745dfc8ce88d9200e0cbc129698}{%
+           family={Leipold},
+           familyi={L\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+        {{hash=cb075b70bc1ebeb568a2385ddf2b57f0}{%
+           family={Staszewski},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi Bogdan},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{644dda3867e75636544b8b6d99b091ef}
+      \strng{fullhash}{da94cd3eeecd1199620a6dfda07656c8}
+      \strng{bibnamehash}{644dda3867e75636544b8b6d99b091ef}
+      \strng{authorbibnamehash}{644dda3867e75636544b8b6d99b091ef}
+      \strng{authornamehash}{644dda3867e75636544b8b6d99b091ef}
+      \strng{authorfullhash}{da94cd3eeecd1199620a6dfda07656c8}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 IEEE MTT-S International Microwave Symposium (IMS)}
+      \field{title}{Cryogenic Low-Drop-Out Regulators Fully Integrated with Quantum Dot Array in 22-nm FD-SOI CMOS}
+      \field{year}{2021}
+      \field{pages}{635\bibrangedash 637}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1109/IMS19712.2021.9574910
+      \endverb
+      \keyw{Temperature distribution;Regulators;Voltage measurement;Digital-analog conversion;Quantum dots;Silicon-on-insulator;Cryogenics;Cryogenic CMOS;FD-SOI;LDO;single-electron detector;position-based qubits;charge qubits;quantum dot (QD);quantum dot array (QDA);quantum processing unit (QPU)}
+    \endentry
+    \entry{ashok2025}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=e8441ff5fadd30f69af880a7d8400b5f}{%
+           family={Ashok},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ddcc3a95102961fa5ff34ae1cf9f9125}{%
+           family={Cabrera},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d753a38f81fb470b140799e136c2b681}{%
+           family={Baje},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0fc4465f6ef745ca925619fd328403ca}{%
+           family={Zambanini},
+           familyi={Z\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=17c5346e8ff70b965388e5c054b91da7}{%
+           family={Allinger},
+           familyi={A\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f9f72bb47961b641737bf739c1f8cb28}{%
+           family={Bahr},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=96f1c622cf28b65a78faf1efa7b09468}{%
+           family={Waasen},
+           familyi={W\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3741ff4416ef2b5d33fbccd3bbbabd5}
+      \strng{fullhash}{c7af47196b5cd8f664005cef1ab9eac2}
+      \strng{bibnamehash}{d3741ff4416ef2b5d33fbccd3bbbabd5}
+      \strng{authorbibnamehash}{d3741ff4416ef2b5d33fbccd3bbbabd5}
+      \strng{authornamehash}{d3741ff4416ef2b5d33fbccd3bbbabd5}
+      \strng{authorfullhash}{c7af47196b5cd8f664005cef1ab9eac2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{quant-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Self Clocked Digital LDO for Cryogenic Power Management in 22nm FDSOI with 98 Percent Efficiency}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2505.10234
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2505.10234
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2505.10234
+      \endverb
+    \endentry
+    \entry{Beckers2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0e1d3955291d25599338063450b3cc37}{%
+           family={Beckers},
+           familyi={B\bibinitperiod},
+           given={Arnout},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2211b577f306f32b381f3ab5624b0156}{%
+           family={Jazaeri},
+           familyi={J\bibinitperiod},
+           given={Farzan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=73c287f1195124aac0229abc3b58e7ac}{%
+           family={Enz},
+           familyi={E\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1519a0728e776dc2970987fcb0a4764}
+      \strng{fullhash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{bibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{authorbibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{authornamehash}{f1519a0728e776dc2970987fcb0a4764}
+      \strng{authorfullhash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Journal of the Electron Devices Society}
+      \field{title}{Characterization and Modeling of 28-nm Bulk CMOS Technology Down to 4.2 K}
+      \field{volume}{6}
+      \field{year}{2018}
+      \field{pages}{1007\bibrangedash 1018}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/JEDS.2018.2817458
+      \endverb
+      \keyw{MOS devices;Semiconductor device modeling;Temperature;Integrated circuit modeling;CMOS technology;Cryogenics;28 nm bulk CMOS;cryo-CMOS;subthreshold swing;freeze-out;cryoelectronics;cryogenic;interface charge traps;MOS transistor modeling;slope factor;4.2 K}
+    \endentry
+    \entry{Beckers2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0e1d3955291d25599338063450b3cc37}{%
+           family={Beckers},
+           familyi={B\bibinitperiod},
+           given={Arnout},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2211b577f306f32b381f3ab5624b0156}{%
+           family={Jazaeri},
+           familyi={J\bibinitperiod},
+           given={Farzan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=73c287f1195124aac0229abc3b58e7ac}{%
+           family={Enz},
+           familyi={E\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1519a0728e776dc2970987fcb0a4764}
+      \strng{fullhash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{bibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{authorbibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{authornamehash}{f1519a0728e776dc2970987fcb0a4764}
+      \strng{authorfullhash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Electron Device Letters}
+      \field{number}{2}
+      \field{title}{Theoretical Limit of Low Temperature Subthreshold Swing in Field-Effect Transistors}
+      \field{volume}{41}
+      \field{year}{2020}
+      \field{pages}{276\bibrangedash 279}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/LED.2019.2963379
+      \endverb
+      \keyw{Temperature measurement;MOSFET;Temperature;Logic gates;Temperature dependence;Silicon;Photonic band gap;Band tail;cryogenic;MOSFET;modeling;subthreshold slope;subthreshold swing}
+    \endentry
+    \entry{Blais2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=760f3979cb2de6f22bc87f3ee4d52150}{%
+           family={Blais},
+           familyi={B\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9f9ed5f53dff4f658f59f765af32935a}{%
+           family={Grimsmo},
+           familyi={G\bibinitperiod},
+           given={Arne\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=2fe7ce38663715919c6b1b7ff878347f}{%
+           family={Girvin},
+           familyi={G\bibinitperiod},
+           given={S.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a4618fc5d2d71b35587cdc771e590b70}{%
+           family={Wallraff},
+           familyi={W\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{46728eee29178d1ed38b6aca5b46a568}
+      \strng{fullhash}{de5b064a2b6224ee03566c54b8bb70bb}
+      \strng{bibnamehash}{46728eee29178d1ed38b6aca5b46a568}
+      \strng{authorbibnamehash}{46728eee29178d1ed38b6aca5b46a568}
+      \strng{authornamehash}{46728eee29178d1ed38b6aca5b46a568}
+      \strng{authorfullhash}{de5b064a2b6224ee03566c54b8bb70bb}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{2}
+      \field{journaltitle}{Rev. Mod. Phys.}
+      \field{month}{5}
+      \field{title}{Circuit quantum electrodynamics}
+      \field{volume}{93}
+      \field{year}{2021}
+      \field{pages}{025005}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.93.025005
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.93.025005
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.93.025005
+      \endverb
+    \endentry
+    \entry{Faine2026}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=da8e99bc4cd451da5205f3038cbfee84}{%
+           family={Fainé},
+           familyi={F\bibinitperiod},
+           given={Xavier\bibnamedelima Íñiguez},
+           giveni={X\bibinitperiod\bibinitdelim Í\bibinitperiod}}}%
+        {{hash=ca500e24320eafa9a1d7406df0760ccd}{%
+           family={Alarcón},
+           familyi={A\bibinitperiod},
+           given={Eduard},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c1d689cdbf7540d9d9777a96ee2647f4}{%
+           family={Sebastiano},
+           familyi={S\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=bafc29f3438687d7d8832b8ddebf4901}{%
+           family={Fanals-i-Batllori},
+           familyi={F\bibinithyphendelim i\bibinithyphendelim B\bibinitperiod},
+           given={Llorenç},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6c8c7c923c0bdddb7712e3f6b901c59f}{%
+           family={Perez},
+           familyi={P\bibinitperiod},
+           given={Aldo\bibnamedelima Pena},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
+      \strng{fullhash}{16ef8c59f0c6e46e1bd00973d0bb8644}
+      \strng{bibnamehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
+      \strng{authorbibnamehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
+      \strng{authornamehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
+      \strng{authorfullhash}{16ef8c59f0c6e46e1bd00973d0bb8644}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2026 IEEE International Symposium on Circuits and Systems (ISCAS)}
+      \field{title}{A 40 nm integrated cryo-CMOS 120 MHz switching power converter for power management at 4 K aiming large-scale quantum computers}
+      \field{year}{2026}
+      \field{pages}{2505\bibrangedash 2509}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ISCAS66217.2026.11562983
+      \endverb
+      \keyw{Converters;Printing;Switches;Voltage;Temperature;Inductors;Modeling;Current;Design methodology;Capacitors}
+    \endentry
+    \entry{Patra2018}{article}{}
+      \name{author}{11}{}{%
+        {{hash=d07af4c86e4a29c95d17cb7f7fff51e7}{%
+           family={Patra},
+           familyi={P\bibinitperiod},
+           given={Bishnu},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a393b412bd5b72ac1dbdc333d53f9064}{%
+           family={Incandela},
+           familyi={I\bibinitperiod},
+           given={Rosario\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3949a054f6db2022ac99fd117736c10b}{%
+           family={Dijk},
+           familyi={D\bibinitperiod},
+           given={Jeroen\bibnamedelimb P.\bibnamedelimi G.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=ad4f7704d921b058acab43c089942cac}{%
+           family={Homulle},
+           familyi={H\bibinitperiod},
+           given={Harald\bibnamedelimb A.\bibnamedelimi R.},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=332d3c7067015d60f6c6cf188764e089}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b7785b037c525c256c8b9650cd525a0d}{%
+           family={Shahmohammadi},
+           familyi={S\bibinitperiod},
+           given={Mina},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a6472e22e6597c79f1c1112b311a16f8}{%
+           family={Staszewski},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima Bogdan},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=9003dc43946d958369bd1a2c8417f051}{%
+           family={Vladimirescu},
+           familyi={V\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3dd1daf57f5eef0934e651614acfb708}{%
+           family={Babaie},
+           familyi={B\bibinitperiod},
+           given={Masoud},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c1d689cdbf7540d9d9777a96ee2647f4}{%
+           family={Sebastiano},
+           familyi={S\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d6dd49eea525bedc29f7505ead40f2c8}{%
+           family={Charbon},
+           familyi={C\bibinitperiod},
+           given={Edoardo},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{aed020f9f0f062458fff48a4c6ef397b}
+      \strng{fullhash}{9bb6704eb45276f5261445371ade0e21}
+      \strng{bibnamehash}{aed020f9f0f062458fff48a4c6ef397b}
+      \strng{authorbibnamehash}{aed020f9f0f062458fff48a4c6ef397b}
+      \strng{authornamehash}{aed020f9f0f062458fff48a4c6ef397b}
+      \strng{authorfullhash}{9bb6704eb45276f5261445371ade0e21}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Journal of Solid-State Circuits}
+      \field{number}{1}
+      \field{title}{Cryo-CMOS Circuits and Systems for Quantum Computing Applications}
+      \field{volume}{53}
+      \field{year}{2018}
+      \field{pages}{309\bibrangedash 321}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/JSSC.2017.2737549
+      \endverb
+      \keyw{Cryogenics;Quantum computing;CMOS technology;Process control;Temperature;Oscillators;Class-F oscillator;CMOS characterization;cryo-CMOS;low-noise amplifier (LNA);noise canceling;phase noise (PN);quantum bit (qubit);quantum computing;qubit control;single-photon avalanche diode (SPAD)}
+    \endentry
+    \entry{Sansen2006}{book}{}
+      \name{author}{1}{}{%
+        {{hash=010d2b7955acb31fc1227309ce4fb30c}{%
+           family={Sansen},
+           familyi={S\bibinitperiod},
+           given={Willy\bibnamedelimb M.\bibnamedelimi C.},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{010d2b7955acb31fc1227309ce4fb30c}
+      \strng{fullhash}{010d2b7955acb31fc1227309ce4fb30c}
+      \strng{bibnamehash}{010d2b7955acb31fc1227309ce4fb30c}
+      \strng{authorbibnamehash}{010d2b7955acb31fc1227309ce4fb30c}
+      \strng{authornamehash}{010d2b7955acb31fc1227309ce4fb30c}
+      \strng{authorfullhash}{010d2b7955acb31fc1227309ce4fb30c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-387-25746-4}
+      \field{series}{The Springer International Series in Engineering and Computer Science}
+      \field{title}{Analog Design Essentials}
+      \field{volume}{859}
+      \field{year}{2006}
+      \verb{doi}
+      \verb 10.1007/b135984
+      \endverb
+    \endentry
+    \entry{underwood2023}{misc}{}
+      \name{author}{21}{}{%
+        {{hash=3726987076da20a1b91efcfa9fa3d525}{%
+           family={Underwood},
+           familyi={U\bibinitperiod},
+           given={Devin\bibnamedelima L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=6f5a08a41d46b773f7dcd5bc3d3f277b}{%
+           family={Glick},
+           familyi={G\bibinitperiod},
+           given={Joseph\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=4cc4df3fe0e3eaf472d26c664fbcdc11}{%
+           family={Inoue},
+           familyi={I\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8bfa86b3ae85d6a5995ce43eddc3197e}{%
+           family={Frank},
+           familyi={F\bibinitperiod},
+           given={David\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e9ea945ed8c64e8457e1766110b44528}{%
+           family={Timmerwilke},
+           familyi={T\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8516f9d3e83344f56b2efc87dc782d4a}{%
+           family={Pritchett},
+           familyi={P\bibinitperiod},
+           given={Emily},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7b1bc33c4e6b51eb1b8ec665ee05d6d2}{%
+           family={Chakraborty},
+           familyi={C\bibinitperiod},
+           given={Sudipto},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4436dbe1d27e0f811bd17814696490df}{%
+           family={Tien},
+           familyi={T\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3f356f9febd70414efb08027edc6e87e}{%
+           family={Yeck},
+           familyi={Y\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6f741b7d73a04dd29467062e9eb0a5f6}{%
+           family={Bulzacchelli},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=287cd7ee2b520b909397ef3d3b3d4bd7}{%
+           family={Baks},
+           familyi={B\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c5a0c77bddf578e0e98887fcb7d16e53}{%
+           family={Rosno},
+           familyi={R\bibinitperiod},
+           given={Pat},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6d8edcd5b8aead1289ae5e3e74ec685c}{%
+           family={Robertazzi},
+           familyi={R\bibinitperiod},
+           given={Raphael},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b985c9a61a9bb11d3f3d292f9cd2f7e4}{%
+           family={Beck},
+           familyi={B\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=400f9ae27aa52242ea0e772c23155255}{%
+           family={Joshi},
+           familyi={J\bibinitperiod},
+           given={Rajiv\bibnamedelima V.},
+           giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=4e011bcf81d7619b9d5617488fc4f4c0}{%
+           family={Wisnieff},
+           familyi={W\bibinitperiod},
+           given={Dorothy},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e40facd69643a196689636684c5d9d60}{%
+           family={Ramirez},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fa596b31fd6860f1079774c11e223652}{%
+           family={Ruedinger},
+           familyi={R\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3082e53eec707aaa3373c5aa44220865}{%
+           family={Lekuch},
+           familyi={L\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=694c3977053644822089443fbb9066a9}{%
+           family={Gaucher},
+           familyi={G\bibinitperiod},
+           given={Brian\bibnamedelima P.},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=f45297150b64464de4c4929945478fc8}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Daniel\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a8e0b2f32676014d7ee2eec611c95a79}
+      \strng{fullhash}{d20e6dba70638632fc800ad90a33e22d}
+      \strng{bibnamehash}{a8e0b2f32676014d7ee2eec611c95a79}
+      \strng{authorbibnamehash}{a8e0b2f32676014d7ee2eec611c95a79}
+      \strng{authornamehash}{a8e0b2f32676014d7ee2eec611c95a79}
+      \strng{authorfullhash}{d20e6dba70638632fc800ad90a33e22d}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{quant-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Using Cryogenic CMOS Control Electronics To Enable A Two-Qubit Cross-Resonance Gate}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2302.11538
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2302.11538
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2302.11538
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
+

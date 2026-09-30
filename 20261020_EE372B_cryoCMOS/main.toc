@@ -1,2 +1,4 @@
-\beamer@sectionintoc {1}{Cryo-CMOS power management}{4}{0}{1}
-\beamer@subsectionintoc {1}{1}{Cryo-CMOS power management sub}{6}{0}{1}
+\beamer@sectionintoc {1}{Cryogenic systems}{3}{0}{1}
+\beamer@sectionintoc {2}{MOS temperature behavior}{13}{0}{2}
+\beamer@sectionintoc {3}{Cryo LDO literature review}{23}{0}{3}
+\beamer@sectionintoc {4}{Design}{33}{0}{4}

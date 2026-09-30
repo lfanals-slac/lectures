@@ -1,0 +1,323 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Beckers2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0e1d3955291d25599338063450b3cc37}{%
+           family={Beckers},
+           familyi={B\bibinitperiod},
+           given={Arnout},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2211b577f306f32b381f3ab5624b0156}{%
+           family={Jazaeri},
+           familyi={J\bibinitperiod},
+           given={Farzan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=73c287f1195124aac0229abc3b58e7ac}{%
+           family={Enz},
+           familyi={E\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1519a0728e776dc2970987fcb0a4764}
+      \strng{fullhash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{bibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{authorbibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{authornamehash}{f1519a0728e776dc2970987fcb0a4764}
+      \strng{authorfullhash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Journal of the Electron Devices Society}
+      \field{title}{Characterization and Modeling of 28-nm Bulk CMOS Technology Down to 4.2 K}
+      \field{volume}{6}
+      \field{year}{2018}
+      \field{pages}{1007\bibrangedash 1018}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/JEDS.2018.2817458
+      \endverb
+      \keyw{MOS devices;Semiconductor device modeling;Temperature;Integrated circuit modeling;CMOS technology;Cryogenics;28 nm bulk CMOS;cryo-CMOS;subthreshold swing;freeze-out;cryoelectronics;cryogenic;interface charge traps;MOS transistor modeling;slope factor;4.2 K}
+    \endentry
+    \entry{Beckers2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0e1d3955291d25599338063450b3cc37}{%
+           family={Beckers},
+           familyi={B\bibinitperiod},
+           given={Arnout},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2211b577f306f32b381f3ab5624b0156}{%
+           family={Jazaeri},
+           familyi={J\bibinitperiod},
+           given={Farzan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=73c287f1195124aac0229abc3b58e7ac}{%
+           family={Enz},
+           familyi={E\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1519a0728e776dc2970987fcb0a4764}
+      \strng{fullhash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{bibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{authorbibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{authornamehash}{f1519a0728e776dc2970987fcb0a4764}
+      \strng{authorfullhash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Electron Device Letters}
+      \field{number}{2}
+      \field{title}{Theoretical Limit of Low Temperature Subthreshold Swing in Field-Effect Transistors}
+      \field{volume}{41}
+      \field{year}{2020}
+      \field{pages}{276\bibrangedash 279}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/LED.2019.2963379
+      \endverb
+      \keyw{Temperature measurement;MOSFET;Temperature;Logic gates;Temperature dependence;Silicon;Photonic band gap;Band tail;cryogenic;MOSFET;modeling;subthreshold slope;subthreshold swing}
+    \endentry
+    \entry{Blais2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=760f3979cb2de6f22bc87f3ee4d52150}{%
+           family={Blais},
+           familyi={B\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9f9ed5f53dff4f658f59f765af32935a}{%
+           family={Grimsmo},
+           familyi={G\bibinitperiod},
+           given={Arne\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=2fe7ce38663715919c6b1b7ff878347f}{%
+           family={Girvin},
+           familyi={G\bibinitperiod},
+           given={S.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a4618fc5d2d71b35587cdc771e590b70}{%
+           family={Wallraff},
+           familyi={W\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{46728eee29178d1ed38b6aca5b46a568}
+      \strng{fullhash}{de5b064a2b6224ee03566c54b8bb70bb}
+      \strng{bibnamehash}{46728eee29178d1ed38b6aca5b46a568}
+      \strng{authorbibnamehash}{46728eee29178d1ed38b6aca5b46a568}
+      \strng{authornamehash}{46728eee29178d1ed38b6aca5b46a568}
+      \strng{authorfullhash}{de5b064a2b6224ee03566c54b8bb70bb}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{2}
+      \field{journaltitle}{Rev. Mod. Phys.}
+      \field{month}{5}
+      \field{title}{Circuit quantum electrodynamics}
+      \field{volume}{93}
+      \field{year}{2021}
+      \field{pages}{025005}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.93.025005
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.93.025005
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.93.025005
+      \endverb
+    \endentry
+    \entry{Faine2026}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=da8e99bc4cd451da5205f3038cbfee84}{%
+           family={Fainé},
+           familyi={F\bibinitperiod},
+           given={Xavier\bibnamedelima Íñiguez},
+           giveni={X\bibinitperiod\bibinitdelim Í\bibinitperiod}}}%
+        {{hash=ca500e24320eafa9a1d7406df0760ccd}{%
+           family={Alarcón},
+           familyi={A\bibinitperiod},
+           given={Eduard},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c1d689cdbf7540d9d9777a96ee2647f4}{%
+           family={Sebastiano},
+           familyi={S\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=bafc29f3438687d7d8832b8ddebf4901}{%
+           family={Fanals-i-Batllori},
+           familyi={F\bibinithyphendelim i\bibinithyphendelim B\bibinitperiod},
+           given={Llorenç},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6c8c7c923c0bdddb7712e3f6b901c59f}{%
+           family={Perez},
+           familyi={P\bibinitperiod},
+           given={Aldo\bibnamedelima Pena},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
+      \strng{fullhash}{16ef8c59f0c6e46e1bd00973d0bb8644}
+      \strng{bibnamehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
+      \strng{authorbibnamehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
+      \strng{authornamehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
+      \strng{authorfullhash}{16ef8c59f0c6e46e1bd00973d0bb8644}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2026 IEEE International Symposium on Circuits and Systems (ISCAS)}
+      \field{title}{A 40 nm integrated cryo-CMOS 120 MHz switching power converter for power management at 4 K aiming large-scale quantum computers}
+      \field{year}{2026}
+      \field{pages}{2505\bibrangedash 2509}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ISCAS66217.2026.11562983
+      \endverb
+      \keyw{Converters;Printing;Switches;Voltage;Temperature;Inductors;Modeling;Current;Design methodology;Capacitors}
+    \endentry
+    \entry{Patra2018}{article}{}
+      \name{author}{11}{}{%
+        {{hash=d07af4c86e4a29c95d17cb7f7fff51e7}{%
+           family={Patra},
+           familyi={P\bibinitperiod},
+           given={Bishnu},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a393b412bd5b72ac1dbdc333d53f9064}{%
+           family={Incandela},
+           familyi={I\bibinitperiod},
+           given={Rosario\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3949a054f6db2022ac99fd117736c10b}{%
+           family={Dijk},
+           familyi={D\bibinitperiod},
+           given={Jeroen\bibnamedelimb P.\bibnamedelimi G.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=ad4f7704d921b058acab43c089942cac}{%
+           family={Homulle},
+           familyi={H\bibinitperiod},
+           given={Harald\bibnamedelimb A.\bibnamedelimi R.},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=332d3c7067015d60f6c6cf188764e089}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b7785b037c525c256c8b9650cd525a0d}{%
+           family={Shahmohammadi},
+           familyi={S\bibinitperiod},
+           given={Mina},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a6472e22e6597c79f1c1112b311a16f8}{%
+           family={Staszewski},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima Bogdan},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=9003dc43946d958369bd1a2c8417f051}{%
+           family={Vladimirescu},
+           familyi={V\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3dd1daf57f5eef0934e651614acfb708}{%
+           family={Babaie},
+           familyi={B\bibinitperiod},
+           given={Masoud},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c1d689cdbf7540d9d9777a96ee2647f4}{%
+           family={Sebastiano},
+           familyi={S\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d6dd49eea525bedc29f7505ead40f2c8}{%
+           family={Charbon},
+           familyi={C\bibinitperiod},
+           given={Edoardo},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{aed020f9f0f062458fff48a4c6ef397b}
+      \strng{fullhash}{9bb6704eb45276f5261445371ade0e21}
+      \strng{bibnamehash}{aed020f9f0f062458fff48a4c6ef397b}
+      \strng{authorbibnamehash}{aed020f9f0f062458fff48a4c6ef397b}
+      \strng{authornamehash}{aed020f9f0f062458fff48a4c6ef397b}
+      \strng{authorfullhash}{9bb6704eb45276f5261445371ade0e21}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Journal of Solid-State Circuits}
+      \field{number}{1}
+      \field{title}{Cryo-CMOS Circuits and Systems for Quantum Computing Applications}
+      \field{volume}{53}
+      \field{year}{2018}
+      \field{pages}{309\bibrangedash 321}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/JSSC.2017.2737549
+      \endverb
+      \keyw{Cryogenics;Quantum computing;CMOS technology;Process control;Temperature;Oscillators;Class-F oscillator;CMOS characterization;cryo-CMOS;low-noise amplifier (LNA);noise canceling;phase noise (PN);quantum bit (qubit);quantum computing;qubit control;single-photon avalanche diode (SPAD)}
+    \endentry
+    \entry{Sansen2006}{book}{}
+      \name{author}{1}{}{%
+        {{hash=010d2b7955acb31fc1227309ce4fb30c}{%
+           family={Sansen},
+           familyi={S\bibinitperiod},
+           given={Willy\bibnamedelimb M.\bibnamedelimi C.},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{010d2b7955acb31fc1227309ce4fb30c}
+      \strng{fullhash}{010d2b7955acb31fc1227309ce4fb30c}
+      \strng{bibnamehash}{010d2b7955acb31fc1227309ce4fb30c}
+      \strng{authorbibnamehash}{010d2b7955acb31fc1227309ce4fb30c}
+      \strng{authornamehash}{010d2b7955acb31fc1227309ce4fb30c}
+      \strng{authorfullhash}{010d2b7955acb31fc1227309ce4fb30c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-387-25746-4}
+      \field{series}{The Springer International Series in Engineering and Computer Science}
+      \field{title}{Analog Design Essentials}
+      \field{volume}{859}
+      \field{year}{2006}
+      \verb{doi}
+      \verb 10.1007/b135984
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

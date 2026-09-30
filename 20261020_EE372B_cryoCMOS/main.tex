@@ -6,7 +6,7 @@
 {}
 
 % \subtitle{Status report and feedback}
-\subtitle{Cryo-CMOS power management and silicon bring-up considerations}
+\subtitle{Cryo-CMOS power management}
 
 \author[] % (optional, for multiple authors)
 % {A.~Alpha\inst{1} \and B.~Bravo\inst{2} \\ On behalf of Institute X, Institute Y, Institute Z}
@@ -42,8 +42,24 @@
 \usepackage{pgfplots} % tikz plots
 \usepgfplotslibrary{colorbrewer} % cycle color
 \usepackage{filecontents} % read csvs
-\usepackage[natbib=true,backend=bibtex,sorting=none]{biblatex}
-\bibliography{./bibliography.bib}
+% \usepackage[natbib=true,backend=bibtex,sorting=none]{biblatex}
+% \bibliography{./bibliography.bib}
+\usepackage[style=numeric, backend=biber, maxcitenames=1, mincitenames=1]{biblatex}
+\renewbibmacro*{name:andothers}{}
+\addbibresource{./bibliography.bib}
+  \DeclareCiteCommand{\cite}[\mkbibbrackets]
+    {\usebibmacro{prenote}}
+    {\usebibmacro{citeindex}%
+     \printfield{labelnumber}%
+     \setunit{\addcomma\space}%
+     \printnames[family][1-1]{labelname}%
+     \setunit{\addspace}%
+     \printfield{year}}
+    {\multicitedelim}
+    {\usebibmacro{postnote}}
+
+
+
 \usepackage{hyperref} % mailto
 \usepackage{listings}
 \usepackage[para]{threeparttable}
@@ -70,23 +86,23 @@
 \titlepage
 \end{frame}
 
-\begin{frame}{Introduction}
-  \begin{columns}
-      \begin{column}{0.5\textwidth}
-        \begin{itemize}
-            \item Llorenç Fanals-i-Batllori.
-            \item BSc EE Universitat the Girona, Spain (9.52/10), MSc EE UPC Barcelona, Spain (9.69/10).
-            \item Mixed-signal Design Verification Engineer at Apple, UK.
-            \item Mixed-signal ASIC Design Engineer at SLAC/Stanford.
-        \end{itemize}
-      \end{column}
-      \begin{column}{0.5\textwidth}
-        \begin{figure} \centering
-            \includegraphics[width=0.8\textwidth]{./images/portrait_.jpeg}
-        \end{figure}
-      \end{column}
-  \end{columns}
-\end{frame}
+% \begin{frame}{Introduction}
+%   \begin{columns}
+%       \begin{column}{0.5\textwidth}
+%         \begin{itemize}
+%             \item Llorenç Fanals-i-Batllori.
+%             \item BSc EE Universitat the Girona, Spain (9.52/10), MSc EE UPC Barcelona, Spain (9.69/10).
+%             \item Mixed-signal Design Verification Engineer at Apple, UK.
+%             \item Mixed-signal ASIC Design Engineer at SLAC/Stanford.
+%         \end{itemize}
+%       \end{column}
+%       \begin{column}{0.5\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.8\textwidth]{./images/portrait_.jpeg}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
 
 \begin{frame}[SloganTitleUnderline]{Table of contents}
     \LARGE \tableofcontents%[section]
@@ -98,15 +114,552 @@
 % 1: Cryogenic systems
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Cryogenic systems}
-\begin{frame}[SectionTitlepage]{Cryo-CMOS power management}
+\begin{frame}[SectionTitlepage]{Cryogenic systems}
+\end{frame}
+% Explain how a dilution refrigerator is wired and the need for power management
+% 100 Ohms per DC wire, thermal load, quick simulation of how bad the power can be there, need for scaling
+
+\begin{frame}{Dilution refrigerator}
+\vspace{-0.4cm}
+\begin{columns}[T]
+  \begin{column}{0.55\textwidth}
+      \begin{itemize}
+        \item The power budget scales approximately as $\propto T^2$.
+        \item Useful quantum computers need thousands or millions of qubits.
+        \item $k_B T \ll \omega \hbar$ for quantum effects to show up \cite{Blais2021}.
+        \item Cryo-CMOS at \SI{}{\m\K} temperatures needs to be show near zero static power consumption.
+        \item The $4$-\SI{}{\K} is regarded as a suitable stage for more power-hungry cryo-CMOS \cite{Patra2018}.
+      \end{itemize}
+  \end{column}
+  \begin{column}{0.4\textwidth}
+    \begin{figure} \centering
+        \includegraphics[width=0.9\textwidth]{./figures/dil_fridge.pdf}
+    \end{figure}
+  \end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}{Cryo-CMOS power management}
+\begin{frame}{Cryo-CMOS motivation \cite{Patra2018}}
+\vspace{-0.2cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.65\textwidth]{./figures/patra2018.pdf}
+    \end{figure}
 \end{frame}
 
-\subsection{Cryo-CMOS power management sub}
-\begin{frame}[SectionTitlepage]{Cryo-CMOS power management}
+\begin{frame}{The need for power \cite{Patra2018}, adapted}
+\vspace{-0.2cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.75\textwidth]{./figures/patra2018_vdd.pdf}
+    \end{figure}
 \end{frame}
+
+\begin{frame}{Equivalent model, DC}
+\vspace{-0.2cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.5\textwidth]{./figures/wiring_model.pdf}
+    \end{figure}
+    Efficiency:
+    \begin{equation}
+        \eta \triangleq \frac{P_\text{out}}{P_\text{in}} = \frac{V_\text{DD} I_\text{load} - I_\text{load}^2 \cdot 2 R}{V_\text{DD} I_\text{load}} = 1 - \frac{ 2 I_\text{load} R}{V_\text{DD}} \ .
+        \label{eq:efficiency}
+    \end{equation}
+    For $R = \SI{100}{\ohm}$, $V_\text{DD} = \SI{1}{\V}$, $I_\text{load} = \SI{1}{\mA}$, $\eta = 0.8$. The system stops working even for moderate loads!
+    \begin{itemize}
+        \item A single twisted pair is very resistive to minimize the heat load.
+        \item Multiple twisted pairs in parallel are common, but this doesn't scale well.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Equivalent model, transient}
+\vspace{-0.2cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.6\textwidth]{./figures/wiring_model_transient.pdf}
+    \end{figure}
+    \begin{equation}
+        \frac{V_\text{DD} - v_\text{out}(t)}{2 R} = C \frac{\partial v_\text{out}(t)}{\partial t} + i_\text{load}(t) \ .
+    \end{equation}
+    For a step on $i_\text{load} (t)$ from $0$ to $I_\text{max}$, 
+    \begin{equation}
+        v_\text{out}(t) = V_\text{DD} - 2 R I_\text{max} \left( 1 - e^{-\frac{t}{2RC}} \right) \ .
+    \end{equation}
+    For $R = \SI{100}{\ohm}$, $C = \SI{1}{\nF}$, $\tau = \SI{100}{\ns}$, slow!
+\end{frame}
+
+\begin{frame}{Equivalent model, transient}
+\vspace{-0.6cm}
+    \begin{equation}
+        v_\text{out}(t) = V_\text{DD} - 2 R I_\text{max} \left( 1 - e^{-\frac{t}{2RC}} \right) \ .
+    \end{equation}
+    \begin{figure} \centering
+        \includegraphics[width=0.6\textwidth]{./figures/wiring_model_transient_all.pdf}
+    \end{figure}
+    If we increase the number of twisted pairs by $N$,
+    \begin{itemize}
+        \item $v_\text{out}(t \rightarrow \infty)$ gets closer to $V_\text{DD}$.
+        \item $\tau$ is kept constant.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{+ LDO}
+    \vspace{-0.2cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.8\textwidth]{./figures/wiring_model_ldo.pdf}
+    \end{figure}
+    \vspace{-0.3cm}
+    The output impedance of the LDO is very low, leading to
+    \begin{itemize}
+        \item fast transients.
+        \item A well-regulated voltage, $\epsilon \triangleq V_\text{ref} - V_\text{out} = \frac{V_\text{ref}}{1 + A(s) g_{mP} Z_\text{load}} = \frac{V_\text{ref}}{1 + T(s)}$.
+    \end{itemize}
+    System-wise, the efficiency $\eta$ is still poor. How to improve it?
+\end{frame}
+
+\begin{frame}{+ buck converter \cite{Faine2026}}
+    \vspace{-0.2cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.65\textwidth]{./images/faine.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{+ buck converter}
+    \vspace{-0.2cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.8\textwidth]{./figures/wiring_model_buck_ldo.pdf}
+    \end{figure}
+    \vspace{-0.2cm}
+    \begin{itemize}
+        \item $V_\text{DD}$ is maximized to minimize the supply current. $P_\text{loss} = 2R \cdot I^2$ is minimized.
+        \item An LDO is mandatory to clean the buck output ripple voltage.
+        \item Ubiquitous architecture, found in almost all batery-operated devices.
+    \end{itemize}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 2: MOS temperature behavior
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{MOS temperature behavior}
+\begin{frame}[SectionTitlepage]{MOS temperature behavior}
+\end{frame}
+% Derivation of SS, gm/Id, small-signal approximation
+
+\begin{frame}{MOS temperature behavior, $22$-\SI{}{\nm} FDSOI}
+\vspace{-0.8cm}
+\begin{columns}
+    \begin{column}{0.175\textwidth}
+      \begin{figure} \centering
+          \includegraphics[width=0.9\textwidth]{./figures/mos_ss.pdf}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.8\textwidth}
+    \begin{figure}[htpb] \centering
+      \begin{tikzpicture}
+        \begin{axis}[
+            xlabel={$V_\text{GS}$ $\left[\SI{}{\V}\right]$},
+            ylabel={$I_\text{DS}$ $\left[\SI{}{\A}\right]$},
+            ymode=log,
+            width=10cm,
+            height=6cm,
+            legend style={at={(0.98,0.02)}, anchor=south east, font=\small},
+          ]                                                                
+          \addplot+[mark=none, color=red] table [col sep=comma, x=Vgs_V, y=Ids_0Vbulk_A] {./datasets/SS_300K_1u1u_100mVds_1Vbulk.csv};
+          \addlegendentry{\SI{300}{\K}, $V_\text{BS} = \SI{0}{\V}$}
+          \addplot+[mark=none, color=red, dashed] table [col sep=comma, x=Vgs_V, y=Ids_1Vbulk_A] {./datasets/SS_300K_1u1u_100mVds_1Vbulk.csv};
+          \addlegendentry{\SI{300}{\K}, $V_\text{BS} = \SI{1}{\V}$}
+    
+          \addplot+[mark=none, color=blue] table [col sep=comma, x=Vgs_V, y=Ids_0Vbulk_A] {./datasets/SS_4K_1u1u_100mVds_1Vbulk_fine.csv};
+          \addlegendentry{\SI{4}{\K}, $V_\text{BS} = \SI{0}{\V}$}
+          \addplot+[mark=none, color=blue, dashed] table [col sep=comma, x=Vgs_V, y=Ids_1Vbulk_A] {./datasets/SS_4K_1u1u_100mVds_1Vbulk_fine.csv};
+          \addlegendentry{\SI{4}{\K}, $V_\text{BS} = \SI{1}{\V}$}
+        \end{axis}                                                         
+      \end{tikzpicture}
+      % \caption{$I_{DS} \left(V_{GS}\right)$ of a $W=L=\SI{1}{\um}$ NMOS device with $V_{DS} = \SI{100}{\mV}$ at \SI{300}{\K} (PDK models) and \SI{4}{\K} (cryogenic models).}
+      \label{fig:ss}
+    \end{figure}
+    \end{column}
+\end{columns}
+\vspace{-0.4cm}
+$\SI{300}{\K} \rightarrow \SI{4}{\K}$ yields \cite{Beckers2018}
+\begin{itemize}
+    \item An increase in threshold voltage $\Delta V_\text{TH} \approx \SI{150}{\mV}$.
+    \item An increase in mobility $\frac{\mu_\text{4 K}}{\mu_\text{300 K}} \approx 2.5$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{MOS temperature behavior, $28$-\SI{}{\nm} bulk \cite{Beckers2020}}
+% \vspace{-0.8cm}
+      \begin{figure} \centering
+          \includegraphics[width=0.8\textwidth]{./images/beckers2020.png}
+      \end{figure}
+\end{frame}
+
+\begin{frame}{MOS temperature behavior, $28$-\SI{}{\nm} bulk \cite{Beckers2020}}
+    \vspace{-0.2cm}
+      \begin{figure} \centering
+          \includegraphics[width=0.5\textwidth]{./images/beckers2020_SS.png}
+      \end{figure}
+    \vspace{-0.4cm}
+      \begin{itemize}
+          \item As long as superconductivity is not achieved, MOS behaves the same below \SI{35}{\K}.
+          \item For calculations, take $T = \SI{35}{\K}$ as a saturation temperature.
+      \end{itemize}
+\end{frame}
+
+\begin{frame}{MOS in weak inversion}
+    In weak inversion,
+\begin{equation}
+    I_\text{DS,wi} = I_\text{D0} \frac{W}{L} e^{V_{GS} / \left(n k_B T / q\right)} \ ,
+    \label{eq:Id_wi}
+\end{equation}
+where
+\begin{itemize}
+    \item $I_{DO} \propto e^{-V_\text{TH} / \left(n k_B T / q\right)}$, take it as a constant.
+    \item $W, L$: transistor effective width and length, respectively.
+    \item $n(T)$: subthreshold slope factor, $\sim 1.2$ for FDSOI and $1.4$ for bulk, increases at cryo.
+    \item $k_B = \SI{1.38e-23}{\m\squared\kg\s\tothe{-2}\K\tothe{-1}}$: Boltzmann's constant.
+    \item $T$: temperature, in \SI{}{\K}.
+    \item $q = \SI{1.6e-19}{\C}$: charge of an electron.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{MOS WI to SI transition \cite{Sansen2006}}
+In weak inversion,
+\begin{equation}
+    I_\text{DS,wi} = I_\text{D0} \frac{W}{L} e^{V_{GS} / \left(n k_B T / q\right)} \ , \ \frac{g_{m\text{,wi}}}{I_\text{DS,wi}} = \frac{1}{n k_B T / q} = \frac{\ln(10)}{SS}  \ .
+\end{equation}
+In strong inversion,
+\begin{equation}
+    I_\text{DS,si} \approx \mu_N C_{ox} \frac{W}{L} \left(V_\text{GS} - V_\text{TH}\right)^2 \left(1 + \lambda V_\text{DS} \right) \ , \ \frac{g_{m\text{,si}}}{I_\text{DS,si}} = \frac{2}{V_\text{GS} - V_\text{TH}} \ .
+\end{equation}
+The transition is at $ \frac{g_{m\text{,wi}}}{I_\text{DS,wi}} = \frac{g_{m\text{,si}}}{I_\text{DS,si}}$:
+\begin{equation}
+    \left( V_\text{OD} \right)_t \triangleq \left( V_\text{GS} - V_\text{TH} \right)_t = 2 n \frac{k_B T}{q} \ .
+\end{equation}
+\vspace{-0.6cm}
+\begin{itemize}
+    \item $\left( V_\text{OD} \right)_t$ = \SI{72}{\mV} at \SI{300}{\K} $\rightarrow$ $V_\text{OD} = \SI{200}{\mV}$ is taken for strong inversion.
+    \item $\left( V_\text{OD} \right)_t$ = \SI{8.4}{\mV} at \SI{4}{\K} (assuming saturation at \SI{35}{\K}) $\rightarrow$ can achieve strong inversion with small $V_\text{OD}$, but be careful about $V_\text{TH}$ mismatch!
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{$g_m / I_\text{DS}$}
+    \vspace{-0.4cm}
+    \begin{figure}[htpb] \centering
+      \begin{tikzpicture}
+        \begin{axis}[
+            xlabel={$I_\text{DS}$ $\left[\SI{}{\A}\right]$},
+            ylabel={$g_m / I_\text{DS}$ $\left[\SI{}{\per\V}\right]$},
+            xmode=log,
+            width=10cm,
+            height=6cm,
+            grid=both,
+            minor tick num=4,
+            major grid style={gray!50, thin},
+            minor grid style={gray!20, very thin},
+            title={$22$-\SI{}{\nm} FDSOI, Semiwise models, $W=L=\SI{1}{\um}$ NMOS},
+            title style={yshift=-0.3cm},
+            legend style={at={(0.98,0.98)}, anchor=north east, font=\small},
+          ]                                                                
+          \addplot+[mark=none, color=blue] table [col sep=comma, x=Id_A, y=gmId_1perV] {./datasets/gmId_22nm_4K_Vbulk0V.csv};
+          \addlegendentry{\SI{4}{\K}}
+          \addplot+[mark=none, color=red] table [col sep=comma, x=Id_A, y=gmId_1perV] {./datasets/gmId_22nm_300K_Vbulk0V.csv};
+          \addlegendentry{\SI{300}{\K}}
+        \end{axis}                                                         
+      \end{tikzpicture}
+    \end{figure}
+%    
+    \vspace{-0.6cm}
+    \begin{itemize}
+        \item In \cite{Beckers2020}, $\min(SS) = \SI{10}{\mV}$/dec $\rightarrow$ $g_m / I_\text{DS} = 230 \SI{}{\per\V}$ and $g_m / I_\text{DS} \approx \SI{500}{\per\V}$ at low $I_\text{DS}$. 
+        \item Large $g_m / I_\text{DS}$ means a high current efficiency, but a slow speed.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Small-signal validity in weak inversion}
+    $g_m = \frac{\partial I_\text{DS}}{\partial V_\text{GS}}$ is a linearization around the operating point.
+
+    How much error does this approximation yield?
+
+    % Recall,
+    \begin{equation}
+        I_\text{DS,wi} = I_\text{D0} \frac{W}{L} e^{V_{GS} / \left(n k_B T / q\right)} \ .
+    \end{equation}
+    A Taylor expansion of $f(x)$ around $x_0$ is
+    \begin{equation}
+        f(x) \approx f(x_0) + \frac{\partial f(x_0)}{\partial x^1} \frac{(x - x_0)^1}{1!} + \frac{\partial f(x_0)}{\partial x^2} \frac{(x - x_0)^2}{2!} + \frac{\partial f(x_0)}{\partial x^3} \frac{(x - x_0)^3}{3!} + ... \ .
+    \end{equation}
+    We can think in terms of absolute and relative errors:
+    \begin{equation}
+        \epsilon_\text{abs} (x) \triangleq \left( f(x_0) + \frac{\partial f(x)}{\partial x^1} \frac{(x - x_0)^1}{1!} \right) - f(x) \ .
+    \end{equation}
+    \begin{equation}
+        \epsilon_\text{rel} (x) \triangleq \frac{|\epsilon_\text{abs}(x)|}{f(x_0) + \frac{\partial f(x)}{\partial x^1} \frac{(x - x_0)^1}{1!}} \ .
+    \end{equation}
+\end{frame}
+
+\begin{frame}{Small-signal validity in weak inversion}
+  \vspace{-0.3cm}
+  \begin{figure}[htpb] \centering
+  \begin{tikzpicture}
+    \pgfmathsetmacro{\xo}{0.6}              % expansion point
+    \pgfmathsetmacro{\dx}{1}            % step Delta x
+    \pgfmathsetmacro{\xi}{\xo+\dx}        % x0 + Delta x
+    \pgfmathsetmacro{\yo}{exp(\xo)}       % f(x0) = f'(x0) = e^{x0}
+    \pgfmathsetmacro{\yt}{\yo*(1+\dx)}    % tangent value at x0 + Delta x
+    \pgfmathsetmacro{\yi}{exp(\xi)}       % true value at x0 + Delta x
+    \begin{axis}[
+        width=7cm, height=5.5cm,
+        xmin=0, xmax=2.5, ymin=0, ymax=6,
+        axis lines=middle,
+        xtick=\empty, ytick=\empty,
+        clip=false,
+        xlabel={$V_\text{GS}$},
+        ylabel={$I_\text{DS,wi}$},
+        xlabel style={anchor=north east},
+        ylabel style={anchor=south east},
+      ]
+      % the function
+      \addplot[blue, thick, domain=0:1.8, samples=200] {exp(x)};
+      \node[blue, anchor=south west] at (axis cs:1.75, 6.0) {$I_\text{DS,wi} = I_\text{D0} \frac{W}{L} e^{V_{GS} / \left(n V_T\right)}$};
+
+      % tangent at x0, clipped to x >= 0
+      \addplot[red, thick, dashed, domain=0:\xi+0.3, samples=2] {\yo*(1 + x - \xo)};
+
+      % drop lines to the x axis
+      \draw[gray, dashed] (axis cs:\xo,0) -- (axis cs:\xo,\yo);
+      \draw[gray, dashed] (axis cs:\xi,0) -- (axis cs:\xi,\yi);
+      % drop lines to the y axis
+      \draw[gray, dashed] (axis cs:0,\yo) -- (axis cs:\xo,\yo);
+      \draw[gray, dashed] (axis cs:0,\yt) -- (axis cs:\xi,\yt);
+      \draw[gray, dashed] (axis cs:0,\yi) -- (axis cs:\xi,\yi);
+
+      % points
+      \addplot[only marks, mark=*, mark size=1.8pt, black]
+        coordinates {(\xo,\yo) (\xi,\yi)};
+      \addplot[only marks, mark=*, mark size=1.8pt, red]
+        coordinates {(\xi,\yt)};
+
+      % x axis labels
+    \node[anchor=north] at (axis cs:\xo,0) {$V_\text{GS0}$};
+    \node[anchor=north] at (axis cs:\xi,0) {$V_\text{GS0}+\Delta V_\text{GS}$};
+    \draw[<->, >=stealth] (axis cs:\xo,0.35) -- (axis cs:\xi,0.35)
+    node[midway, above, font=\small] {$\Delta V_\text{GS}$};
+
+      % y axis labels
+    \node[anchor=east] at (axis cs:0,\yo) {$I_\text{DS,wi} (V_\text{GS0})$};
+    \node[anchor=east] at (axis cs:0,\yt) {$I_\text{DS,wi} (V_\text{GS0}) + I_\text{DS,wi}^{'} (V_\text{GS0}) \Delta V_\text{GS} $};
+    \node[anchor=east] at (axis cs:0,\yi) {$I_\text{DS,wi} (V_\text{GS0} + \Delta V_\text{GS})$};
+
+      % absolute error brace
+      \draw[decorate, decoration={brace, amplitude=4pt}]
+        (axis cs:\xi,\yi) -- (axis cs:\xi,\yt)
+        node[midway, anchor=west, xshift=4pt] {$\epsilon_\text{abs}$};
+    \end{axis}
+  \end{tikzpicture}
+  \end{figure}
+
+  \vspace{-0.5cm}
+    \begin{equation}
+        \epsilon_\text{abs} (V_\text{GS0} + \Delta V_\text{GS}) = I_\text{D0} \frac{W}{L} e^{V_\text{GS0}/(n V_T)} \left( 1 + \Delta V_\text{GS}/ (n V_T) - e^{\Delta V_\text{GS}/(n V_T)} \right) \ . 
+    \end{equation}
+    \begin{equation}
+        \epsilon_\text{rel} (V_\text{GS0} + \Delta V_\text{GS}) = \frac{e^{\Delta V_\text{GS}/(n V_T)}}{1 + \Delta V_\text{GS}/(n V_T)} - 1 \ . 
+    \end{equation}
+\end{frame}
+
+
+\begin{frame}{Small-signal validity in weak inversion, $\epsilon_\text{rel}$}
+  \vspace{-0.2cm}
+  \begin{figure}[htpb] \centering
+  \begin{tikzpicture}
+    \pgfmathsetmacro{\n}{1.2}
+    \pgfmathsetmacro{\kq}{0.08617333}                 % k_B/q in mV/K
+    \pgfmathsetmacro{\Vta}{\kq*300}                   % 25.85 mV
+    \pgfmathsetmacro{\Vtb}{\kq*35}                    %  3.02 mV
+    \begin{axis}[
+        width=10cm, height=6cm,
+        xmin=0, xmax=3,
+        % ymode=log,
+        xlabel={$\Delta V_\text{GS}$ $\left[\SI{}{\mV}\right]$},
+        ylabel={$\epsilon_\text{rel}$},
+        grid=both,
+        major grid style={gray!50, thin},
+        minor grid style={gray!20, very thin},
+  title style={yshift=-0.25cm},
+  yticklabel={\pgfmathprintnumber{\tick}\,\%},
+  scaled y ticks=false,
+  % y filter/.code={\pgfmathparse{##1*100}},
+  y filter/.expression={y*100},
+        legend style={at={(0.02,0.98)}, anchor=north west, font=\small},
+        legend cell align=left,
+        title={$\epsilon_\text{rel} (V_\text{GS0} + \Delta V_\text{GS}) = \frac{e^{\Delta V_\text{GS}/(n V_T)}}{1 + \Delta V_\text{GS}/(n V_T)} - 1$ with $n=1.2$},
+      ]
+      \addplot[red, thick, domain=0.01:3, samples=200]
+        {exp(x/(\n*\Vta))/(1 + x/(\n*\Vta)) - 1};
+      \addlegendentry{$T=\SI{300}{\K}$}
+
+      \addplot[blue, thick, domain=0.01:3, samples=200]
+        {exp(x/(\n*\Vtb))/(1 + x/(\n*\Vtb)) - 1};
+      \addlegendentry{$T=\SI{35}{\K}$}
+    \end{axis}
+  \end{tikzpicture}
+  \end{figure}
+
+  \vspace{-0.3cm}
+  $\epsilon_\text{rel} (1 n V_T) = \SI{35.9}{\percent}$, $\epsilon_\text{rel} (2 n V_T) = \SI{146}{\percent}$. At cryo, small-signal approximations fail quickly!
+\end{frame}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 3: Literature review
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cryo LDO literature review}
+% Equal1, Julich, and a few other LDOs
+
+\begin{frame}[SectionTitlepage]{Cryo LDO literature review}
+\end{frame}
+
+% IBM
+\begin{frame}{IBM \cite{underwood2023}}
+    \vspace{-0.3cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.9\textwidth]{./images/ibm_full.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{IBM \cite{underwood2023}}
+    \vspace{-0.3cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.5\textwidth]{./images/ibm_passive.png}
+    \end{figure}
+    \begin{figure} \centering
+        \includegraphics[width=0.4\textwidth]{./images/ibm_power.png}
+    \end{figure}
+   \vspace{-0.3cm}
+   \begin{itemize}
+    \item A passive approach is valid too.
+    \item Wiring losses amount to \SI{4.17}{\mW}, amounting to \SI{16}{\percent} of the total power consumption.
+   \end{itemize} 
+\end{frame}
+
+
+% Julich
+\begin{frame}{Jülich \cite{ashok2025}}
+    \vspace{-0.3cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.6\textwidth]{./images/julich_digital.png}
+    \end{figure}
+   \vspace{-0.3cm}
+   \begin{itemize}
+    \item Pros versus A-LDO: lower dropout, higher efficiency $\eta$, portable to advanced nodes, robust. 
+    \item Cons versus A-LDO: ripple in steady state, limited PSRR, speed (unless high power and ripple).
+   \end{itemize} 
+\end{frame}
+
+\begin{frame}{Jülich \cite{ashok2025}}
+    \vspace{-0.3cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.6\textwidth]{./images/julich_digital_fine.png}
+    \end{figure}
+   \vspace{-0.3cm}
+   \begin{itemize}
+    \item Fine loop: enabled when $V_\text{out} \in \left[V_\text{REFL},\, V_\text{REFH}\right]$. 
+    \item Coarse loop: enabled when $V_\text{out} \notin \left[V_\text{REFL},\, V_\text{REFH}\right]$. 
+    \item $P_\text{cons} = \SI{325}{\uW}$ with a clock frequency of \SI{100}{\MHz}, in $22$-\SI{}{\nm} FDSOI.
+   \end{itemize} 
+\end{frame}
+
+\begin{frame}{Jülich \cite{ashok2025}}
+    \vspace{-0.3cm}
+\begin{columns}
+    \begin{column}{0.425\textwidth}
+    \begin{itemize}
+        \item How to improve the transient response? Lower the depth of the flop chain (sacrifice accuracy) or run with a faster clock (increase power consumption).
+        \item There is always some ripple in steady state. Acceptable for digital loads, not for high-precision analog or mixed-signal.
+    \end{itemize}
+    \end{column}
+    \begin{column}{0.55\textwidth}
+      \begin{figure} \centering
+        \includegraphics[width=0.99\textwidth]{./images/julich_transient.png}
+      \end{figure}
+    \end{column}
+\end{columns}
+\end{frame}
+
+
+
+% Equal1
+\begin{frame}{Equal1 \cite{Andrade2021}}
+    \vspace{-0.3cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.5\textwidth]{./images/equal1_top.png}
+    \end{figure}
+   \vspace{-0.3cm}
+   \begin{itemize}
+    \item A DAC will never be better than its analog reference. Quiet and regulated rails are needed.
+    \item \SI{1.5}{\V} for thick oxide devices, mostly used for analog circuits.
+    \item \SI{0.8}{\V} for thin oxide devices, mostly used for digital circuits, to benefit from $P_\text{cons} \propto V_\text{DD}^2$.
+   \end{itemize} 
+\end{frame}
+
+\begin{frame}{Equal1 \cite{Andrade2021}}
+    \vspace{-0.3cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.55\textwidth]{./images/equal1_1p5V.png}
+    \end{figure}
+   \vspace{-0.3cm}
+   \begin{itemize}
+    \item PMOS pass device.
+    \item There is enough headroom to afford cascode devices.
+    \item CMP is a tunable compensation current to facilitate stability.
+   \end{itemize} 
+\end{frame}
+
+\begin{frame}{Equal1 \cite{Andrade2021}}
+    \vspace{-0.3cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.55\textwidth]{./images/equal1_0p8V.png}
+    \end{figure}
+   \vspace{-0.3cm}
+   \begin{itemize}
+    \item NMOS pass device.
+    \item The error amplifier is operated via \SI{1.8}{\V}, while the pass device sees \SI{1.0}{\V}.
+    \item Only thick-oxide devices are used, with a minimum length of \SI{150}{\nm}. 
+   \end{itemize} 
+\end{frame}
+
+\begin{frame}{Equal1 \cite{Andrade2021}}
+    \vspace{-0.3cm}
+    \begin{figure} \centering
+        \includegraphics[width=0.55\textwidth]{./images/equal1_chip.png}
+    \end{figure}
+   \vspace{-0.3cm}
+   \begin{itemize}
+    \item LDOs are sitting next to the DACs and circuitry.
+    \item Capless means low area overhead.
+   \end{itemize} 
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 4: Design
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Design}
+\begin{frame}[SectionTitlepage]{Design}
+\end{frame}
+% Insights of our design
+
+\begin{frame}{Design}
+\end{frame}
+
 
 
 
