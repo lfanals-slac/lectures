@@ -16,5 +16,51 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global}\enddatalist
+\datalist[entry]{none/global//global/global}
+  \entry{rosenberg_decoupling}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=RH}{%
+         family={Rosenberg},
+         familyi={R\bibinitperiod},
+         given={Hans},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RH1}
+    \strng{fullhash}{RH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{YouTube}
+    \field{note}{Accessed: 2026-08-31}
+    \field{title}{The most misunderstood concept in decoupling}
+    \verb{url}
+    \verb https://www.youtube.com/watch?v=TpXvac1Y3h0
+    \endverb
+  \endentry
+
+  \entry{Kim_SSCM}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KHS}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Hyun-Sik},
+         giveni={H\bibinithyphendelim S\bibinitperiod},
+      }}%
+    }
+    \keyw{Current;Design methodology;Loading;Transistors;Regulators;Voltage;Printing;Regulation;Gain;Noise}
+    \strng{namehash}{KHS1}
+    \strng{fullhash}{KHS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/MSSC.2026.3696588
+    \endverb
+    \field{number}{3}
+    \field{pages}{55\bibrangedash 72}
+    \field{title}{Fundamentals of Energy-Efficient LDO Regulator Design: From dropout optimization to wide-bandwidth and high-PSR techniques}
+    \field{volume}{18}
+    \field{journaltitle}{IEEE Solid-State Circuits Magazine}
+    \field{year}{2026}
+  \endentry
+\enddatalist
 \endinput
