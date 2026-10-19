@@ -334,6 +334,115 @@
       \endverb
       \keyw{Converters;Printing;Switches;Voltage;Temperature;Inductors;Modeling;Current;Design methodology;Capacitors}
     \endentry
+    \entry{Huang2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=017e2ee2a0a52eddb02efff304b65e18}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Mo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=08e0f77a6aa32f09026f20a6f67da4a0}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=635bd6c5b3ef24cba5c293cafd6200eb}{%
+           family={Martins},
+           familyi={M\bibinitperiod},
+           given={Rui\bibnamedelima P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{caaa8f95cf7111775fd39d66d7d4b63a}
+      \strng{fullhash}{b8be88cac2423731f328538fc013eada}
+      \strng{bibnamehash}{b8be88cac2423731f328538fc013eada}
+      \strng{authorbibnamehash}{b8be88cac2423731f328538fc013eada}
+      \strng{authornamehash}{caaa8f95cf7111775fd39d66d7d4b63a}
+      \strng{authorfullhash}{b8be88cac2423731f328538fc013eada}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1558-173X}
+      \field{journaltitle}{IEEE Journal of Solid-State Circuits}
+      \field{title}{An Analog-Proportional Digital-Integral Multiloop Digital LDO With PSR Improvement and LCO Reduction}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/jssc.2020.2967540
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/JSSC.2020.2967540
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/JSSC.2020.2967540
+      \endverb
+    \endentry
+    \entry{Kundu2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a99b391359768270cf02aa3275f5cfc5}{%
+           family={Kundu},
+           familyi={K\bibinitperiod},
+           given={Somnath},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c1c0ca81d253c08dd2daac7e2c9ed586}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Muqing},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6621f4c24bd1bbce3d7f805f2276c786}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Shi-Jie},
+           giveni={S\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=3c1b326cdc7eadf8ca4f5118d35101a6}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=fa13c46efa699ce2d577d1264e23cd06}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Chris\bibnamedelima H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{621f257571aa2c575083d9dd4f857c4d}
+      \strng{fullhash}{a832f7b210013092b35eeb10aefe4bb9}
+      \strng{bibnamehash}{621f257571aa2c575083d9dd4f857c4d}
+      \strng{authorbibnamehash}{621f257571aa2c575083d9dd4f857c4d}
+      \strng{authornamehash}{621f257571aa2c575083d9dd4f857c4d}
+      \strng{authorfullhash}{a832f7b210013092b35eeb10aefe4bb9}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1558-173X}
+      \field{journaltitle}{IEEE Journal of Solid-State Circuits}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{A Fully Integrated Digital LDO With Built-In Adaptive Sampling and Active Voltage Positioning Using a Beat-Frequency Quantizer}
+      \field{volume}{54}
+      \field{year}{2019}
+      \field{pages}{109\bibrangedash 120}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/jssc.2018.2870558
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/JSSC.2018.2870558
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/JSSC.2018.2870558
+      \endverb
+    \endentry
     \entry{Patra2018}{article}{}
       \name{author}{11}{}{%
         {{hash=d07af4c86e4a29c95d17cb7f7fff51e7}{%
@@ -447,6 +556,64 @@
       \field{year}{2006}
       \verb{doi}
       \verb 10.1007/b135984
+      \endverb
+    \endentry
+    \entry{Song2021}{article}{}
+      \name{author}{5}{}{%
+        {{hash=4e47687d325fb99e2fdb9afd73b21af5}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Yoonho},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a6e4ec0117be0737c39081fb8bf77346}{%
+           family={Oh},
+           familyi={O\bibinitperiod},
+           given={Jonghyun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b1088df014b181dbe17ce97a2e5f67eb}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Sung-Yong},
+           giveni={S\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=788023d403948d3233644d02a7318b90}{%
+           family={Jeong},
+           familyi={J\bibinitperiod},
+           given={Deog-Kyoon},
+           giveni={D\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=bdbd62909e7e0cad766e923dec7f2a0e}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jun-Eun},
+           giveni={J\bibinithyphendelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{a02380747f0c16fe844f77be7e5f4183}
+      \strng{fullhash}{b58a5a207f254dd9920d70169bc26d3f}
+      \strng{bibnamehash}{a02380747f0c16fe844f77be7e5f4183}
+      \strng{authorbibnamehash}{a02380747f0c16fe844f77be7e5f4183}
+      \strng{authornamehash}{a02380747f0c16fe844f77be7e5f4183}
+      \strng{authorfullhash}{b58a5a207f254dd9920d70169bc26d3f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1941-0107}
+      \field{journaltitle}{IEEE Transactions on Power Electronics}
+      \field{title}{A Fast Droop-Recovery Event-Driven Digital LDO With Adaptive Linear/Binary Two-Step Search for Voltage Regulation in Advanced Memory}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 1}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1109/tpel.2021.3103611
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/TPEL.2021.3103611
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/TPEL.2021.3103611
       \endverb
     \endentry
     \entry{underwood2023}{misc}{}

@@ -86,23 +86,23 @@
 \titlepage
 \end{frame}
 
-% \begin{frame}{Introduction}
-%   \begin{columns}
-%       \begin{column}{0.5\textwidth}
-%         \begin{itemize}
-%             \item Llorenç Fanals-i-Batllori.
-%             \item BSc EE Universitat the Girona, Spain (9.52/10), MSc EE UPC Barcelona, Spain (9.69/10).
-%             \item Mixed-signal Design Verification Engineer at Apple, UK.
-%             \item Mixed-signal ASIC Design Engineer at SLAC/Stanford.
-%         \end{itemize}
-%       \end{column}
-%       \begin{column}{0.5\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.8\textwidth]{./images/portrait_.jpeg}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
+\begin{frame}{Introduction}
+  \begin{columns}
+      \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item Llorenç Fanals-i-Batllori.
+            \item BSc EE Universitat the Girona, Spain (9.52/10), MSc EE UPC Barcelona, Spain (9.69/10).
+            \item Mixed-signal Design Verification Engineer at Apple, UK.
+            \item Mixed-signal ASIC Design Engineer at SLAC/Stanford.
+        \end{itemize}
+      \end{column}
+      \begin{column}{0.5\textwidth}
+        \begin{figure} \centering
+            \includegraphics[width=0.8\textwidth]{./images/portrait_.jpeg}
+        \end{figure}
+      \end{column}
+  \end{columns}
+\end{frame}
 
 \begin{frame}[SloganTitleUnderline]{Table of contents}
     \LARGE \tableofcontents%[section]
@@ -529,7 +529,7 @@ The transition is at $ \frac{g_{m\text{,wi}}}{I_\text{DS,wi}} = \frac{g_{m\text{
 \begin{frame}{IBM \cite{underwood2023}}
     \vspace{-0.3cm}
     \begin{figure} \centering
-        \includegraphics[width=0.9\textwidth]{./images/ibm_full.png}
+        \includegraphics[width=0.95\textwidth]{./images/ibm_full.png}
     \end{figure}
 \end{frame}
 
@@ -657,585 +657,442 @@ The transition is at $ \frac{g_{m\text{,wi}}}{I_\text{DS,wi}} = \frac{g_{m\text{
 \end{frame}
 % Insights of our design
 
-\begin{frame}{Design}
+\begin{frame}{Design philosophy}
+   \begin{itemize}
+    \item Chose an analog LDO to have a ripple-free rail.
+    \item Leverage weak inversion for a high $g_m/I_D$.
+    \item Target $I_Q < \SI{2}{\uA}$ for compatibility with \SI{}{\milli\K} stages.
+    \item Use dynamic large-signal circuits to aid transients.
+    \item Accept the pass device dropout voltage as a tax to the power delivered to the load.
+   \end{itemize} 
+\end{frame}
+
+\begin{frame}{Error amplifier + pass device}
+\begin{figure}[H]
+\centering
+\begin{circuitikz}[american, transform shape, scale=0.7]
+\ctikzset{tripoles/nmos/width=0.714286, tripoles/nmos/height=1.428571, tripoles/pmos/width=0.714286, tripoles/pmos/height=1.428571, tripoles/mos style/arrows, tripoles/pmos style/nocircle}
+\draw (11,13) node[nmos] (M1) {}; \node[anchor=west] at (M1.text) {$\text{M}_{1}$};
+\draw (15,13) node[nmos, xscale=-1] (M2) {}; \node[anchor=east] at (M2.text) {$\text{M}_{2}$};
+\draw (13,10) node[nmos] (M3) {}; \node[anchor=west] at (M3.text) {$\text{M}_{3}$};
+\draw (15,16) node[pmos] (M4) {}; \node[anchor=west] at (M4.text) {$\text{M}_{4}$};
+\draw (11,16) node[pmos, xscale=-1] (M5) {}; \node[anchor=east] at (M5.text) {$\text{M}_{5}$};
+\draw (7,10) node[nmos, xscale=-1] (M6) {}; \node[anchor=east] at (M6.text) {$\text{M}_{6}$};
+\draw (13,17.5) node[vcc] {};
+\draw (13,9) node[ground] {};
+\draw (7,9) node[ground] {};
+\draw (7,17.5) node[vcc] {};
+\node at (13,16.5) {400n/3u};
+\node at (8.5,9.5) {400n/8u};
+\node at (10,10.5) {1:8};
+\node at (13,13) {50x400n/400n};
+\node at (8,12) {$V_\text{OD} = \SI{80}{\mV}$};
+\draw (19,14.5) node[pmos] (M7) {}; \node[anchor=west] at (M7.text) {$\text{M}_{7}$};
+\draw (19,17.5) node[vcc] {};
+\node at (20,12) [circle, fill, inner sep=1.5pt] {};
+\node at (20,12.5) {$V_\text{out}$};
+\node at (20.5,15.5) {32x32x1u/20n};
+\node at (13.5,18) {\SI{1}{\V}};
+\node at (16.5,13) {$V_\text{ref}$};
+\node at (16.5,14.75) {$V_\text{gpass}$};
+\draw (M5.S) to[short] (11,17.5);
+\draw (11,17.5) to[short] (15,17.5);
+\draw (15,17.5) to[short] (M4.S);
+\draw (M5.D) to[short] (M1.D);
+\draw (M4.G) to[short] (M5.G);
+\draw (12.5,16) to[short] (12.5,14.5);
+\draw (12.5,14.5) to[short] (11,14.5);
+\draw (M2.D) to[short] (M4.D);
+\draw (M2.S) to[short] (15,11.5);
+\draw (15,11.5) to[short] (11,11.5);
+\draw (M1.S) to[short] (11,11.5);
+\draw (13,11.5) to[short] (M3.D);
+\draw (M3.G) to[short] (M6.G);
+\draw (8.5,10) to[short] (8.5,11.5);
+\draw (8.5,11.5) to[short] (7,11.5);
+\draw (M6.D) to[short] (7,15);
+\draw (7,17.5) to[isource,l=$\SI{100}{\nA}$] (7,15);
+\draw (19,17.5) to[short] (M7.S);
+\draw (M7.G) to[short] (15,14.5);
+\draw (19,13) to[short] (19,12);
+\draw (19,12) to[short] (20,12);
+\draw (19,12) to[short] (15.5,12);
+\draw (15.5,12) to[jump crossing] (14.5,12);
+\draw (14.5,12) to[short] (11.5,12);
+\draw (11.5,12) to[jump crossing] (10.5,12);
+\draw (10.5,12) to[short] (9.5,12);
+\draw (9.5,12) to[short] (9.5,13);
+\draw (9.5,13) to[short] (M1.G);
+\draw (19,13) to[short] (M7.D);
+\node at (14.75,10) {$g_m/I_D = 25$};
+\node at (13.5,15.5) {$g_m/I_D = 24$ };
+\node at (9.5,14) {$g_m/I_D = 280$};
+\end{circuitikz}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Frequency response}
+    \begin{tikzpicture}
+
+\pgfplotsset{
+  width=6.5cm, height=5.6cm,
+  xmode=log, xlabel={Frequency [\si{\hertz}]},
+  grid=both, grid style={gray!25},
+  tick label style={font=\small}, label style={font=\small},
+  legend style={font=\small, cells={anchor=west}, draw=gray!50},
+  title style={yshift=-1.2ex, font=\small},
+  every axis plot/.append style={line width=0.9pt},
+  xmin=1, xmax=1e9, xtick={1e0,1e2,1e4,1e6,1e8}, minor xtick={1e1,1e3,1e5,1e7,1e9},
+}
+
+% ---------------- loop gain: magnitude (left axis) + phase (right axis) ----------------
+\begin{axis}[
+  name=loop, xmode=log,
+  title={Loop gain (light load)},
+  ylabel={$|T|$ [\si{\deci\bel}]}, ymin=-60, ymax=100, ytick={-60,-40,-20,0,20,40,60,80,100},
+  axis y line*=left,
+  legend style={font=\small, at={(0.03,0.06)}, anchor=south west, draw=gray!50},
+]
+\addplot[blue] table[x=f_hz, y=loop_db, col sep=comma] {./datasets/ac_response.csv};
+\addlegendentry{magnitude}
+\addlegendimage{red, dashed}
+\addlegendentry{phase, PM $=\SI{61.2}{\degree}$}
+\draw[gray!70, dotted] ({rel axis cs:0,0}|-{axis cs:1,0}) -- ({rel axis cs:1,0}|-{axis cs:1,0});   % 0 dB line
+\end{axis}
+
+\begin{axis}[
+  at={(loop.south west)}, anchor=south west, xmode=log,
+  width=6.5cm, height=5.6cm,
+  ylabel={$\angle T$ [\si{\degree}]}, ymin=-60, ymax=200, ytick={-60,0,60,120,180},
+  axis y line*=right, axis x line=none,
+  ylabel near ticks,   % no rotate=180 here: pgfplots already turns the label for a right-hand axis, so forcing 180 renders it upside-down
+]
+\addplot[red, dashed] table[x=f_hz, y=loop_phase_deg, col sep=comma] {./datasets/ac_response.csv};
+\end{axis}
+
+% ---------------- PSRR ----------------
+\begin{axis}[
+  name=psrr, at={(loop.south east)}, xshift=30mm, anchor=south west, xmode=log,   % must clear the phase axis's right-hand label, which hangs ~12mm past loop.south east
+  title={Power-supply rejection},
+  ylabel={PSRR [\si{\deci\bel}]}, ymin=0, ymax=100, ytick={0,20,40,60,80,100},
+  legend pos=south west,
+]
+\addplot[blue] table[x=f_hz, y=psrr_light_db, col sep=comma] {./datasets/ac_response.csv};
+\addlegendentry{$\sim$\SI{1}{\milli\ampere}}
+\addplot[red, dashed] table[x=f_hz, y=psrr_heavy_db, col sep=comma] {./datasets/ac_response.csv};
+\addlegendentry{$\sim$\SI{10}{\milli\ampere}}
+\end{axis}
+\end{tikzpicture}
+\end{frame}
+
+
+
+\begin{frame}{Transient response}
+    \begin{tikzpicture}
+    \pgfplotsset{
+      width=6.75cm, height=5.2cm,
+      xlabel={Time [\si{\nano\second}]},
+      ylabel={$V_\text{OUT}$ [\si{\milli\volt}]},
+      grid=both, grid style={gray!25},
+      tick label style={font=\small}, label style={font=\small},
+      legend style={font=\small, cells={anchor=west}, draw=gray!50},
+      title style={yshift=-1.2ex, font=\small},
+      every axis plot/.append style={line width=0.9pt},
+    }
+    
+    % ---------------- rising load edge: 1 -> 10 mA ----------------
+    \begin{axis}[
+      name=rise,
+      title={Load step up: \SI{1}{}$\to$\SI{10}{\milli\ampere}},
+      xmin=-1, xmax=62, ymin=710, ymax=810,
+      legend pos=south east,
+    ]
+    \addplot[gray, dashed] table[x=t_ns, y=vout_off_mv, col sep=comma] {./datasets/tran_rise.csv};
+    % \addlegendentry{kickers off}
+    % \addplot[blue] table[x=t_ns, y=vout_on_mv, col sep=comma] {./datasets/tran_rise.csv};
+    % \addlegendentry{kickers on}
+    \draw[red!60, dashed] ({rel axis cs:0,0}|-{axis cs:0,808}) -- ({rel axis cs:1,0}|-{axis cs:0,808});
+    \draw[red!60, dashed] ({rel axis cs:0,0}|-{axis cs:0,792}) -- ({rel axis cs:1,0}|-{axis cs:0,792});
+    \end{axis}
+    
+    % ---------------- falling load edge: 10 -> 1 mA ----------------
+    \begin{axis}[
+      name=fall, at={(rise.south east)}, xshift=20mm, anchor=south west,
+      title={Load step down: \SI{10}{}$\to$\SI{1}{\milli\ampere}},
+      xmin=-1, xmax=67, ymin=790, ymax=890,
+      legend pos=north east,
+    ]
+    \addplot[gray, dashed] table[x=t_ns, y=vout_off_mv, col sep=comma] {./datasets/tran_fall.csv};
+    % \addlegendentry{kickers off}
+    % \addplot[blue] table[x=t_ns, y=vout_on_mv, col sep=comma] {./datasets/tran_fall.csv};
+    % \addlegendentry{kickers on}
+    \draw[red!60, dashed] ({rel axis cs:0,0}|-{axis cs:0,808}) -- ({rel axis cs:1,0}|-{axis cs:0,808});
+    \draw[red!60, dashed] ({rel axis cs:0,0}|-{axis cs:0,792}) -- ({rel axis cs:1,0}|-{axis cs:0,792});
+    \end{axis}
+    
+    \end{tikzpicture}
+\end{frame}
+
+
+
+\begin{frame}{SR limitations}
+\begin{figure}[H]
+\centering
+\begin{circuitikz}[american, transform shape, scale=0.7]
+\ctikzset{tripoles/nmos/width=0.714286, tripoles/nmos/height=1.428571, tripoles/pmos/width=0.714286, tripoles/pmos/height=1.428571, tripoles/mos style/arrows, tripoles/pmos style/nocircle}
+\draw (11,13) node[nmos] (M1) {}; \node[anchor=west] at (M1.text) {$\text{M}_{1}$};
+\draw (15,13) node[nmos, xscale=-1] (M2) {}; \node[anchor=east] at (M2.text) {$\text{M}_{2}$};
+\draw (13,10) node[nmos] (M3) {}; \node[anchor=west] at (M3.text) {$\text{M}_{3}$};
+\draw (15,16) node[pmos] (M4) {}; \node[anchor=west] at (M4.text) {$\text{M}_{4}$};
+\draw (11,16) node[pmos, xscale=-1] (M5) {}; \node[anchor=east] at (M5.text) {$\text{M}_{5}$};
+\draw (7,10) node[nmos, xscale=-1] (M6) {}; \node[anchor=east] at (M6.text) {$\text{M}_{6}$};
+\draw (13,17.5) node[vcc] {};
+\draw (13,9) node[ground] {};
+\draw (7,9) node[ground] {};
+\draw (7,17.5) node[vcc] {};
+\node at (13,16.5) {400n/3u};
+\node at (8.5,9.5) {400n/8u};
+\node at (10,10.5) {1:8};
+\node at (13,13) {50x400n/400n};
+\node at (8,12) {$V_\text{OD} = \SI{80}{\mV}$};
+\draw (19,14.5) node[pmos] (M7) {}; \node[anchor=west] at (M7.text) {$\text{M}_{7}$};
+\draw (19,17.5) node[vcc] {};
+\node at (20,12) [circle, fill, inner sep=1.5pt] {};
+\node at (20,12.5) {$V_\text{out}$};
+\node at (20.5,15.5) {32x32x1u/20n};
+\node at (13.5,18) {\SI{1}{\V}};
+\node at (16.5,13) {$V_\text{ref}$};
+\node at (16.5,14.75) {$V_\text{gpass}$};
+\draw (M5.S) to[short] (11,17.5);
+\draw (11,17.5) to[short] (15,17.5);
+\draw (15,17.5) to[short] (M4.S);
+\draw (M5.D) to[short] (M1.D);
+\draw (M4.G) to[short] (M5.G);
+\draw (12.5,16) to[short] (12.5,14.5);
+\draw (12.5,14.5) to[short] (11,14.5);
+\draw (M2.D) to[short] (M4.D);
+\draw (M2.S) to[short] (15,11.5);
+\draw (15,11.5) to[short] (11,11.5);
+\draw (M1.S) to[short] (11,11.5);
+\draw (13,11.5) to[short] (M3.D);
+\draw (M3.G) to[short] (M6.G);
+\draw (8.5,10) to[short] (8.5,11.5);
+\draw (8.5,11.5) to[short] (7,11.5);
+\draw (M6.D) to[short] (7,15);
+\draw (7,17.5) to[isource,l=$\SI{100}{\nA}$] (7,15);
+\draw (19,17.5) to[short] (M7.S);
+\draw (M7.G) to[short] (15,14.5);
+\draw (19,13) to[short] (19,12);
+\draw (19,12) to[short] (20,12);
+\draw (19,12) to[short] (15.5,12);
+\draw (15.5,12) to[jump crossing] (14.5,12);
+\draw (14.5,12) to[short] (11.5,12);
+\draw (11.5,12) to[jump crossing] (10.5,12);
+\draw (10.5,12) to[short] (9.5,12);
+\draw (9.5,12) to[short] (9.5,13);
+\draw (9.5,13) to[short] (M1.G);
+\draw (19,13) to[short] (M7.D);
+\node at (14.75,10) {$g_m/I_D = 25$};
+\node at (13.5,15.5) {$g_m/I_D = 24$ };
+\node at (9.5,14) {$g_m/I_D = 280$};
+\draw (17.5,14.5) to[C,l=$C_\text{gg}$] (17.5,17.5);
+\draw (17.5,17.5) node[vcc] {};
+% sketch annotations
+\draw[orange, line width=2pt, line cap=round, line join=round, opacity=0.9] plot[smooth, tension=0.6] coordinates {(17.525,14.024) (17.2,14.176) (16.797,14.209) (16.107,14.022) (15.996,13.954) (15.908,13.754) (15.949,13.383) (16.062,13.136) (16.448,12.611) (16.429,12.452) (15.966,11.955) (14.906,11.213) (14.558,11.081) (14.058,11.127) (13.891,11.013) (13.679,10.7) (13.605,10.471) (13.558,9.245) (13.488,8.958)};
+\draw[orange, line width=2pt, line cap=round, line join=round, opacity=0.9] plot[smooth, tension=0.6] coordinates {(13.39,9.199) (13.427,8.808) (13.682,8.905) (13.728,9.053)};
+\draw[green!60!black, line width=2pt, line cap=round, line join=round, opacity=0.9] plot[smooth, tension=0.6] coordinates {(11.985,17.048) (11.769,15.118) (11.758,13.868) (11.567,12.318) (11.635,12.059) (11.813,11.817) (12.18,11.598) (12.59,11.506) (12.653,11.443) (12.703,10.297) (12.629,9.986) (12.615,9.537) (12.523,9.295) (12.486,8.849) (12.453,8.849)};
+\draw[green!60!black, line width=2pt, line cap=round, line join=round, opacity=0.9] plot[smooth, tension=0.6] coordinates {(12.119,9.14) (12.219,8.653) (12.438,8.704) (12.683,8.857)};
+\draw[green!60!black, line width=2pt, line cap=round, line join=round, opacity=0.9] plot[smooth, tension=0.6] coordinates {(15.22,17.411) (15.043,16.804) (15.015,15.718) (15.061,15.426) (15.234,15.185) (15.735,14.898) (16.646,14.935) (16.974,15.028) (17.166,15.167) (17.239,15.306) (17.266,15.537)};
+\draw[green!60!black, line width=2pt, line cap=round, line join=round, opacity=0.9] plot[smooth, tension=0.6] coordinates {(17.149,15.755) (17.125,15.632) (17.005,15.473) (17.237,15.653) (17.392,15.417)};
+
+\end{circuitikz}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Transient improvement}
+\vspace{-0.2cm}
+\begin{figure}[H]
+\centering
+\usetikzlibrary{calc}
+\begin{circuitikz}[american, transform shape, scale=0.6]
+\ctikzset{tripoles/nmos/width=0.714286, tripoles/nmos/height=1.428571, tripoles/pmos/width=0.714286, tripoles/pmos/height=1.428571, tripoles/mos style/arrows, tripoles/pmos style/nocircle}
+\draw (-4.5,8.5) node[ground] {};
+\draw (-6,11) node[nmos, bulk] (M1) {}; \node[anchor=west] at ($(M1.text)!0.5!(M1.D)$) {$\text{M}_{1}$};
+\draw (-3,11) node[nmos, bulk, xscale=-1] (M2) {}; \node[anchor=east] at ($(M2.text)!0.5!(M2.D)$) {$\text{M}_{2}$};
+\draw (-3,13) node[pmos] (M3) {}; \node[anchor=west] at (M3.text) {$\text{M}_{3}$};
+\draw (-6,13) node[pmos, xscale=-1] (M4) {}; \node[anchor=east] at (M4.text) {$\text{M}_{4}$};
+\draw (-4.5,14) node[vcc] {};
+\draw (-5.5,11) node[ground] {};
+\node[red] at (-3.5,11) {$V_\text{bulk}$};
+\draw (8,6.5) node[nmos] (M5) {}; \node[anchor=west] at (M5.text) {$\text{M}_{5}$};
+\draw (8,5.5) node[ground] {};
+\node at (-1.5,11) {$V_\text{out}$};
+\node at (-7.5,11) {$V_\text{ref}$};
+\draw (3.5,8.5) node[ground] {};
+\draw (2,11) node[nmos, bulk] (M6) {}; \node[anchor=west] at ($(M6.text)!0.5!(M6.D)$) {$\text{M}_{6}$};
+\draw (5,11) node[nmos, bulk, xscale=-1] (M7) {}; \node[anchor=east] at ($(M7.text)!0.5!(M7.D)$) {$\text{M}_{7}$};
+\draw (5,13) node[pmos] (M8) {}; \node[anchor=west] at (M8.text) {$\text{M}_{8}$};
+\draw (2,13) node[pmos, xscale=-1] (M9) {}; \node[anchor=east] at (M9.text) {$\text{M}_{9}$};
+\draw (3.5,14) node[vcc] {};
+\draw (4.5,11) node[ground] {};
+\draw (8,12) node[pmos] (M10) {}; \node[anchor=west] at (M10.text) {$\text{M}_{10}$};
+\draw (8,14) node[vcc] {};
+\node at (0.5,11) {$V_\text{ref}$};
+\node at (6.5,11) {$V_\text{out}$};
+\node[red] at (2.5,11) {$V_\text{bulk}$};
+\draw (12.5,8) node[pmos] (M11) {}; \node[anchor=west] at (M11.text) {$\text{M}_{11}$};
+\draw (12.5,9) node[vcc] {};
+\node at (10,8.25) {$V_\text{gpass}$};
+\node at (12.5,6.5) {$V_\text{out}$};
+\node at (12,10.5) {$V_\text{ref}$};
+\node at (14.5,11) {$V_\text{out}$};
+\node at (9,14.5) {$V_G$};
+\node at (6,12.25) {$V_{GP}$};
+\node at (6,6.75) {$V_{GN}$};
+\draw (-4.5,10) to[isource,l=$\SI{100}{\nA}$] (-4.5,8.5);
+\draw (M4.S) to[short] (M3.S);
+\draw (M3.G) to[short] (M4.G);
+\draw (-4.5,13) to[short] (-4.5,12);
+\draw (-4.5,12) to[short] (M1.D);
+\draw (M1.S) to[short] (M2.S);
+\draw (-5.5,11) to[short] (M1.bulk);
+\draw (M5.G) to[short] (5,6.5);
+\draw (8,8) to[short] (9,8);
+\draw (3.5,10) to[isource,l=$\SI{100}{\nA}$] (3.5,8.5);
+\draw (M8.G) to[short] (M9.G);
+\draw (M9.S) to[short] (M8.S);
+\draw (3.5,13) to[short] (3.5,12);
+\draw (M6.D) to[short] (3.5,12);
+\draw (4.5,11) to[short] (M7.bulk);
+\draw (M7.S) to[short] (M6.S);
+\draw (M10.G) to[short] (M7.D);
+\draw (M10.S) to[short] (8,14);
+\draw (M11.G) to[short] (9,8);
+\draw (5,6.5) to[short] (-0.5,6.5);
+\draw (-0.5,12) to[short] (M2.D);
+\draw (-0.5,6.5) to[short] (-0.5,12);
+\draw (M5.D) to[short] (M10.D);
+% sketch annotations
+\draw[green!60!black, line width=1.138pt, line cap=round, line join=round, opacity=0.9] plot[smooth, tension=0.6] coordinates {(10.402,14.011) (10.555,14.046) (10.912,14.008) (11.476,14.025) (11.87,13.894) (12.324,11.836) (12.477,11.611) (12.787,11.51) (14.098,11.497)};
+\draw[blue!70!black, line width=1.138pt, line cap=round, line join=round, opacity=0.9] plot[smooth, tension=0.6] coordinates {(10.483,14.016) (10.721,14.02) (10.835,13.99) (10.895,13.923) (10.937,13.257) (11.2,12.111) (11.395,11.568) (11.62,11.471) (11.832,11.445) (13.258,11.467)};
+\draw[blue!70!black, line width=1.138pt, line cap=round, opacity=0.9] (10.434,13.992) -- (9.679,14.006);
+\draw[black, line width=1.138pt, line cap=round, opacity=0.9] (11.87,11.256) -- (11.874,11.017);
+\draw[blue!70!black, line width=1.138pt, line cap=round, line join=round, opacity=0.9] plot[smooth, tension=0.6] coordinates {(7.536,7.699) (7.022,7.488) (6.88,7.379) (6.774,7.262) (6.654,6.864) (6.654,6.638) (6.737,6.411) (6.924,6.136) (7.029,5.883) (7.237,5.776) (7.652,5.763) (8.276,5.834) (8.743,6.255) (8.787,6.37) (8.658,6.961) (8.247,7.413) (7.999,7.554) (7.446,7.718)};
+\draw[green!60!black, line width=1.138pt, line cap=round, line join=round, opacity=0.9] plot[smooth, tension=0.6] coordinates {(7.459,12.799) (7.335,12.847) (7.124,12.837) (6.81,12.563) (6.875,11.936) (7.085,11.506) (7.302,11.31) (7.686,11.197) (8.636,11.237) (8.88,11.365) (8.959,11.498) (8.963,12.082) (8.746,12.546) (8.514,12.674) (7.555,12.888)};
+\draw[black, line width=1.138pt, line cap=round, line join=round, opacity=0.9] plot[smooth, tension=0.6] coordinates {(9.47,14.485) (9.5,13.532) (9.464,12.262) (9.534,11.314) (9.512,10.884)};
+\draw[black, line width=1.138pt, line cap=round, line join=round, opacity=0.9] plot[smooth, tension=0.6] coordinates {(9.166,11.353) (12.146,11.357) (13.345,11.419) (14.856,11.398)};
+\end{circuitikz}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Improved transient response}
+    \begin{tikzpicture}
+    \pgfplotsset{
+      width=6.75cm, height=5.2cm,
+      xlabel={Time [\si{\nano\second}]},
+      ylabel={$V_\text{OUT}$ [\si{\milli\volt}]},
+      grid=both, grid style={gray!25},
+      tick label style={font=\small}, label style={font=\small},
+      legend style={font=\small, cells={anchor=west}, draw=gray!50},
+      title style={yshift=-1.2ex, font=\small},
+      every axis plot/.append style={line width=0.9pt},
+    }
+    
+    % ---------------- rising load edge: 1 -> 10 mA ----------------
+    \begin{axis}[
+      name=rise,
+      title={Load step up: \SI{1}{}$\to$\SI{10}{\milli\ampere}},
+      xmin=-1, xmax=62, ymin=710, ymax=810,
+      legend pos=south east,
+    ]
+    \addplot[gray, dashed] table[x=t_ns, y=vout_off_mv, col sep=comma] {./datasets/tran_rise.csv};
+    \addlegendentry{kickers off}
+    \addplot[blue] table[x=t_ns, y=vout_on_mv, col sep=comma] {./datasets/tran_rise.csv};
+    \addlegendentry{kickers on}
+    \draw[red!60, dashed] ({rel axis cs:0,0}|-{axis cs:0,808}) -- ({rel axis cs:1,0}|-{axis cs:0,808});
+    \draw[red!60, dashed] ({rel axis cs:0,0}|-{axis cs:0,792}) -- ({rel axis cs:1,0}|-{axis cs:0,792});
+    \end{axis}
+    
+    % ---------------- falling load edge: 10 -> 1 mA ----------------
+    \begin{axis}[
+      name=fall, at={(rise.south east)}, xshift=20mm, anchor=south west,
+      title={Load step down: \SI{10}{}$\to$\SI{1}{\milli\ampere}},
+      xmin=-1, xmax=67, ymin=790, ymax=890,
+      legend pos=north east,
+    ]
+    \addplot[gray, dashed] table[x=t_ns, y=vout_off_mv, col sep=comma] {./datasets/tran_fall.csv};
+    \addlegendentry{kickers off}
+    \addplot[blue] table[x=t_ns, y=vout_on_mv, col sep=comma] {./datasets/tran_fall.csv};
+    \addlegendentry{kickers on}
+    \draw[red!60, dashed] ({rel axis cs:0,0}|-{axis cs:0,808}) -- ({rel axis cs:1,0}|-{axis cs:0,808});
+    \draw[red!60, dashed] ({rel axis cs:0,0}|-{axis cs:0,792}) -- ({rel axis cs:1,0}|-{axis cs:0,792});
+    \end{axis}
+    
+    \end{tikzpicture}
 \end{frame}
 
 
 
 
 
+\begin{frame}{Comparison}
+\vspace{-0.1cm}
+\begin{table}[t] \centering \scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{0.8}
+\begin{tabular}{@{}l|c|c|c|c|c|c@{}}
+\toprule
+& \textbf{This work (sim.)} & \cite{Andrade2021} & \cite{ashok2025} & \cite{Huang2020} & \cite{Kundu2019} & \cite{Song2021} \\
+\midrule \hline
+Technology & \SI{22}{\nano\meter} FDSOI & \SI{22}{\nano\meter} FDSOI & \SI{22}{\nano\meter} FDSOI & \SI{65}{\nano\meter} bulk & \SI{65}{\nano\meter} LP & \SI{40}{\nano\meter} bulk \\
+\hline
+Architecture & analog & analog & digital & mixed & mixed & mixed \\
+\hline
+Temperature & \textbf{\SI{4}{\kelvin}} & \textbf{\SI{3.7}{\kelvin}} & \textbf{\SI{4}{\kelvin}} & \SI{300}{\kelvin} & \SI{300}{\kelvin} & \SI{300}{\kelvin} \\
+\hline
+$V_\text{IN}$ & \SI{1.0}{\volt} & 1.0 / \SI{1.8}{\volt} & \SIrange{0.9}{1.8}{\volt} & \SI{0.6}{\volt} & \SIrange{0.6}{1.2}{\volt} & \SIrange{0.6}{1.2}{\volt} \\
+\hline
+$V_\text{OUT}$ & \SI{0.8}{\volt} & 0.8 / \SI{1.5}{\volt} & \SIrange{0.8}{1.7}{\volt} & --- & \SIrange{0.4}{1.1}{\volt} & --- \\
+\hline
+$V_\text{DO}$ & \SI{200}{\milli\volt} & --- & \SI{100}{\milli\volt} & \SI{50}{\milli\volt} & --- & --- \\
+\hline
+$I_\text{load,max}$ & \SI{10.9}{\milli\ampere} & \textbf{\SI{64}{\milli\ampere}} & \SI{10}{\milli\ampere} & \SI{10}{\milli\ampere} & \textbf{\SI{100}{\milli\ampere}} & --- \\
+\hline
+$I_\text{Q}$ & \textbf{\SI{1.65}{\micro\ampere}} & $\sim$\SI{10}{\micro\ampere}$^{\dagger}$ & \SI{325}{\micro\ampere} & \SI{29}{\micro\ampere} & $\sim$\SI{800}{\micro\ampere}$^{\ddagger}$ & --- \\
+\hline
+$\eta_\text{I}$ & \textbf{\SI{99.985}{\percent}} & --- & \SI{98.03}{\percent} & --- & \SI{99.5}{\percent} & --- \\
+\hline
+$C_\text{out}$ & \textbf{\SI{10}{\pico\farad}} & \textbf{none} & --- & --- & \SI{40}{\pico\farad} & --- \\
+\midrule \hline
+$\Delta I_\text{load}$ & \SI{1}{}$\to$\SI{10}{\milli\ampere} & dc sweep & \SI{0.1}{}$\to$\SI{10}{\milli\ampere} & \SI{0}{}$\to$\SI{10}{\milli\ampere} & \SI{50}{\milli\ampere} & \textbf{\SI{104}{\milli\ampere}} \\
+\hline
+$\Delta V_\text{OUT}$ & \SI{81}{\milli\volt} & \SI{1.76}{\percent} & --- & \SI{65}{\milli\volt} & \SI{108}{\milli\volt} & --- \\
+\hline
+$t_\text{rec}$ & \textbf{\SI{10.5}{\nano\second}} & --- & \SI{841}{\nano\second} & --- & \SI{1240}{\nano\second} & \textbf{\SI{6}{\nano\second}} \\
+\hline
+$t_\text{settle}$ & \textbf{\SI{10.5}{\nano\second}} & --- & \SI{1150}{\nano\second} & --- & --- & \textbf{\SI{15}{\nano\second}} \\
+\hline
+PSR & --- & --- & --- & \SI{-22}{\deci\bel} @ \SI{1}{\mega\hertz} & --- & --- \\
+\hline
+PM & \SI{61}{\degree} & --- & --- & --- & --- & --- \\
+\hline
+Area & n/a & \textbf{\SI{706}{\micro\meter\squared}} & --- & --- & \SI{37400}{\micro\meter\squared} & --- \\
+\hline
+FoM$^{\S}$ (\si{\pico\second}) & \textbf{0.014} & --- & --- & 0.37 & 1.38 & --- \\
+\bottomrule
+\end{tabular}
+\caption{$^{\dagger}$internal current reference; total $I_\text{Q}$ not reported. $^{\ddagger}$back-calculated from the reported FoM. $^{\S}$FoM${}=C_\text{out}\,\Delta V_\text{OUT}\,I_\text{Q}/\Delta I_\text{load}^{2}$; lower is better.}
+\label{tab:ldo-comparison}
+\end{table}
+\end{frame}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% % 1: Silicon bring-up
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% % \section{Silicon bring-up}
-% % \begin{frame}[SectionTitlepage]{Silicon bring-up}
-% % \end{frame}
-% 
-% \begin{frame}{Silicon bring-up}
-%     You just received your ASICs. Now what?
-% %     \begin{enumerate}
-% %         \item PCB design.
-% %         \item Packaging (wire bonding).
-% %         \item Sanity checks.
-% %         \item Power-up.
-% %         \item Characterization.
-% %     \end{enumerate}
-% \end{frame}
-% 
-% \begin{frame}{Hand it off?}
-%     \begin{figure} \centering
-%         \includegraphics[width=0.8\textwidth]{./images/SiVal2.png}
-%     \end{figure}
-% \end{frame}
-% 
-% \begin{frame}{Silicon bring-up}
-%     You just received your ASICs. Now what?
-%     \begin{enumerate}
-%         \item PCB design.
-%         \item Packaging (wire bonding).
-%         \item Embedded system.
-%         \item Sanity checks.
-%         \item Power-up.
-%         \item Characterization.
-%     \end{enumerate}
-% \end{frame}
-% 
-% \begin{frame}{Do it yourself!}
-%     \begin{figure} \centering
-%         \includegraphics[width=0.55\textwidth]{./figures/big.pdf}
-%     \end{figure}
-% \end{frame}
-% 
-% \begin{frame}{General advice}
-%     \begin{itemize}
-%         \item Document.
-%         \item Use version control (git).
-%         \item Use redundancy, avoid a single point of failure.
-%         \item Print in paper your pinout (ASIC and PCB).
-%         \item Wear an ESD bracelet.
-%     \end{itemize}
-% \end{frame}
-% 
-% 
-% 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{PCB design}
-% \begin{frame}[SectionTitlepage]{PCB design}
-% \end{frame}
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{frame}{PCB design}
-%     \begin{figure} \centering
-%         \includegraphics[width=0.55\textwidth]{./figures/bigh_pcb.pdf}
-%     \end{figure}
-% \end{frame}
-% 
-% \begin{frame}{PCB design}
-%     Potentials software to use:
-%     \begin{itemize}
-%         \item Altium: profressional-grade, needs a license.
-%         \item KiCad: "hobbyist" software but extremely capable as of 2026.
-%         \item EasyEDA: limited capabilities but smooth integration with PCB manufacturer.
-%     \end{itemize}
-%   \begin{columns}
-%       \begin{column}{0.3\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./images/altium.jpg}
-%         \end{figure}
-%       \end{column}
-%       \begin{column}{0.3\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./images/kicad.jpg}
-%         \end{figure}
-%       \end{column}
-%       \begin{column}{0.3\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./images/easyeda.png}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% 
-% \end{frame}
-% 
-% 
-% \begin{frame}{PCB design I}
-%   \vspace{-0.3cm}
-%   \begin{columns}
-%       \hspace{0.4cm}
-%       \begin{column}{0.45\textwidth}
-%         Obtain the sheet resistance of the conducting metal, in \SI{}{\ohm\per\square}.
-%         \begin{enumerate}
-%             \item Design to minimize voltage drop $IR$ on nets that carry current.
-%             \item Nets driving a high-impedance pin (transistor gate) are much more relaxed. Make them minimum dimensions ($\sim$ 4 mil).
-%         \end{enumerate}
-%       \end{column}
-%       \begin{column}{0.52\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./figures/big_pcb.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% \begin{frame}{PCB design II}
-%   \vspace{-0.3cm}
-%   \begin{columns}
-%       \hspace{0.4cm}
-%       \begin{column}{0.45\textwidth}
-%         \begin{enumerate}
-%             \setcounter{enumi}{2}
-%             \item Use decoupling capacitors between supply and ground. Use different cap values to improve the frequency response (or not \cite{rosenberg_decoupling}).
-%             \item Use jumpers to increase flexibility during testing.
-%             \item Or 0-Ohm resistors.
-%             \item Place extensive test points. There must be a good reason for a PCB net to not be exposed/measurable. Label them.
-%         \end{enumerate}
-%       \end{column}
-%       \begin{column}{0.52\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./figures/big_pcb.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% \begin{frame}{PCB design III}
-%   \vspace{-0.3cm}
-%   \begin{columns}
-%       \hspace{0.4cm}
-%       \begin{column}{0.45\textwidth}
-%         \begin{enumerate}
-%             \setcounter{enumi}{6}
-%             \item You can place an array of binary-weighted resistors and small $R_{DS}$ MOSFETs to realize a tunable load. The gate voltages may need a level shifter (LS). Be aware of the GPIO latency.
-%             \item Use metals at different levels in an orthogonal fashion.
-%             \item Level shifters (LS) are needed to accommodate the ASIC voltage domain to that of the GPIOs, and viceversa.
-%         \end{enumerate}
-%       \end{column}
-%       \begin{column}{0.52\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./figures/big_pcb.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% \begin{frame}{PCB design IV}
-%   \vspace{-0.3cm}
-%   \begin{columns}
-%       \hspace{0.4cm}
-%       \begin{column}{0.45\textwidth}
-%         \begin{enumerate}
-%             \setcounter{enumi}{9}
-%             \item Place mounting holes both at the PCB level and around the ASIC.
-%             \item Give a separation between PCB pads and ASIC of \SI{300}{\um} at least. A special surface finish may be needed.
-%         \end{enumerate}
-%       \end{column}
-%       \begin{column}{0.52\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./figures/big_pcb.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% \begin{frame}{PCB design: example I (Andrew Young)}
-%     \vspace{-0.6cm}
-%   \begin{columns}
-%       \hspace{0.4cm}
-%       \begin{column}{0.45\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[height=0.8\textheight]{./images/C4Q1_carrier_render.png}
-%         \end{figure}
-%       \end{column}
-%       \begin{column}{0.45\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[height=0.8\textheight]{./images/C4Q1_carrier_pic.jpg}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% \begin{frame}{PCB design: example II (Joan Serrano Aporta)}
-%     \begin{figure} \centering
-%         \includegraphics[width=0.8\textwidth]{./images/pcb_C4Q1_interface_jlcpcb.png}
-%     \end{figure}
-% \end{frame}
-% 
-% \begin{frame}{PCB design: example II (Joan Serrano Aporta)}
-%     \vspace{-0.5cm}
-%   \begin{columns}
-%       \hspace{0.4cm}
-%       \begin{column}{0.45\textwidth}
-%           \begin{itemize}
-%             \item Total cost: $\sim 350 \$$, 5 boards, entirely populated.
-%             \item Turnaround time: 1 week.
-%             \item No issues observed.
-%           \end{itemize}
-%       \end{column}
-%       \begin{column}{0.45\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./images/pcb_C4Q1_interface_pic_one.png}
-%         \end{figure}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./images/pcb_C4Q1_interface_pic_two.png}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% 
-% 
-% 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Packaging (wire bonding)}
-% \begin{frame}[SectionTitlepage]{Packaging (wire bonding)}
-% \end{frame}
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{frame}{Packaging (wire bonding)}
-%     \begin{figure} \centering
-%         \includegraphics[width=0.55\textwidth]{./figures/bigh_bond.pdf}
-%     \end{figure}
-% \end{frame}
-% 
-% \begin{frame}{ESD bracelet}
-%   \begin{columns}
-%       \begin{column}{0.45\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./figures/esd_bracelet.pdf}
-%         \end{figure}
-%       \end{column}
-%       \begin{column}{0.52\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./images/esd_bracelet.jpg}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% \begin{frame}{ESD bracelet}
-%   \begin{columns}
-%       \begin{column}{0.45\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./figures/esd_bracelet.pdf}
-%         \end{figure}
-%       \end{column}
-%       \begin{column}{0.52\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./figures/hbm.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% 
-% \begin{frame}{Packaging (wire bonding)}
-%   \vspace{-0.3cm}
-%   \begin{columns}
-%       \hspace{0.4cm}
-%       \begin{column}{0.45\textwidth}
-%         \begin{enumerate}
-%             \item Give clear indications of the ASIC orientation. A logo or a disctinctive feature can be extremely helpful.
-%             \item Be aware of the $\sim \SI{1}{\nH\per\mm}$ series inductance. Keep supply and analog bonds as short as possible.
-%             \item Provide sufficient spacing between PCB pads and ASIC pads.
-%             \item Make the PCB pad large enough while meeting DRC rules.
-%         \end{enumerate}
-%       \end{column}
-%       \begin{column}{0.52\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./figures/big_wirebonding.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% \begin{frame}{Wire bonding: example I (Matt Cherry)}
-%     \begin{figure} \centering
-%         \includegraphics[width=0.3\textwidth]{./images/C4Q1_22_.jpg}
-%     \end{figure}
-% \end{frame}
-% 
-% \begin{frame}{Wire bonding: example II (Matt Cherry)}
-%     \begin{figure} \centering
-%         \includegraphics[width=0.8\textwidth]{./images/C4Q1_28_.jpg}
-%     \end{figure}
-% \end{frame}
-% 
-% 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Embedded system}
-% \begin{frame}[SectionTitlepage]{Embedded system}
-% \end{frame}
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% \begin{frame}{Embedded system}
-%     \begin{figure} \centering
-%         \includegraphics[width=0.55\textwidth]{./figures/bigh_embedded.pdf}
-%     \end{figure}
-% \end{frame}
-% 
-% \begin{frame}{Raspberry Pi}
-%     \begin{figure} \centering
-%         \includegraphics[width=0.5\textwidth]{./images/RPi_buy.png}
-%     \end{figure}
-%     \begin{itemize}
-%         \item A Linux system with GPIOs for $20 \$$.
-%         \item Can run Claude on it!
-%         \item Do not use for deterministic / precise timing operations.
-%         \item Be careful about noise.
-%     \end{itemize}
-% \end{frame}
-% 
-% \begin{frame}{Raspberry Pi interface}
-%     \texttt{picocom -b 115200 /dev/cu.usbmodem11103}
-%     \begin{figure} \centering
-%         \includegraphics[width=0.28\textwidth]{./images/RPi_menu.png}
-%     \end{figure}
-% \end{frame}
-% 
-% \begin{frame}{Arduino}
-%     \begin{figure} \centering
-%         \includegraphics[width=0.3\textwidth]{./images/arduino_nano.jpg}
-%     \end{figure}
-%     \begin{itemize}
-%         \item A microcontroller.
-%         \item C code gets mapped into assembly, so real-time operation.
-%         \item Not interactive by default.
-%     \end{itemize}
-% \end{frame}
-% 
-% \begin{frame}{LabVIEW-based DAQ}
-% \vspace{-0.8cm}
-%   \begin{columns}
-%       \begin{column}{0.3\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./images/NI_IO.png}
-%         \end{figure}
-%       \end{column}
-%       \begin{column}{0.7\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.99\textwidth]{./images/LabView.png}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-%     \begin{itemize}
-%         \item Expensive.
-%         \item Could digitize the LDO output.
-%         \item Can synchronize events.
-%     \end{itemize}
-% \end{frame}
-% 
-% 
-% 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Sanity checks}
-% \begin{frame}[SectionTitlepage]{Sanity checks}
-% \end{frame}
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% \begin{frame}{Sanity checks}
-%     \begin{figure} \centering
-%         \includegraphics[width=0.55\textwidth]{./figures/big.pdf}
-%     \end{figure}
-% \end{frame}
-% 
-% \begin{frame}{Sanity checks: short detection via multimeter}
-%     \begin{figure} \centering
-%         \includegraphics[width=0.55\textwidth]{./figures/multimeter.pdf}
-%     \end{figure}
-%     This can stress and damage the ASIC pads!
-% \end{frame}
-% 
-% \begin{frame}{Sanity checks: short detection via power supply}
-%     \begin{figure} \centering
-%         \includegraphics[width=0.55\textwidth]{./figures/power_supply_limit.pdf}
-%     \end{figure}
-%     To ensure the current protection works, short the supply and monitor the current.
-% \end{frame}
-% 
-% \begin{frame}{Sanity checks: short detection via power supply}
-%     \vspace{-0.5cm}
-%   \begin{columns}
-%       \begin{column}{0.45\textwidth}
-%         \begin{itemize}
-%             \item Monitor the current on the power supply.
-%             \item This also indicates if any VSS is open.
-%             \item Connections are actually done to the test points!
-%         \end{itemize}
-%       \end{column}
-%       \begin{column}{0.52\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./figures/short_check1.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% \begin{frame}{Sanity checks: short detection via power supply}
-%     \vspace{-0.5cm}
-%   \begin{columns}
-%       \begin{column}{0.45\textwidth}
-%         \begin{itemize}
-%             \item Monitor the current on the power supply.
-%             \item This also indicates if any VSS is open.
-%             \item Connections are actually done to the test points!
-%             \item Cycle through all the pads.
-%         \end{itemize}
-%       \end{column}
-%       \begin{column}{0.52\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./figures/short_check2.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% 
-% 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Power-up}
-% \begin{frame}[SectionTitlepage]{Power-up}
-% \end{frame}
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% \begin{frame}{Power-up I}
-%   \vspace{-0.3cm}
-%   \begin{columns}
-%       \hspace{0.4cm}
-%       \begin{column}{0.45\textwidth}
-%         \begin{enumerate}
-%             \item Connect the power supply with a conservative maximum current and nominal voltage.
-%             \item Measure all the test points and internal nets.
-%             \item Power your CPU.
-%             \item Perform read and write operations to your embedded system.
-%         \end{enumerate}
-%       \end{column}
-%       \begin{column}{0.52\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./figures/big_powerup.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% \begin{frame}{Power-up II}
-%   \vspace{-0.3cm}
-%   \begin{columns}
-%       \hspace{0.4cm}
-%       \begin{column}{0.45\textwidth}
-%         \begin{enumerate}
-%             \setcounter{enumi}{4}
-%             \item Raise the current limit.
-%             \item Exercise different loads and ensure a proper behavior.
-%         \end{enumerate}
-%       \end{column}
-%       \begin{column}{0.52\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.9\textwidth]{./figures/big_powerup.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% 
-% 
-% 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Characterization}
-% \begin{frame}[SectionTitlepage]{Characterization}
-% \end{frame}
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% \begin{frame}{Characterization: $I_Q$}
-%   \vspace{-0.7cm}
-%   \begin{columns}
-%       \hspace{0.4cm}
-%       \begin{column}{0.4\textwidth}
-%         \begin{enumerate}
-%             \item Ensure the output is floating (no load).
-%             \item Pick a suitable resistor to get a measurable voltage drop, but not too large to power off the LDO.
-%         \end{enumerate}
-%       \end{column}
-%       \begin{column}{0.55\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.95\textwidth]{./figures/meas_iq.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% \begin{frame}{Characterization: noise}
-%   \vspace{-0.7cm}
-%   \begin{columns}
-%       \hspace{0.4cm}
-%       \begin{column}{0.4\textwidth}
-%         \begin{enumerate}
-%             \item Perform an FFT on the transient waveform, report the voltage spectral density.
-%         \end{enumerate}
-%       \end{column}
-%       \begin{column}{0.53\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.95\textwidth]{./figures/meas_noise.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% \begin{frame}{Characterization: minimum dropout \cite{Kim_SSCM}}
-%   \vspace{-0.7cm}
-%   \begin{columns}
-%       \hspace{0.4cm}
-%       \begin{column}{0.35\textwidth}
-%         \begin{enumerate}
-%             \item Sweep $V_{in}$
-%             \item Sweep $I_\text{load}$.
-%             \item Measure $V_{out}$.
-%         \end{enumerate}
-%       \end{column}
-%       \begin{column}{0.6\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.95\textwidth]{./figures/meas_loadVout.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% \begin{frame}{Characterization: load regulation}
-%   \vspace{-0.7cm}
-%   \begin{columns}
-%       \hspace{0.4cm}
-%       \begin{column}{0.35\textwidth}
-%         \begin{enumerate}
-%             \item Measure in advance the loads precisely.
-%             \item Toggle the load.
-%             \item Capture the transient response. Can use the trigger signal.
-%         \end{enumerate}
-%       \end{column}
-%       \begin{column}{0.6\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.95\textwidth]{./figures/meas_transient.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% \begin{frame}{Characterization: line regulation (PSRR)}
-%   \vspace{-0.7cm}
-%   \begin{columns}
-%       \hspace{0.4cm}
-%       \begin{column}{0.4\textwidth}
-%         \begin{enumerate}
-%             \item Add an AC component on $V_{in}$
-%             \item Measure the spectrum on $V_{out}$.
-%         \end{enumerate}
-%       \end{column}
-%       \begin{column}{0.55\textwidth}
-%         \begin{figure} \centering
-%             \includegraphics[width=0.95\textwidth]{./figures/meas_PSRR.pdf}
-%         \end{figure}
-%       \end{column}
-%   \end{columns}
-% \end{frame}
-% 
-% 
 
 
 
