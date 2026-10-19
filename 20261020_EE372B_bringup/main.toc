@@ -1,6 +1,2 @@
-\beamer@sectionintoc {1}{PCB design}{9}{0}{1}
-\beamer@sectionintoc {2}{Packaging (wire bonding)}{19}{0}{2}
-\beamer@sectionintoc {3}{Embedded system}{26}{0}{3}
-\beamer@sectionintoc {4}{Sanity checks}{32}{0}{4}
-\beamer@sectionintoc {5}{Power-up}{38}{0}{5}
-\beamer@sectionintoc {6}{Characterization}{41}{0}{6}
+\beamer@sectionintoc {1}{Silicon bring-up considerations}{3}{0}{1}
+\beamer@sectionintoc {2}{Backup}{18}{0}{2}

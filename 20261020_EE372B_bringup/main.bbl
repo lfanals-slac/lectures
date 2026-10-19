@@ -17,6 +17,41 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{Kuhlmann2013}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=KK}{%
+         family={Kuhlmann},
+         familyi={K\bibinitperiod},
+         given={Karsten},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {German}%
+    }
+    \strng{namehash}{KK1}
+    \strng{fullhash}{KK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.15480/882.1086
+    \endverb
+    \field{isbn}{978-3-86387-264-9}
+    \field{note}{Advisor: A.~F. Jacob. English title: ``Highly integrated active antenna in the millimeter wave range''}
+    \field{title}{Hochintegrierte aktive {Sendeantenne} f{\"u}r den {Millimeterwellenbereich}}
+    \verb{url}
+    \verb https://hdl.handle.net/11420/1088
+    \endverb
+    \list{location}{1}{%
+      {Hamburg, Germany}%
+    }
+    \list{institution}{1}{%
+      {Technische Universit{\"a}t Hamburg-Harburg}%
+    }
+    \field{type}{Dissertation ({Dr.-Ing.})}
+    \field{year}{2013}
+  \endentry
+
   \entry{rosenberg_decoupling}{misc}{}
     \name{author}{1}{}{%
       {{hash=RH}{%

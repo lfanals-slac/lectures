@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.19)  28 SEP 2026 19:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.19)  18 OCT 2026 19:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1314,12 +1314,12 @@ Package biblatex Info: Reference segment=0 on input line 66.
  (./main.nav)
 LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
 (Font)              scaled to size 5.0pt on input line 66.
-<./template/images/SLAC_TID.pdf, id=41, 806.01125pt x 88.33pt>
+<./template/images/SLAC_TID.pdf, id=49, 806.01125pt x 88.33pt>
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
 Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 66.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-<./template/images/IC.pdf, id=42, 242.9075pt x 121.45375pt>
+<./template/images/IC.pdf, id=50, 242.9075pt x 121.45375pt>
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
 Package pdftex.def Info: ./template/images/IC.pdf  used on input line 66.
@@ -1340,7 +1340,7 @@ LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
 (Font)              scaled to size 16.0pt on input line 71.
 Package svg Info: Last page of `./svg-inkscape/titlepage_inset_svg-tex.pdf' is 1 on input line 71.
  (./svg-inkscape/titlepage_inset_svg-tex.pdf_tex
-<./svg-inkscape/titlepage_inset_svg-tex.pdf, id=44, page=1, 1054.6903pt x 1045.65656pt>
+<./svg-inkscape/titlepage_inset_svg-tex.pdf, id=52, page=1, 1054.6903pt x 1045.65656pt>
 File: ./svg-inkscape/titlepage_inset_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/titlepage_inset_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/titlepage_inset_svg-tex.pdf , page1 used on input line 56.
@@ -1375,7 +1375,7 @@ Overfull \hbox (398.3386pt too wide) in paragraph at lines 71--71
 
 Package svg Info: Last page of `./svg-inkscape/SLAC_TID_white_svg-tex.pdf' is 1 on input line 71.
 (./svg-inkscape/SLAC_TID_white_svg-tex.pdf_tex
-<./svg-inkscape/SLAC_TID_white_svg-tex.pdf, id=47, page=1, 2518.1659pt x 271.0125pt>
+<./svg-inkscape/SLAC_TID_white_svg-tex.pdf, id=55, page=1, 2518.1659pt x 271.0125pt>
 File: ./svg-inkscape/SLAC_TID_white_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SLAC_TID_white_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/SLAC_TID_white_svg-tex.pdf , page1 used on input line 56.
@@ -1383,7 +1383,7 @@ Package pdftex.def Info: ./svg-inkscape/SLAC_TID_white_svg-tex.pdf , page1 used 
 )
 Package svg Info: Last page of `./svg-inkscape/TID_ID_IC_svg-tex.pdf' is 1 on input line 71.
  (./svg-inkscape/TID_ID_IC_svg-tex.pdf_tex
-<./svg-inkscape/TID_ID_IC_svg-tex.pdf, id=49, page=1, 4608.70341pt x 1105.12532pt>
+<./svg-inkscape/TID_ID_IC_svg-tex.pdf, id=57, page=1, 4608.70341pt x 1105.12532pt>
 File: ./svg-inkscape/TID_ID_IC_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/TID_ID_IC_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/TID_ID_IC_svg-tex.pdf , page1 used on input line 56.
@@ -1391,7 +1391,7 @@ Package pdftex.def Info: ./svg-inkscape/TID_ID_IC_svg-tex.pdf , page1 used on in
 )
 Package svg Info: Last page of `./svg-inkscape/Stanford_University_svg-tex.pdf' is 1 on input line 71.
  (./svg-inkscape/Stanford_University_svg-tex.pdf_tex
-<./svg-inkscape/Stanford_University_svg-tex.pdf, id=51, page=1, 72.78091pt x 32.29997pt>
+<./svg-inkscape/Stanford_University_svg-tex.pdf, id=59, page=1, 72.78091pt x 32.29997pt>
 File: ./svg-inkscape/Stanford_University_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Stanford_University_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Stanford_University_svg-tex.pdf , page1 used on input line 56.
@@ -1399,13 +1399,13 @@ Package pdftex.def Info: ./svg-inkscape/Stanford_University_svg-tex.pdf , page1 
 )
 Package svg Info: Last page of `./svg-inkscape/DOE_svg-tex.pdf' is 1 on input line 71.
  (./svg-inkscape/DOE_svg-tex.pdf_tex
-<./svg-inkscape/DOE_svg-tex.pdf, id=53, page=1, 236.38322pt x 57.21382pt>
+<./svg-inkscape/DOE_svg-tex.pdf, id=61, page=1, 236.38322pt x 57.21382pt>
 File: ./svg-inkscape/DOE_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/DOE_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/DOE_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 49.59833pt x 12.00478pt.
 )
-<./template/images/titlepage_background.pdf, id=54, 963.6pt x 542.025pt>
+<./template/images/titlepage_background.pdf, id=62, 963.6pt x 542.025pt>
 File: ./template/images/titlepage_background.pdf Graphic file (type pdf)
 <use ./template/images/titlepage_background.pdf>
 Package pdftex.def Info: ./template/images/titlepage_background.pdf  used on input line 71.
@@ -1427,40 +1427,6 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/DOE_svg-tex.pdf): PDF inclusion: m
 >]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 89.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 89.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 89.
-LaTeX Font Info:    Font shape `TS1/lato-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 89.
-<./images/portrait_.jpeg, id=108, 1027.84pt x 1026.83624pt>
-File: ./images/portrait_.jpeg Graphic file (type jpg)
-<use ./images/portrait_.jpeg>
-Package pdftex.def Info: ./images/portrait_.jpeg  used on input line 89.
-(pdftex.def)             Requested size: 159.33604pt x 159.17363pt.
-LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 89.
-LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 89.
-LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
-(Font)              scaled to size 4.0pt on input line 89.
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 89.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 89.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [2
-
- <./images/portrait_.jpeg> <./template/images/SLAC_TID.pdf> <./template/images/IC.pdf>]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
 Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 93.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
@@ -1469,12 +1435,19 @@ Package pdftex.def Info: ./template/images/IC.pdf  used on input line 93.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
 LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 93.
- (./main.toc)
-<./template/images/slogan.pdf, id=130, 963.6pt x 18.0675pt>
+ (./main.toc
+LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 1.
+)
+<./template/images/slogan.pdf, id=118, 963.6pt x 18.0675pt>
 File: ./template/images/slogan.pdf Graphic file (type pdf)
 <use ./template/images/slogan.pdf>
 Package pdftex.def Info: ./template/images/slogan.pdf  used on input line 93.
 (pdftex.def)             Requested size: 455.24408pt x 8.53583pt.
+LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 93.
+LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
+(Font)              scaled to size 4.0pt on input line 93.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
 Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 93.
@@ -1483,894 +1456,968 @@ File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
 Package pdftex.def Info: ./template/images/IC.pdf  used on input line 93.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [3
+ [2
 
- <./template/images/slogan.pdf>]
+ <./template/images/slogan.pdf> <./template/images/SLAC_TID.pdf> <./template/images/IC.pdf>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 113.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 98.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 113.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 98.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./template/images/slogan.pdf Graphic file (type pdf)
+<use ./template/images/slogan.pdf>
+Package pdftex.def Info: ./template/images/slogan.pdf  used on input line 98.
+(pdftex.def)             Requested size: 455.24408pt x 8.53583pt.
+LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
+(Font)              scaled to size 35.0pt on input line 98.
+LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 98.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 98.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 98.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [3
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 110.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 110.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 113.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 110.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 113.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 110.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
  [4
 
 ]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 119.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 116.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 119.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 116.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./images/SiVal2.png, id=152, 1282.7925pt x 747.79375pt>
-File: ./images/SiVal2.png Graphic file (type png)
-<use ./images/SiVal2.png>
-Package pdftex.def Info: ./images/SiVal2.png  used on input line 119.
-(pdftex.def)             Requested size: 318.67209pt x 185.76129pt.
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 119.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 119.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [5
+<./figures/big.pdf, id=150, 231.71298pt x 218.4316pt>
+File: ./figures/big.pdf Graphic file (type pdf)
+<use ./figures/big.pdf>
+Package pdftex.def Info: ./figures/big.pdf  used on input line 116.
+(pdftex.def)             Requested size: 219.08743pt x 206.5356pt.
 
- <./images/SiVal2.png>]
+Overfull \vbox (16.42924pt too high) detected at line 116
+ []
+
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 131.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 116.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 131.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 116.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+[5
+
+ <./figures/big.pdf>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 131.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 127.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 131.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 127.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 127.
+LaTeX Font Info:    Font shape `TS1/lato-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 127.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 127.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 127.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
  [6
 
 ]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 137.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 138.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 137.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 138.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/big.pdf, id=165, 231.71298pt x 218.4316pt>
-File: ./figures/big.pdf Graphic file (type pdf)
-<use ./figures/big.pdf>
-Package pdftex.def Info: ./figures/big.pdf  used on input line 137.
-(pdftex.def)             Requested size: 219.08743pt x 206.5356pt.
-
-Overfull \vbox (16.47874pt too high) detected at line 137
- []
-
+<./images/PCB_rev1.jpg, id=169, 3418.7725pt x 1941.2525pt>
+File: ./images/PCB_rev1.jpg Graphic file (type jpg)
+<use ./images/PCB_rev1.jpg>
+Package pdftex.def Info: ./images/PCB_rev1.jpg  used on input line 138.
+(pdftex.def)             Requested size: 278.83578pt x 158.32472pt.
+LaTeX Font Info:    Font shape `TS1/lato-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 138.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 137.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 138.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 137.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 138.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[7
+ [7
 
- <./figures/big.pdf>]
+ <./images/PCB_rev1.jpg>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 147.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 144.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 147.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 144.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./images/PCB_rev1_VNA.jpg, id=176, 3630.56375pt x 2383.90625pt>
+File: ./images/PCB_rev1_VNA.jpg Graphic file (type jpg)
+<use ./images/PCB_rev1_VNA.jpg>
+Package pdftex.def Info: ./images/PCB_rev1_VNA.jpg  used on input line 144.
+(pdftex.def)             Requested size: 278.83578pt x 183.07755pt.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 147.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 144.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 147.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 144.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
  [8
 
-]
+ <./images/PCB_rev1_VNA.jpg>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 154.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 150.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 154.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 150.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-File: ./template/images/slogan.pdf Graphic file (type pdf)
-<use ./template/images/slogan.pdf>
-Package pdftex.def Info: ./template/images/slogan.pdf  used on input line 154.
-(pdftex.def)             Requested size: 455.24408pt x 8.53583pt.
-LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
-(Font)              scaled to size 35.0pt on input line 154.
-LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 154.
+<./images/MiniSMP_Hamburg.png, id=182, 1648.1575pt x 799.98875pt>
+File: ./images/MiniSMP_Hamburg.png Graphic file (type png)
+<use ./images/MiniSMP_Hamburg.png>
+Package pdftex.def Info: ./images/MiniSMP_Hamburg.png  used on input line 150.
+(pdftex.def)             Requested size: 358.50229pt x 174.00835pt.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 154.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 150.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 154.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 150.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
  [9
 
-]
+ <./images/MiniSMP_Hamburg.png>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 160.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 156.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 160.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 156.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/bigh_pcb.pdf, id=190, 235.43568pt x 218.4318pt>
-File: ./figures/bigh_pcb.pdf Graphic file (type pdf)
-<use ./figures/bigh_pcb.pdf>
-Package pdftex.def Info: ./figures/bigh_pcb.pdf  used on input line 160.
-(pdftex.def)             Requested size: 219.08743pt x 203.27278pt.
-
-Overfull \vbox (13.16643pt too high) detected at line 160
- []
-
+<./images/footprint_rev1.png, id=193, 1615.03375pt x 999.735pt>
+File: ./images/footprint_rev1.png Graphic file (type png)
+<use ./images/footprint_rev1.png>
+Package pdftex.def Info: ./images/footprint_rev1.png  used on input line 156.
+(pdftex.def)             Requested size: 278.83578pt x 172.60701pt.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 160.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 156.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 160.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 156.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[10
+ [10
 
- <./figures/bigh_pcb.pdf>]
+ <./images/footprint_rev1.png>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 187.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 162.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 187.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 162.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./images/altium.jpg, id=202, 401.5pt x 199.74625pt>
-File: ./images/altium.jpg Graphic file (type jpg)
-<use ./images/altium.jpg>
-Package pdftex.def Info: ./images/altium.jpg  used on input line 187.
-(pdftex.def)             Requested size: 107.55177pt x 53.5055pt.
-<./images/kicad.jpg, id=203, 903.375pt x 903.375pt>
-File: ./images/kicad.jpg Graphic file (type jpg)
-<use ./images/kicad.jpg>
-Package pdftex.def Info: ./images/kicad.jpg  used on input line 187.
-(pdftex.def)             Requested size: 107.55177pt x 107.54568pt.
-<./images/easyeda.png, id=204, 448.67625pt x 448.67625pt>
-File: ./images/easyeda.png Graphic file (type png)
-<use ./images/easyeda.png>
-Package pdftex.def Info: ./images/easyeda.png  used on input line 187.
-(pdftex.def)             Requested size: 107.55177pt x 107.54758pt.
-
-Overfull \vbox (0.60965pt too high) detected at line 187
- []
-
+<./images/EM_sims.png, id=200, 3438.8475pt x 1531.7225pt>
+File: ./images/EM_sims.png Graphic file (type png)
+<use ./images/EM_sims.png>
+Package pdftex.def Info: ./images/EM_sims.png  used on input line 162.
+(pdftex.def)             Requested size: 358.50229pt x 159.67868pt.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 187.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 162.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 187.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 162.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[11
+ [11
 
- <./images/altium.jpg> <./images/kicad.jpg> <./images/easyeda.png>]
+ <./images/EM_sims.png>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 207.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 180.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 207.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 180.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/big_pcb.pdf, id=211, 182.86931pt x 167.4269pt>
-File: ./figures/big_pcb.pdf Graphic file (type pdf)
-<use ./figures/big_pcb.pdf>
-Package pdftex.def Info: ./figures/big_pcb.pdf  used on input line 207.
-(pdftex.def)             Requested size: 186.42271pt x 170.68886pt.
+File: ./images/footprint_rev1.png Graphic file (type png)
+<use ./images/footprint_rev1.png>
+Package pdftex.def Info: ./images/footprint_rev1.png  used on input line 180.
+(pdftex.def)             Requested size: 177.85806pt x 110.09322pt.
+<./images/footprint_rev2.png, id=207, 1292.83pt x 1010.77625pt>
+File: ./images/footprint_rev2.png Graphic file (type png)
+<use ./images/footprint_rev2.png>
+Package pdftex.def Info: ./images/footprint_rev2.png  used on input line 180.
+(pdftex.def)             Requested size: 177.85806pt x 139.05542pt.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 207.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 180.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 207.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 180.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
  [12
 
- <./figures/big_pcb.pdf>]
+ <./images/footprint_rev2.png>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 228.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 186.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 228.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 186.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-File: ./figures/big_pcb.pdf Graphic file (type pdf)
-<use ./figures/big_pcb.pdf>
-Package pdftex.def Info: ./figures/big_pcb.pdf  used on input line 228.
-(pdftex.def)             Requested size: 186.42271pt x 170.68886pt.
+<./images/PCB_rev2.jpg, id=214, 4047.12pt x 3035.34pt>
+File: ./images/PCB_rev2.jpg Graphic file (type jpg)
+<use ./images/PCB_rev2.jpg>
+Package pdftex.def Info: ./images/PCB_rev2.jpg  used on input line 186.
+(pdftex.def)             Requested size: 239.00558pt x 179.24098pt.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 228.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 186.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 228.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 186.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
  [13
 
-]
+ <./images/PCB_rev2.jpg>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 248.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 192.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 248.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 192.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-File: ./figures/big_pcb.pdf Graphic file (type pdf)
-<use ./figures/big_pcb.pdf>
-Package pdftex.def Info: ./figures/big_pcb.pdf  used on input line 248.
-(pdftex.def)             Requested size: 186.42271pt x 170.68886pt.
+<./images/S11_rev1_rev2.png, id=221, 1036.87375pt x 504.88625pt>
+File: ./images/S11_rev1_rev2.png Graphic file (type png)
+<use ./images/S11_rev1_rev2.png>
+Package pdftex.def Info: ./images/S11_rev1_rev2.png  used on input line 192.
+(pdftex.def)             Requested size: 318.67209pt x 155.17262pt.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 248.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 192.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 248.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 192.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
  [14
 
-]
+ <./images/S11_rev1_rev2.png>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 267.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 198.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 267.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 198.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-LaTeX Font Info:    Font shape `TS1/lato-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 267.
-File: ./figures/big_pcb.pdf Graphic file (type pdf)
-<use ./figures/big_pcb.pdf>
-Package pdftex.def Info: ./figures/big_pcb.pdf  used on input line 267.
-(pdftex.def)             Requested size: 186.42271pt x 170.68886pt.
+<./images/S21_rev1_rev2.png, id=230, 1052.93375pt x 563.10374pt>
+File: ./images/S21_rev1_rev2.png Graphic file (type png)
+<use ./images/S21_rev1_rev2.png>
+Package pdftex.def Info: ./images/S21_rev1_rev2.png  used on input line 198.
+(pdftex.def)             Requested size: 318.67209pt x 170.42747pt.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 267.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 198.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 267.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 198.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
  [15
 
+ <./images/S21_rev1_rev2.png>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 208.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 208.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./figures/setup.pdf, id=237, 278.46178pt x 167.7852pt>
+File: ./figures/setup.pdf Graphic file (type pdf)
+<use ./figures/setup.pdf>
+Package pdftex.def Info: ./figures/setup.pdf  used on input line 208.
+(pdftex.def)             Requested size: 338.59023pt x 204.03197pt.
+
+Overfull \vbox (13.97511pt too high) detected at line 208
+ []
+
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 208.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 208.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+[16
+
+ <./figures/setup.pdf>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 211.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 211.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 211.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 211.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [17
+
 ]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 284.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 225.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 284.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./images/C4Q1_carrier_render.png, id=254, 627.34375pt x 1132.23pt>
-File: ./images/C4Q1_carrier_render.png Graphic file (type png)
-<use ./images/C4Q1_carrier_render.png>
-Package pdftex.def Info: ./images/C4Q1_carrier_render.png  used on input line 284.
-(pdftex.def)             Requested size: 105.50789pt x 190.42096pt.
-<./images/C4Q1_carrier_pic.jpg, id=255, 2200.22pt x 2714.14pt>
-File: ./images/C4Q1_carrier_pic.jpg Graphic file (type jpg)
-<use ./images/C4Q1_carrier_pic.jpg>
-Package pdftex.def Info: ./images/C4Q1_carrier_pic.jpg  used on input line 284.
-(pdftex.def)             Requested size: 154.33328pt x 190.42096pt.
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 284.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 284.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [16
-
- <./images/C4Q1_carrier_render.png> <./images/C4Q1_carrier_pic.jpg>]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 290.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 290.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./images/pcb_C4Q1_interface_jlcpcb.png, id=262, 1612.0225pt x 989.6975pt>
-File: ./images/pcb_C4Q1_interface_jlcpcb.png Graphic file (type png)
-<use ./images/pcb_C4Q1_interface_jlcpcb.png>
-Package pdftex.def Info: ./images/pcb_C4Q1_interface_jlcpcb.png  used on input line 290.
-(pdftex.def)             Requested size: 318.67209pt x 195.64055pt.
-
-Overfull \vbox (5.5837pt too high) detected at line 290
- []
-
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 290.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 290.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[17
-
- <./images/pcb_C4Q1_interface_jlcpcb.png>]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 312.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 312.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./images/pcb_C4Q1_interface_pic_one.png, id=269, 629.35126pt x 367.87437pt>
-File: ./images/pcb_C4Q1_interface_pic_one.png Graphic file (type png)
-<use ./images/pcb_C4Q1_interface_pic_one.png>
-Package pdftex.def Info: ./images/pcb_C4Q1_interface_pic_one.png  used on input line 312.
-(pdftex.def)             Requested size: 161.32492pt x 94.29788pt.
-<./images/pcb_C4Q1_interface_pic_two.png, id=270, 606.76688pt x 350.30875pt>
-File: ./images/pcb_C4Q1_interface_pic_two.png Graphic file (type png)
-<use ./images/pcb_C4Q1_interface_pic_two.png>
-Package pdftex.def Info: ./images/pcb_C4Q1_interface_pic_two.png  used on input line 312.
-(pdftex.def)             Requested size: 161.32492pt x 93.13605pt.
-
-Overfull \vbox (12.5262pt too high) detected at line 312
- []
-
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 312.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 312.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[18
-
- <./images/pcb_C4Q1_interface_pic_one.png> <./images/pcb_C4Q1_interface_pic_two.png>]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 320.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 320.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 225.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
 File: ./template/images/slogan.pdf Graphic file (type pdf)
 <use ./template/images/slogan.pdf>
-Package pdftex.def Info: ./template/images/slogan.pdf  used on input line 320.
+Package pdftex.def Info: ./template/images/slogan.pdf  used on input line 225.
 (pdftex.def)             Requested size: 455.24408pt x 8.53583pt.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 320.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 225.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 320.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 225.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [18
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 243.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 243.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 243.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 243.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
  [19
 
 ]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 326.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 249.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 326.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 249.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/bigh_bond.pdf, id=283, 231.71298pt x 218.4318pt>
-File: ./figures/bigh_bond.pdf Graphic file (type pdf)
-<use ./figures/bigh_bond.pdf>
-Package pdftex.def Info: ./figures/bigh_bond.pdf  used on input line 326.
-(pdftex.def)             Requested size: 219.08743pt x 206.53578pt.
+<./images/SiVal2.png, id=276, 1282.7925pt x 747.79375pt>
+File: ./images/SiVal2.png Graphic file (type png)
+<use ./images/SiVal2.png>
+Package pdftex.def Info: ./images/SiVal2.png  used on input line 249.
+(pdftex.def)             Requested size: 318.67209pt x 185.76129pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 249.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 249.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [20
 
-Overfull \vbox (16.42943pt too high) detected at line 326
+ <./images/SiVal2.png>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 261.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 261.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 261.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 261.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [21
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 267.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 267.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./figures/big.pdf Graphic file (type pdf)
+<use ./figures/big.pdf>
+Package pdftex.def Info: ./figures/big.pdf  used on input line 267.
+(pdftex.def)             Requested size: 219.08743pt x 206.5356pt.
+
+Overfull \vbox (16.42924pt too high) detected at line 267
  []
 
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 326.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 267.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 326.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 267.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[20
+[22
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 277.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 277.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 277.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 277.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [23
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 284.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 284.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./template/images/slogan.pdf Graphic file (type pdf)
+<use ./template/images/slogan.pdf>
+Package pdftex.def Info: ./template/images/slogan.pdf  used on input line 284.
+(pdftex.def)             Requested size: 455.24408pt x 8.53583pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 284.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 284.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [24
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 290.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 290.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./figures/bigh_pcb.pdf, id=303, 235.43568pt x 218.4318pt>
+File: ./figures/bigh_pcb.pdf Graphic file (type pdf)
+<use ./figures/bigh_pcb.pdf>
+Package pdftex.def Info: ./figures/bigh_pcb.pdf  used on input line 290.
+(pdftex.def)             Requested size: 219.08743pt x 203.27278pt.
+
+Overfull \vbox (13.16643pt too high) detected at line 290
+ []
+
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 290.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 290.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+[25
+
+ <./figures/bigh_pcb.pdf>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 317.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 317.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./images/altium.jpg, id=316, 401.5pt x 199.74625pt>
+File: ./images/altium.jpg Graphic file (type jpg)
+<use ./images/altium.jpg>
+Package pdftex.def Info: ./images/altium.jpg  used on input line 317.
+(pdftex.def)             Requested size: 107.55177pt x 53.5055pt.
+<./images/kicad.jpg, id=317, 903.375pt x 903.375pt>
+File: ./images/kicad.jpg Graphic file (type jpg)
+<use ./images/kicad.jpg>
+Package pdftex.def Info: ./images/kicad.jpg  used on input line 317.
+(pdftex.def)             Requested size: 107.55177pt x 107.54568pt.
+<./images/easyeda.png, id=318, 448.67625pt x 448.67625pt>
+File: ./images/easyeda.png Graphic file (type png)
+<use ./images/easyeda.png>
+Package pdftex.def Info: ./images/easyeda.png  used on input line 317.
+(pdftex.def)             Requested size: 107.55177pt x 107.54758pt.
+
+Overfull \vbox (0.61566pt too high) detected at line 317
+ []
+
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 317.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 317.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+[26
+
+ <./images/altium.jpg> <./images/kicad.jpg> <./images/easyeda.png>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 337.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 337.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./figures/big_pcb.pdf, id=325, 182.86931pt x 167.4269pt>
+File: ./figures/big_pcb.pdf Graphic file (type pdf)
+<use ./figures/big_pcb.pdf>
+Package pdftex.def Info: ./figures/big_pcb.pdf  used on input line 337.
+(pdftex.def)             Requested size: 186.42271pt x 170.68886pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 337.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 337.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [27
+
+ <./figures/big_pcb.pdf>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 358.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 358.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./figures/big_pcb.pdf Graphic file (type pdf)
+<use ./figures/big_pcb.pdf>
+Package pdftex.def Info: ./figures/big_pcb.pdf  used on input line 358.
+(pdftex.def)             Requested size: 186.42271pt x 170.68886pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 358.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 358.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [28
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 378.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 378.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./figures/big_pcb.pdf Graphic file (type pdf)
+<use ./figures/big_pcb.pdf>
+Package pdftex.def Info: ./figures/big_pcb.pdf  used on input line 378.
+(pdftex.def)             Requested size: 186.42271pt x 170.68886pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 378.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 378.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [29
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 397.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 397.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+LaTeX Font Info:    Font shape `TS1/lato-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 397.
+File: ./figures/big_pcb.pdf Graphic file (type pdf)
+<use ./figures/big_pcb.pdf>
+Package pdftex.def Info: ./figures/big_pcb.pdf  used on input line 397.
+(pdftex.def)             Requested size: 186.42271pt x 170.68886pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 397.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 397.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [30
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 414.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 414.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./images/C4Q1_carrier_render.png, id=368, 627.34375pt x 1132.23pt>
+File: ./images/C4Q1_carrier_render.png Graphic file (type png)
+<use ./images/C4Q1_carrier_render.png>
+Package pdftex.def Info: ./images/C4Q1_carrier_render.png  used on input line 414.
+(pdftex.def)             Requested size: 105.50789pt x 190.42096pt.
+<./images/C4Q1_carrier_pic.jpg, id=369, 2200.22pt x 2714.14pt>
+File: ./images/C4Q1_carrier_pic.jpg Graphic file (type jpg)
+<use ./images/C4Q1_carrier_pic.jpg>
+Package pdftex.def Info: ./images/C4Q1_carrier_pic.jpg  used on input line 414.
+(pdftex.def)             Requested size: 154.33328pt x 190.42096pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 414.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 414.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [31
+
+ <./images/C4Q1_carrier_render.png> <./images/C4Q1_carrier_pic.jpg>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 420.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 420.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./images/pcb_C4Q1_interface_jlcpcb.png, id=377, 1612.0225pt x 989.6975pt>
+File: ./images/pcb_C4Q1_interface_jlcpcb.png Graphic file (type png)
+<use ./images/pcb_C4Q1_interface_jlcpcb.png>
+Package pdftex.def Info: ./images/pcb_C4Q1_interface_jlcpcb.png  used on input line 420.
+(pdftex.def)             Requested size: 318.67209pt x 195.64055pt.
+
+Overfull \vbox (5.5837pt too high) detected at line 420
+ []
+
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 420.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 420.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+[32
+
+ <./images/pcb_C4Q1_interface_jlcpcb.png>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 442.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 442.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./images/pcb_C4Q1_interface_pic_one.png, id=384, 629.35126pt x 367.87437pt>
+File: ./images/pcb_C4Q1_interface_pic_one.png Graphic file (type png)
+<use ./images/pcb_C4Q1_interface_pic_one.png>
+Package pdftex.def Info: ./images/pcb_C4Q1_interface_pic_one.png  used on input line 442.
+(pdftex.def)             Requested size: 161.32492pt x 94.29788pt.
+<./images/pcb_C4Q1_interface_pic_two.png, id=385, 606.76688pt x 350.30875pt>
+File: ./images/pcb_C4Q1_interface_pic_two.png Graphic file (type png)
+<use ./images/pcb_C4Q1_interface_pic_two.png>
+Package pdftex.def Info: ./images/pcb_C4Q1_interface_pic_two.png  used on input line 442.
+(pdftex.def)             Requested size: 161.32492pt x 93.13605pt.
+
+Overfull \vbox (12.5757pt too high) detected at line 442
+ []
+
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 442.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 442.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+[33
+
+ <./images/pcb_C4Q1_interface_pic_one.png> <./images/pcb_C4Q1_interface_pic_two.png>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 450.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 450.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./template/images/slogan.pdf Graphic file (type pdf)
+<use ./template/images/slogan.pdf>
+Package pdftex.def Info: ./template/images/slogan.pdf  used on input line 450.
+(pdftex.def)             Requested size: 455.24408pt x 8.53583pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 450.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 450.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [34
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 456.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 456.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./figures/bigh_bond.pdf, id=398, 231.71298pt x 218.4318pt>
+File: ./figures/bigh_bond.pdf Graphic file (type pdf)
+<use ./figures/bigh_bond.pdf>
+Package pdftex.def Info: ./figures/bigh_bond.pdf  used on input line 456.
+(pdftex.def)             Requested size: 219.08743pt x 206.53578pt.
+
+Overfull \vbox (16.47893pt too high) detected at line 456
+ []
+
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 456.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 456.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+[35
 
  <./figures/bigh_bond.pdf>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 341.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 471.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 341.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 471.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/esd_bracelet.pdf, id=295, 106.45093pt x 66.91191pt>
+<./figures/esd_bracelet.pdf, id=410, 106.45093pt x 66.91191pt>
 File: ./figures/esd_bracelet.pdf Graphic file (type pdf)
 <use ./figures/esd_bracelet.pdf>
-Package pdftex.def Info: ./figures/esd_bracelet.pdf  used on input line 341.
+Package pdftex.def Info: ./figures/esd_bracelet.pdf  used on input line 471.
 (pdftex.def)             Requested size: 161.32492pt x 101.41614pt.
-<./images/esd_bracelet.jpg, id=296, 1104.125pt x 1104.125pt>
+<./images/esd_bracelet.jpg, id=411, 1104.125pt x 1104.125pt>
 File: ./images/esd_bracelet.jpg Graphic file (type jpg)
 <use ./images/esd_bracelet.jpg>
-Package pdftex.def Info: ./images/esd_bracelet.jpg  used on input line 341.
+Package pdftex.def Info: ./images/esd_bracelet.jpg  used on input line 471.
 (pdftex.def)             Requested size: 186.42271pt x 186.41835pt.
 
-Overfull \vbox (12.78047pt too high) detected at line 341
+Overfull \vbox (12.78648pt too high) detected at line 471
  []
 
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 341.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 471.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 341.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 471.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[21
+[36
 
  <./figures/esd_bracelet.pdf> <./images/esd_bracelet.jpg>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 356.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 486.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 356.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 486.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
 File: ./figures/esd_bracelet.pdf Graphic file (type pdf)
 <use ./figures/esd_bracelet.pdf>
-Package pdftex.def Info: ./figures/esd_bracelet.pdf  used on input line 356.
+Package pdftex.def Info: ./figures/esd_bracelet.pdf  used on input line 486.
 (pdftex.def)             Requested size: 161.32492pt x 101.41614pt.
-<./figures/hbm.pdf, id=308, 166.35852pt x 65.39581pt>
+<./figures/hbm.pdf, id=423, 166.35852pt x 65.39581pt>
 File: ./figures/hbm.pdf Graphic file (type pdf)
 <use ./figures/hbm.pdf>
-Package pdftex.def Info: ./figures/hbm.pdf  used on input line 356.
+Package pdftex.def Info: ./figures/hbm.pdf  used on input line 486.
 (pdftex.def)             Requested size: 186.42271pt x 73.2887pt.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 356.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 486.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 356.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 486.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [22
+ [37
 
  <./figures/hbm.pdf>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 377.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 507.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 377.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 507.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/big_wirebonding.pdf, id=326, 90.40164pt x 80.52393pt>
+<./figures/big_wirebonding.pdf, id=442, 90.40164pt x 80.52393pt>
 File: ./figures/big_wirebonding.pdf Graphic file (type pdf)
 <use ./figures/big_wirebonding.pdf>
-Package pdftex.def Info: ./figures/big_wirebonding.pdf  used on input line 377.
+Package pdftex.def Info: ./figures/big_wirebonding.pdf  used on input line 507.
 (pdftex.def)             Requested size: 186.42271pt x 166.07277pt.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 377.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 507.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 377.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 507.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [23
+ [38
 
  <./figures/big_wirebonding.pdf>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 383.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 513.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 383.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 513.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./images/C4Q1_22_.jpg, id=343, 796.9775pt x 1401.235pt>
+<./images/C4Q1_22_.jpg, id=459, 796.9775pt x 1401.235pt>
 File: ./images/C4Q1_22_.jpg Graphic file (type jpg)
 <use ./images/C4Q1_22_.jpg>
-Package pdftex.def Info: ./images/C4Q1_22_.jpg  used on input line 383.
+Package pdftex.def Info: ./images/C4Q1_22_.jpg  used on input line 513.
 (pdftex.def)             Requested size: 119.50279pt x 210.09065pt.
 
-Overfull \vbox (20.0338pt too high) detected at line 383
+Overfull \vbox (20.0338pt too high) detected at line 513
  []
 
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 383.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 513.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 383.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 513.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[24
+[39
 
  <./images/C4Q1_22_.jpg>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 389.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 519.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 389.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 519.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./images/C4Q1_28_.jpg, id=350, 1233.60875pt x 711.65875pt>
+<./images/C4Q1_28_.jpg, id=465, 1233.60875pt x 711.65875pt>
 File: ./images/C4Q1_28_.jpg Graphic file (type jpg)
 <use ./images/C4Q1_28_.jpg>
-Package pdftex.def Info: ./images/C4Q1_28_.jpg  used on input line 389.
+Package pdftex.def Info: ./images/C4Q1_28_.jpg  used on input line 519.
 (pdftex.def)             Requested size: 318.67209pt x 183.83241pt.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 389.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 519.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 389.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 519.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [25
+ [40
 
  <./images/C4Q1_28_.jpg>]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 395.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 395.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-File: ./template/images/slogan.pdf Graphic file (type pdf)
-<use ./template/images/slogan.pdf>
-Package pdftex.def Info: ./template/images/slogan.pdf  used on input line 395.
-(pdftex.def)             Requested size: 455.24408pt x 8.53583pt.
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 395.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 395.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [26
-
-]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 402.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 402.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/bigh_embedded.pdf, id=361, 231.71315pt x 222.00398pt>
-File: ./figures/bigh_embedded.pdf Graphic file (type pdf)
-<use ./figures/bigh_embedded.pdf>
-Package pdftex.def Info: ./figures/bigh_embedded.pdf  used on input line 402.
-(pdftex.def)             Requested size: 219.08743pt x 209.91342pt.
-
-Overfull \vbox (19.85657pt too high) detected at line 402
- []
-
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 402.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 402.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[27
-
- <./figures/bigh_embedded.pdf>]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 414.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 414.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./images/RPi_buy.png, id=373, 1010.77625pt x 494.84875pt>
-File: ./images/RPi_buy.png Graphic file (type png)
-<use ./images/RPi_buy.png>
-Package pdftex.def Info: ./images/RPi_buy.png  used on input line 414.
-(pdftex.def)             Requested size: 199.1693pt x 97.50314pt.
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 414.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 414.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [28
-
- <./images/RPi_buy.png>]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 421.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 421.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./images/RPi_menu.png, id=380, 748.7975pt x 1206.5075pt>
-File: ./images/RPi_menu.png Graphic file (type png)
-<use ./images/RPi_menu.png>
-Package pdftex.def Info: ./images/RPi_menu.png  used on input line 421.
-(pdftex.def)             Requested size: 111.53432pt x 179.69804pt.
-
-Overfull \vbox (8.06618pt too high) detected at line 421
- []
-
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 421.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 421.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[29
-
- <./images/RPi_menu.png>]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 432.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 432.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./images/arduino_nano.jpg, id=388, 429.605pt x 360.34625pt>
-File: ./images/arduino_nano.jpg Graphic file (type jpg)
-<use ./images/arduino_nano.jpg>
-Package pdftex.def Info: ./images/arduino_nano.jpg  used on input line 432.
-(pdftex.def)             Requested size: 119.50279pt x 100.23645pt.
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 432.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 432.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [30
-
- <./images/arduino_nano.jpg>]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 453.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 453.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./images/NI_IO.png, id=394, 518.93875pt x 357.335pt>
-File: ./images/NI_IO.png Graphic file (type png)
-<use ./images/NI_IO.png>
-Package pdftex.def Info: ./images/NI_IO.png  used on input line 453.
-(pdftex.def)             Requested size: 107.55177pt x 74.05566pt.
-<./images/LabView.png, id=395, 1027.84pt x 554.07pt>
-File: ./images/LabView.png Graphic file (type png)
-<use ./images/LabView.png>
-Package pdftex.def Info: ./images/LabView.png  used on input line 453.
-(pdftex.def)             Requested size: 276.04895pt x 148.80618pt.
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 453.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 453.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [31
-
- <./images/NI_IO.png> <./images/LabView.png>]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 460.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 460.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-File: ./template/images/slogan.pdf Graphic file (type pdf)
-<use ./template/images/slogan.pdf>
-Package pdftex.def Info: ./template/images/slogan.pdf  used on input line 460.
-(pdftex.def)             Requested size: 455.24408pt x 8.53583pt.
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 460.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 460.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [32
-
-]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 467.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 467.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-File: ./figures/big.pdf Graphic file (type pdf)
-<use ./figures/big.pdf>
-Package pdftex.def Info: ./figures/big.pdf  used on input line 467.
-(pdftex.def)             Requested size: 219.08743pt x 206.5356pt.
-
-Overfull \vbox (16.47874pt too high) detected at line 467
- []
-
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 467.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 467.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[33
-
-]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 474.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 474.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/multimeter.pdf, id=412, 114.08382pt x 59.40253pt>
-File: ./figures/multimeter.pdf Graphic file (type pdf)
-<use ./figures/multimeter.pdf>
-Package pdftex.def Info: ./figures/multimeter.pdf  used on input line 474.
-(pdftex.def)             Requested size: 219.08743pt x 114.08235pt.
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 474.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 474.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [34
-
- <./figures/multimeter.pdf>]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 481.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 481.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/power_supply_limit.pdf, id=424, 145.99104pt x 66.91191pt>
-File: ./figures/power_supply_limit.pdf Graphic file (type pdf)
-<use ./figures/power_supply_limit.pdf>
-Package pdftex.def Info: ./figures/power_supply_limit.pdf  used on input line 481.
-(pdftex.def)             Requested size: 219.08743pt x 100.41762pt.
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 481.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 481.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [35
-
- <./figures/power_supply_limit.pdf>]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 499.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 499.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/short_check1.pdf, id=436, 186.36098pt x 196.02054pt>
-File: ./figures/short_check1.pdf Graphic file (type pdf)
-<use ./figures/short_check1.pdf>
-Package pdftex.def Info: ./figures/short_check1.pdf  used on input line 499.
-(pdftex.def)             Requested size: 186.42271pt x 196.08583pt.
-
-Overfull \vbox (8.2276pt too high) detected at line 499
- []
-
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 499.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 499.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[36
-
- <./figures/short_check1.pdf>]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 518.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 518.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/short_check2.pdf, id=448, 186.3608pt x 196.02054pt>
-File: ./figures/short_check2.pdf Graphic file (type pdf)
-<use ./figures/short_check2.pdf>
-Package pdftex.def Info: ./figures/short_check2.pdf  used on input line 518.
-(pdftex.def)             Requested size: 186.42271pt x 196.08583pt.
-
-Overfull \vbox (8.2276pt too high) detected at line 518
- []
-
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 518.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 518.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[37
-
- <./figures/short_check2.pdf>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
 Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 525.
@@ -2391,234 +2438,544 @@ File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
 Package pdftex.def Info: ./template/images/IC.pdf  used on input line 525.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [38
-
-]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 546.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 546.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/big_powerup.pdf, id=465, 226.92096pt x 218.4318pt>
-File: ./figures/big_powerup.pdf Graphic file (type pdf)
-<use ./figures/big_powerup.pdf>
-Package pdftex.def Info: ./figures/big_powerup.pdf  used on input line 546.
-(pdftex.def)             Requested size: 186.42271pt x 179.45853pt.
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 546.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 546.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [39
-
- <./figures/big_powerup.pdf>]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 565.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 565.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-File: ./figures/big_powerup.pdf Graphic file (type pdf)
-<use ./figures/big_powerup.pdf>
-Package pdftex.def Info: ./figures/big_powerup.pdf  used on input line 565.
-(pdftex.def)             Requested size: 186.42271pt x 179.45853pt.
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 565.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 565.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [40
-
-]
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 573.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 573.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-File: ./template/images/slogan.pdf Graphic file (type pdf)
-<use ./template/images/slogan.pdf>
-Package pdftex.def Info: ./template/images/slogan.pdf  used on input line 573.
-(pdftex.def)             Requested size: 455.24408pt x 8.53583pt.
-File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
-<use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 573.
-(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
-File: ./template/images/IC.pdf Graphic file (type pdf)
-<use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 573.
-(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
  [41
 
 ]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 592.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 532.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 592.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 532.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/meas_iq.pdf, id=491, 226.934pt x 218.4318pt>
-File: ./figures/meas_iq.pdf Graphic file (type pdf)
-<use ./figures/meas_iq.pdf>
-Package pdftex.def Info: ./figures/meas_iq.pdf  used on input line 592.
-(pdftex.def)             Requested size: 208.13239pt x 200.34308pt.
+<./figures/bigh_embedded.pdf, id=476, 231.71315pt x 222.00398pt>
+File: ./figures/bigh_embedded.pdf Graphic file (type pdf)
+<use ./figures/bigh_embedded.pdf>
+Package pdftex.def Info: ./figures/bigh_embedded.pdf  used on input line 532.
+(pdftex.def)             Requested size: 219.08743pt x 209.91342pt.
 
-Overfull \vbox (7.52687pt too high) detected at line 592
+Overfull \vbox (19.80707pt too high) detected at line 532
  []
 
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 592.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 532.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 592.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 532.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
 [42
+
+ <./figures/bigh_embedded.pdf>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 544.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 544.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./images/RPi_buy.png, id=488, 1010.77625pt x 494.84875pt>
+File: ./images/RPi_buy.png Graphic file (type png)
+<use ./images/RPi_buy.png>
+Package pdftex.def Info: ./images/RPi_buy.png  used on input line 544.
+(pdftex.def)             Requested size: 199.1693pt x 97.50314pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 544.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 544.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [43
+
+ <./images/RPi_buy.png>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 551.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 551.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./images/RPi_menu.png, id=496, 748.7975pt x 1206.5075pt>
+File: ./images/RPi_menu.png Graphic file (type png)
+<use ./images/RPi_menu.png>
+Package pdftex.def Info: ./images/RPi_menu.png  used on input line 551.
+(pdftex.def)             Requested size: 111.53432pt x 179.69804pt.
+
+Overfull \vbox (8.06618pt too high) detected at line 551
+ []
+
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 551.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 551.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+[44
+
+ <./images/RPi_menu.png>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 562.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 562.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./images/arduino_nano.jpg, id=505, 429.605pt x 360.34625pt>
+File: ./images/arduino_nano.jpg Graphic file (type jpg)
+<use ./images/arduino_nano.jpg>
+Package pdftex.def Info: ./images/arduino_nano.jpg  used on input line 562.
+(pdftex.def)             Requested size: 119.50279pt x 100.23645pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 562.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 562.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [45
+
+ <./images/arduino_nano.jpg>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 583.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 583.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./images/NI_IO.png, id=511, 518.93875pt x 357.335pt>
+File: ./images/NI_IO.png Graphic file (type png)
+<use ./images/NI_IO.png>
+Package pdftex.def Info: ./images/NI_IO.png  used on input line 583.
+(pdftex.def)             Requested size: 107.55177pt x 74.05566pt.
+<./images/LabView.png, id=512, 1027.84pt x 554.07pt>
+File: ./images/LabView.png Graphic file (type png)
+<use ./images/LabView.png>
+Package pdftex.def Info: ./images/LabView.png  used on input line 583.
+(pdftex.def)             Requested size: 276.04895pt x 148.80618pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 583.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 583.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [46
+
+ <./images/NI_IO.png> <./images/LabView.png>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 590.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 590.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./template/images/slogan.pdf Graphic file (type pdf)
+<use ./template/images/slogan.pdf>
+Package pdftex.def Info: ./template/images/slogan.pdf  used on input line 590.
+(pdftex.def)             Requested size: 455.24408pt x 8.53583pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 590.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 590.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [47
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 597.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 597.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./figures/big.pdf Graphic file (type pdf)
+<use ./figures/big.pdf>
+Package pdftex.def Info: ./figures/big.pdf  used on input line 597.
+(pdftex.def)             Requested size: 219.08743pt x 206.5356pt.
+
+Overfull \vbox (16.42924pt too high) detected at line 597
+ []
+
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 597.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 597.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+[48
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 604.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 604.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./figures/multimeter.pdf, id=529, 114.08382pt x 59.40253pt>
+File: ./figures/multimeter.pdf Graphic file (type pdf)
+<use ./figures/multimeter.pdf>
+Package pdftex.def Info: ./figures/multimeter.pdf  used on input line 604.
+(pdftex.def)             Requested size: 219.08743pt x 114.08235pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 604.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 604.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [49
+
+ <./figures/multimeter.pdf>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 611.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 611.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./figures/power_supply_limit.pdf, id=542, 145.99104pt x 66.91191pt>
+File: ./figures/power_supply_limit.pdf Graphic file (type pdf)
+<use ./figures/power_supply_limit.pdf>
+Package pdftex.def Info: ./figures/power_supply_limit.pdf  used on input line 611.
+(pdftex.def)             Requested size: 219.08743pt x 100.41762pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 611.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 611.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [50
+
+ <./figures/power_supply_limit.pdf>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 629.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 629.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./figures/short_check1.pdf, id=554, 186.36098pt x 196.02054pt>
+File: ./figures/short_check1.pdf Graphic file (type pdf)
+<use ./figures/short_check1.pdf>
+Package pdftex.def Info: ./figures/short_check1.pdf  used on input line 629.
+(pdftex.def)             Requested size: 186.42271pt x 196.08583pt.
+
+Overfull \vbox (8.2276pt too high) detected at line 629
+ []
+
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 629.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 629.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+[51
+
+ <./figures/short_check1.pdf>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 648.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 648.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./figures/short_check2.pdf, id=566, 186.3608pt x 196.02054pt>
+File: ./figures/short_check2.pdf Graphic file (type pdf)
+<use ./figures/short_check2.pdf>
+Package pdftex.def Info: ./figures/short_check2.pdf  used on input line 648.
+(pdftex.def)             Requested size: 186.42271pt x 196.08583pt.
+
+Overfull \vbox (8.2276pt too high) detected at line 648
+ []
+
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 648.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 648.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+[52
+
+ <./figures/short_check2.pdf>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 655.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 655.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./template/images/slogan.pdf Graphic file (type pdf)
+<use ./template/images/slogan.pdf>
+Package pdftex.def Info: ./template/images/slogan.pdf  used on input line 655.
+(pdftex.def)             Requested size: 455.24408pt x 8.53583pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 655.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 655.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [53
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 676.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 676.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./figures/big_powerup.pdf, id=583, 226.92096pt x 218.4318pt>
+File: ./figures/big_powerup.pdf Graphic file (type pdf)
+<use ./figures/big_powerup.pdf>
+Package pdftex.def Info: ./figures/big_powerup.pdf  used on input line 676.
+(pdftex.def)             Requested size: 186.42271pt x 179.45853pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 676.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 676.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [54
+
+ <./figures/big_powerup.pdf>]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 695.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 695.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./figures/big_powerup.pdf Graphic file (type pdf)
+<use ./figures/big_powerup.pdf>
+Package pdftex.def Info: ./figures/big_powerup.pdf  used on input line 695.
+(pdftex.def)             Requested size: 186.42271pt x 179.45853pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 695.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 695.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [55
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 703.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 703.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+File: ./template/images/slogan.pdf Graphic file (type pdf)
+<use ./template/images/slogan.pdf>
+Package pdftex.def Info: ./template/images/slogan.pdf  used on input line 703.
+(pdftex.def)             Requested size: 455.24408pt x 8.53583pt.
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 703.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 703.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+ [56
+
+]
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 722.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 722.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+<./figures/meas_iq.pdf, id=610, 226.934pt x 218.4318pt>
+File: ./figures/meas_iq.pdf Graphic file (type pdf)
+<use ./figures/meas_iq.pdf>
+Package pdftex.def Info: ./figures/meas_iq.pdf  used on input line 722.
+(pdftex.def)             Requested size: 208.13239pt x 200.34308pt.
+
+Overfull \vbox (7.57637pt too high) detected at line 722
+ []
+
+File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
+<use ./template/images/SLAC_TID.pdf>
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 722.
+(pdftex.def)             Requested size: 72.99294pt x 8.0pt.
+File: ./template/images/IC.pdf Graphic file (type pdf)
+<use ./template/images/IC.pdf>
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 722.
+(pdftex.def)             Requested size: 15.9971pt x 8.0pt.
+[57
 
  <./figures/meas_iq.pdf>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 609.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 739.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 609.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 739.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/meas_noise.pdf, id=509, 239.34477pt x 244.26231pt>
+<./figures/meas_noise.pdf, id=627, 239.34477pt x 244.26231pt>
 File: ./figures/meas_noise.pdf Graphic file (type pdf)
 <use ./figures/meas_noise.pdf>
-Package pdftex.def Info: ./figures/meas_noise.pdf  used on input line 609.
+Package pdftex.def Info: ./figures/meas_noise.pdf  used on input line 739.
 (pdftex.def)             Requested size: 200.56236pt x 204.68321pt.
 
-Overfull \vbox (11.085pt too high) detected at line 609
+Overfull \vbox (11.1345pt too high) detected at line 739
  []
 
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 609.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 739.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 609.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 739.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[43
+[58
 
  <./figures/meas_noise.pdf>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 628.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 758.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 628.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 758.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/meas_loadVout.pdf, id=532, 284.52876pt x 246.19838pt>
+<./figures/meas_loadVout.pdf, id=650, 284.52876pt x 246.19838pt>
 File: ./figures/meas_loadVout.pdf Graphic file (type pdf)
 <use ./figures/meas_loadVout.pdf>
-Package pdftex.def Info: ./figures/meas_loadVout.pdf  used on input line 628.
+Package pdftex.def Info: ./figures/meas_loadVout.pdf  used on input line 758.
 (pdftex.def)             Requested size: 227.05457pt x 196.47435pt.
 
-Overfull \vbox (2.92564pt too high) detected at line 628
+Overfull \vbox (2.92564pt too high) detected at line 758
  []
 
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 628.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 758.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 628.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 758.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[44
+[59
 
  <./figures/meas_loadVout.pdf>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 647.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 777.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 647.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 777.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/meas_transient.pdf, id=554, 289.64516pt x 235.90784pt>
+<./figures/meas_transient.pdf, id=672, 289.64516pt x 235.90784pt>
 File: ./figures/meas_transient.pdf Graphic file (type pdf)
 <use ./figures/meas_transient.pdf>
-Package pdftex.def Info: ./figures/meas_transient.pdf  used on input line 647.
+Package pdftex.def Info: ./figures/meas_transient.pdf  used on input line 777.
 (pdftex.def)             Requested size: 227.05457pt x 184.92886pt.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 647.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 777.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 647.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 777.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [45
+ [60
 
  <./figures/meas_transient.pdf>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 665.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 795.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 665.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 795.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-<./figures/meas_PSRR.pdf, id=574, 252.24365pt x 247.60548pt>
+<./figures/meas_PSRR.pdf, id=692, 252.24365pt x 247.60548pt>
 File: ./figures/meas_PSRR.pdf Graphic file (type pdf)
 <use ./figures/meas_PSRR.pdf>
-Package pdftex.def Info: ./figures/meas_PSRR.pdf  used on input line 665.
+Package pdftex.def Info: ./figures/meas_PSRR.pdf  used on input line 795.
 (pdftex.def)             Requested size: 208.13239pt x 204.31104pt.
 
-Overfull \vbox (10.76233pt too high) detected at line 665
+Overfull \vbox (10.76233pt too high) detected at line 795
  []
 
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 665.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 795.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 665.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 795.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
-[46
+[61
 
  <./figures/meas_PSRR.pdf>]
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 678.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 808.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 678.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 808.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
 LaTeX Font Info:    Font shape `OT1/lato-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 678.
+(Font)              scaled to size 9.0pt on input line 808.
 File: ./template/images/SLAC_TID.pdf Graphic file (type pdf)
 <use ./template/images/SLAC_TID.pdf>
-Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 678.
+Package pdftex.def Info: ./template/images/SLAC_TID.pdf  used on input line 808.
 (pdftex.def)             Requested size: 72.99294pt x 8.0pt.
 File: ./template/images/IC.pdf Graphic file (type pdf)
 <use ./template/images/IC.pdf>
-Package pdftex.def Info: ./template/images/IC.pdf  used on input line 678.
+Package pdftex.def Info: ./template/images/IC.pdf  used on input line 808.
 (pdftex.def)             Requested size: 15.9971pt x 8.0pt.
- [47
+ [62
 
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lato/a_vc7epu.enc}]
 \tf@nav=\write7
@@ -2640,7 +2997,7 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 618B2E9D0486BEACF2F7D8BC90D4AFDE;802.
+(rerunfilecheck)             Checksum: FCA3C86299E6577B573EE453C63A0853;1079.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                main
@@ -2651,18 +3008,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 70004 strings out of 474116
- 1793240 string characters out of 5743682
- 2976613 words of memory out of 5000000
- 91311 multiletter control sequences out of 15000+600000
- 624096 words of font info for 104 fonts, out of 8000000 for 9000
+ 70149 strings out of 474116
+ 1796176 string characters out of 5743682
+ 2977670 words of memory out of 5000000
+ 91422 multiletter control sequences out of 15000+600000
+ 624777 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,123p,1883b,1814s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/typoland/lato/Lato-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (47 pages, 12226500 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/typoland/lato/Lato-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on main.pdf (62 pages, 22138372 bytes).
 PDF statistics:
- 692 PDF objects out of 1000 (max. 8388607)
- 487 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 349 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 823 PDF objects out of 1000 (max. 8388607)
+ 578 compressed objects within 6 object streams
+ 137 named destinations out of 1000 (max. 500000)
+ 410 words of extra memory for PDF output out of 10000 (max. 10000000)
 

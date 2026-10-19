@@ -70,29 +70,159 @@
 \titlepage
 \end{frame}
 
-\begin{frame}{Introduction}
-  \begin{columns}
-      \begin{column}{0.5\textwidth}
-        \begin{itemize}
-            \item Llorenç Fanals-i-Batllori.
-            \item BSc EE Universitat the Girona, Spain (9.52/10), MSc EE UPC Barcelona, Spain (9.69/10).
-            \item Mixed-signal Design Verification Engineer at Apple, UK.
-            \item Mixed-signal ASIC Design Engineer at SLAC/Stanford.
-        \end{itemize}
-      \end{column}
-      \begin{column}{0.5\textwidth}
-        \begin{figure} \centering
-            \includegraphics[width=0.8\textwidth]{./images/portrait_.jpeg}
-        \end{figure}
-      \end{column}
-  \end{columns}
-\end{frame}
+% \begin{frame}{Introduction}
+%   \begin{columns}
+%       \begin{column}{0.5\textwidth}
+%         \begin{itemize}
+%             \item Llorenç Fanals-i-Batllori.
+%             \item BSc EE Universitat the Girona, Spain (9.52/10), MSc EE UPC Barcelona, Spain (9.69/10).
+%             \item Mixed-signal Design Verification Engineer at Apple, UK.
+%             \item Mixed-signal ASIC Design Engineer at SLAC/Stanford.
+%         \end{itemize}
+%       \end{column}
+%       \begin{column}{0.5\textwidth}
+%         \begin{figure} \centering
+%             \includegraphics[width=0.8\textwidth]{./images/portrait_.jpeg}
+%         \end{figure}
+%       \end{column}
+%   \end{columns}
+% \end{frame}
 
 \begin{frame}[SloganTitleUnderline]{Table of contents}
     \LARGE \tableofcontents%[section]
 \end{frame}
 
 
+\section{Silicon bring-up considerations}
+\begin{frame}[SectionTitlepage]{Silicon bring-up considerations}
+\end{frame}
+
+\begin{frame}{Silicon bring-up}
+    You just received your ASICs. Now what?
+    \begin{enumerate}
+        \item PCB design.
+        \item Packaging (wire bonding).
+        \item Embedded system.
+        \item Sanity checks.
+        \item Power-up.
+        \item Characterization.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{System}
+    \begin{figure} \centering
+        \includegraphics[width=0.55\textwidth]{./figures/big.pdf}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{General advice}
+    \begin{itemize}
+        \item Document.
+        \item Use version control (git).
+        \item Use redundancy, avoid a single point of failure.
+        \item Print in paper your pinout (ASIC and PCB).
+        \item Wear an ESD bracelet.
+        \item Use AI wisely.
+    \end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PCB
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{RF PCB: \$5500, ROGERS 4350B}
+    \begin{figure} \centering
+        \includegraphics[width=0.7\textwidth]{./images/PCB_rev1.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{RF PCB}
+    \begin{figure} \centering
+        \includegraphics[width=0.7\textwidth]{./images/PCB_rev1_VNA.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Literature (TU Hamburg) \cite{Kuhlmann2013}}
+    \begin{figure} \centering
+        \includegraphics[width=0.9\textwidth]{./images/MiniSMP_Hamburg.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Connector footprint}
+    \begin{figure} \centering
+        \includegraphics[width=0.7\textwidth]{./images/footprint_rev1.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{EM simulations}
+    \begin{figure} \centering
+        \includegraphics[width=0.9\textwidth]{./images/EM_sims.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Connector footprint}
+    \hfill
+    \begin{columns}[T]
+      \begin{column}{0.47\textwidth}
+        v1
+        \begin{figure} \centering
+            \includegraphics[width=0.95\textwidth]{./images/footprint_rev1.png}
+        \end{figure}
+      \end{column}
+      \begin{column}{0.47\textwidth}
+        v2
+        \begin{figure} \centering
+            \includegraphics[width=0.95\textwidth]{./images/footprint_rev2.png}
+        \end{figure}
+      \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{RF PCB v2: \$241, FR4}
+    \begin{figure} \centering
+        \includegraphics[width=0.6\textwidth]{./images/PCB_rev2.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{$S_{11}$ measured}
+    \begin{figure} \centering
+        \includegraphics[width=0.8\textwidth]{./images/S11_rev1_rev2.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{$S_{21}$ measured}
+    \begin{figure} \centering
+        \includegraphics[width=0.8\textwidth]{./images/S21_rev1_rev2.png}
+    \end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% VNA sweeps
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Setup} % inkscape sketch of the setup
+    \begin{figure} \centering
+        \includegraphics[width=0.85\textwidth]{./figures/setup.pdf}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Video}
+\end{frame}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 1: Backup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Backup}
+\begin{frame}[SectionTitlepage]{Backup}
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 1: Silicon bring-up
@@ -149,7 +279,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{PCB design}
+\section*{PCB design}
 \begin{frame}[SectionTitlepage]{PCB design}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -315,7 +445,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Packaging (wire bonding)}
+\section*{Packaging (wire bonding)}
 \begin{frame}[SectionTitlepage]{Packaging (wire bonding)}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -390,7 +520,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Embedded system}
+\section*{Embedded system}
 \begin{frame}[SectionTitlepage]{Embedded system}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -455,7 +585,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sanity checks}
+\section*{Sanity checks}
 \begin{frame}[SectionTitlepage]{Sanity checks}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -520,7 +650,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Power-up}
+\section*{Power-up}
 \begin{frame}[SectionTitlepage]{Power-up}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -568,7 +698,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Characterization}
+\section*{Characterization}
 \begin{frame}[SectionTitlepage]{Characterization}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

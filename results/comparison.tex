@@ -1,0 +1,72 @@
+% ============================================================================
+%  LDO comparison table -- beamer-friendly, siunitx-based
+%
+%  PREAMBLE: \usepackage{booktabs} \usepackage{siunitx}
+%  \sisetup{detect-weight=true, detect-family=true}   % required for bold \SI
+%
+%  Sources, all verified via Crossref / OpenAlex / arXiv (DOIs checked 2026-10-18):
+%    Equal1  -- Andrade-Miceli et al., IEEE IMS 2021, pp. 635-637
+%    Juelich -- Ashok et al., arXiv:2505.10234, 2025
+%    Huang   -- Huang, Lu, Martins, IEEE JSSC, 2020
+%    Kundu   -- Kundu et al., IEEE JSSC 54(1):109-120, 2019
+%    Song    -- Song et al., IEEE TPEL, 2021 (early access)
+%
+%  ARCHITECTURE labels are deliberately three-way rather than analog/digital: Kundu calls his design "highly digital" but the quantizer is a VCO pair, and Song uses ring-amp continuous-time comparators driving a digital CSR/sub-SAR search, so both are mixed-signal rather than purely digital; Huang is explicitly analog-proportional plus digital-integral.
+%
+%  FoM (Hazucha) = C_out * dV_OUT * I_Q / (dI_load)^2, in seconds, lower is better.
+%  This form was verified against the two papers that report a FoM: it reproduces Kundu's 1.38 ps exactly from his own C=40pF / dV=108mV / dI=50mA, and Huang's 0.37 ps implies C_out ~ 20 pF which he does not state.
+%  The alternative normalisation (C*dV/dI)*(I_Q/I_max) yields 0.43 ps for Kundu and so is NOT the definition these papers use.
+%  FoM is left blank for Equal1 (dc load regulation only -- no transient step, no C_out, no I_Q) and for Juelich and Song (no C_out reported); do not invent those inputs.
+%
+%  CAVEAT to state on the slide: this work is SIMULATION ONLY while all others are measured silicon, and the load steps and output capacitances differ by orders of magnitude, so the transient block is indicative rather than a like-for-like ranking.
+%  The FoM is dominated by I_Q and C_out: of the 27x advantage over Huang, 17.5x is the I_Q ratio and 2x the C_out ratio, while his droop is actually 1.25x BETTER than ours -- present this as a quiescent-current result, not all-round superiority.
+% ============================================================================
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{@{}l|c|c|c|c|c|c@{}}
+\toprule
+& \textbf{This work (sim.)} & Equal1 IMS'21 & J\"ulich arXiv'25 & Huang JSSC'20 & Kundu JSSC'19 & Song TPEL'21 \\
+\midrule \hline
+Technology & \SI{22}{\nano\meter} FDSOI & \SI{22}{\nano\meter} FDSOI & \SI{22}{\nano\meter} FDSOI & \SI{65}{\nano\meter} bulk & \SI{65}{\nano\meter} LP & \SI{40}{\nano\meter} bulk \\
+\hline
+Architecture & analog & analog & digital & mixed & mixed & mixed \\
+\hline
+Temperature & \textbf{\SI{4}{\kelvin}} & \textbf{\SI{3.7}{\kelvin}} & \textbf{\SI{4}{\kelvin}} & \SI{300}{\kelvin} & \SI{300}{\kelvin} & \SI{300}{\kelvin} \\
+\hline
+$V_\text{IN}$ & \SI{1.0}{\volt} & 1.0 / \SI{1.8}{\volt} & \SIrange{0.9}{1.8}{\volt} & \SI{0.6}{\volt} & \SIrange{0.6}{1.2}{\volt} & \SIrange{0.6}{1.2}{\volt} \\
+\hline
+$V_\text{OUT}$ & \SI{0.8}{\volt} & 0.8 / \SI{1.5}{\volt} & \SIrange{0.8}{1.7}{\volt} & --- & \SIrange{0.4}{1.1}{\volt} & --- \\
+\hline
+$V_\text{DO}$ & \SI{200}{\milli\volt} & --- & \SI{100}{\milli\volt} & \SI{50}{\milli\volt} & --- & --- \\
+\hline
+$I_\text{load,max}$ & \SI{10.9}{\milli\ampere} & \textbf{\SI{64}{\milli\ampere}} & \SI{10}{\milli\ampere} & \SI{10}{\milli\ampere} & \textbf{\SI{100}{\milli\ampere}} & --- \\
+\hline
+$I_\text{Q}$ & \textbf{\SI{1.65}{\micro\ampere}} & $\sim$\SI{10}{\micro\ampere}$^{\dagger}$ & \SI{325}{\micro\ampere} & \SI{29}{\micro\ampere} & $\sim$\SI{800}{\micro\ampere}$^{\ddagger}$ & --- \\
+\hline
+$\eta_\text{I}$ & \textbf{\SI{99.985}{\percent}} & --- & \SI{98.03}{\percent} & --- & \SI{99.5}{\percent} & --- \\
+\hline
+$C_\text{out}$ & \textbf{\SI{10}{\pico\farad}} & \textbf{none} & --- & --- & \SI{40}{\pico\farad} & --- \\
+\midrule \hline
+$\Delta I_\text{load}$ & \SI{1}{}$\to$\SI{10}{\milli\ampere} & dc sweep & \SI{0.1}{}$\to$\SI{10}{\milli\ampere} & \SI{0}{}$\to$\SI{10}{\milli\ampere} & \SI{50}{\milli\ampere} & \textbf{\SI{104}{\milli\ampere}} \\
+\hline
+$\Delta V_\text{OUT}$ & \SI{81}{\milli\volt} & \SI{1.76}{\percent} & --- & \SI{65}{\milli\volt} & \SI{108}{\milli\volt} & --- \\
+\hline
+$t_\text{rec}$ & \textbf{\SI{10.5}{\nano\second}} & --- & \SI{841}{\nano\second} & --- & \SI{1240}{\nano\second} & \textbf{\SI{6}{\nano\second}} \\
+\hline
+$t_\text{settle}$ & \textbf{\SI{10.5}{\nano\second}} & --- & \SI{1150}{\nano\second} & --- & --- & \textbf{\SI{15}{\nano\second}} \\
+\hline
+PSR & --- & --- & --- & \SI{-22}{\deci\bel} @ \SI{1}{\mega\hertz} & --- & --- \\
+\hline
+PM & \SI{61}{\degree} & --- & --- & --- & --- & --- \\
+\hline
+Area & n/a & \textbf{\SI{706}{\micro\meter\squared}} & --- & --- & \SI{37400}{\micro\meter\squared} & --- \\
+\hline
+FoM$^{\S}$ (\si{\pico\second}) & \textbf{0.014} & --- & --- & 0.37 & 1.38 & --- \\
+\bottomrule
+\end{tabular}
+\caption{LDO comparison. This work is simulated across seven \SI{4}{\kelvin} corners ($t_\text{settle}$ \SIrange{7.4}{16.8}{\nano\second}, $\Delta V_\text{OUT}$ \SIrange{79}{84}{\milli\volt}, PM \SIrange{60.6}{61.9}{\degree}); all other entries are measured silicon. Architecture ``mixed'' denotes an analog fast path with digital control. Load steps and output capacitances differ by orders of magnitude, so the transient block is indicative rather than a like-for-like ranking. $^{\dagger}$internal current reference; total $I_\text{Q}$ not reported. $^{\ddagger}$back-calculated from the reported FoM. $^{\S}$FoM${}=C_\text{out}\,\Delta V_\text{OUT}\,I_\text{Q}/\Delta I_\text{load}^{2}$; lower is better. Blank where the work does not report enough to compute it. Note the FoM is dominated by $I_\text{Q}$ and by $C_\text{out}$, both of which favour this work; Huang achieves a \emph{smaller} droop.}
+\label{tab:ldo-comparison}
+\end{table}
