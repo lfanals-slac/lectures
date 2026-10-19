@@ -18,220 +18,7 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{Andrade2021}{inproceedings}{}
-      \name{author}{9}{}{%
-        {{hash=2c1a0e5a606db017c1c450684c83c102}{%
-           family={Andrade-Miceli},
-           familyi={A\bibinithyphendelim M\bibinitperiod},
-           given={Dennis},
-           giveni={D\bibinitperiod}}}%
-        {{hash=4b3ddb4d444c211245167e92b576aab4}{%
-           family={Esmailiyan},
-           familyi={E\bibinitperiod},
-           given={Ali},
-           giveni={A\bibinitperiod}}}%
-        {{hash=fae2dbf44706c03b0609e6e1d7766429}{%
-           family={Bisiaux},
-           familyi={B\bibinitperiod},
-           given={Pierre},
-           giveni={P\bibinitperiod}}}%
-        {{hash=d0b0fd0eefeba24e1ba346d1e7b1c954}{%
-           family={Blokhina},
-           familyi={B\bibinitperiod},
-           given={Elena},
-           giveni={E\bibinitperiod}}}%
-        {{hash=76844708c567daff960915d4aacd3a05}{%
-           family={Siriburanon},
-           familyi={S\bibinitperiod},
-           given={Teerachot},
-           giveni={T\bibinitperiod}}}%
-        {{hash=ffbcec82817fb5a6264623c2669d6f44}{%
-           family={Bashir},
-           familyi={B\bibinitperiod},
-           given={Imran},
-           giveni={I\bibinitperiod}}}%
-        {{hash=6f0c732da85d1a1544f6a642ddc45a34}{%
-           family={Asker},
-           familyi={A\bibinitperiod},
-           given={Mike},
-           giveni={M\bibinitperiod}}}%
-        {{hash=5d3e6745dfc8ce88d9200e0cbc129698}{%
-           family={Leipold},
-           familyi={L\bibinitperiod},
-           given={Dirk},
-           giveni={D\bibinitperiod}}}%
-        {{hash=cb075b70bc1ebeb568a2385ddf2b57f0}{%
-           family={Staszewski},
-           familyi={S\bibinitperiod},
-           given={R.\bibnamedelimi Bogdan},
-           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-      }
-      \strng{namehash}{644dda3867e75636544b8b6d99b091ef}
-      \strng{fullhash}{da94cd3eeecd1199620a6dfda07656c8}
-      \strng{bibnamehash}{644dda3867e75636544b8b6d99b091ef}
-      \strng{authorbibnamehash}{644dda3867e75636544b8b6d99b091ef}
-      \strng{authornamehash}{644dda3867e75636544b8b6d99b091ef}
-      \strng{authorfullhash}{da94cd3eeecd1199620a6dfda07656c8}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2021 IEEE MTT-S International Microwave Symposium (IMS)}
-      \field{title}{Cryogenic Low-Drop-Out Regulators Fully Integrated with Quantum Dot Array in 22-nm FD-SOI CMOS}
-      \field{year}{2021}
-      \field{pages}{635\bibrangedash 637}
-      \range{pages}{3}
-      \verb{doi}
-      \verb 10.1109/IMS19712.2021.9574910
-      \endverb
-      \keyw{Temperature distribution;Regulators;Voltage measurement;Digital-analog conversion;Quantum dots;Silicon-on-insulator;Cryogenics;Cryogenic CMOS;FD-SOI;LDO;single-electron detector;position-based qubits;charge qubits;quantum dot (QD);quantum dot array (QDA);quantum processing unit (QPU)}
-    \endentry
-    \entry{ashok2025}{misc}{}
-      \name{author}{7}{}{%
-        {{hash=e8441ff5fadd30f69af880a7d8400b5f}{%
-           family={Ashok},
-           familyi={A\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=ddcc3a95102961fa5ff34ae1cf9f9125}{%
-           family={Cabrera},
-           familyi={C\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=d753a38f81fb470b140799e136c2b681}{%
-           family={Baje},
-           familyi={B\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=0fc4465f6ef745ca925619fd328403ca}{%
-           family={Zambanini},
-           familyi={Z\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=17c5346e8ff70b965388e5c054b91da7}{%
-           family={Allinger},
-           familyi={A\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod}}}%
-        {{hash=f9f72bb47961b641737bf739c1f8cb28}{%
-           family={Bahr},
-           familyi={B\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=96f1c622cf28b65a78faf1efa7b09468}{%
-           family={Waasen},
-           familyi={W\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod},
-           prefix={van},
-           prefixi={v\bibinitperiod}}}%
-      }
-      \strng{namehash}{d3741ff4416ef2b5d33fbccd3bbbabd5}
-      \strng{fullhash}{c7af47196b5cd8f664005cef1ab9eac2}
-      \strng{bibnamehash}{d3741ff4416ef2b5d33fbccd3bbbabd5}
-      \strng{authorbibnamehash}{d3741ff4416ef2b5d33fbccd3bbbabd5}
-      \strng{authornamehash}{d3741ff4416ef2b5d33fbccd3bbbabd5}
-      \strng{authorfullhash}{c7af47196b5cd8f664005cef1ab9eac2}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{quant-ph}
-      \field{eprinttype}{arXiv}
-      \field{title}{Self Clocked Digital LDO for Cryogenic Power Management in 22nm FDSOI with 98 Percent Efficiency}
-      \field{year}{2025}
-      \verb{eprint}
-      \verb 2505.10234
-      \endverb
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/2505.10234
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/2505.10234
-      \endverb
-    \endentry
-    \entry{Beckers2018}{article}{}
-      \name{author}{3}{}{%
-        {{hash=0e1d3955291d25599338063450b3cc37}{%
-           family={Beckers},
-           familyi={B\bibinitperiod},
-           given={Arnout},
-           giveni={A\bibinitperiod}}}%
-        {{hash=2211b577f306f32b381f3ab5624b0156}{%
-           family={Jazaeri},
-           familyi={J\bibinitperiod},
-           given={Farzan},
-           giveni={F\bibinitperiod}}}%
-        {{hash=73c287f1195124aac0229abc3b58e7ac}{%
-           family={Enz},
-           familyi={E\bibinitperiod},
-           given={Christian},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{f1519a0728e776dc2970987fcb0a4764}
-      \strng{fullhash}{e37566e6b5d88dfbde03f088a7a7e447}
-      \strng{bibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
-      \strng{authorbibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
-      \strng{authornamehash}{f1519a0728e776dc2970987fcb0a4764}
-      \strng{authorfullhash}{e37566e6b5d88dfbde03f088a7a7e447}
-      \field{extraname}{1}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Journal of the Electron Devices Society}
-      \field{title}{Characterization and Modeling of 28-nm Bulk CMOS Technology Down to 4.2 K}
-      \field{volume}{6}
-      \field{year}{2018}
-      \field{pages}{1007\bibrangedash 1018}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1109/JEDS.2018.2817458
-      \endverb
-      \keyw{MOS devices;Semiconductor device modeling;Temperature;Integrated circuit modeling;CMOS technology;Cryogenics;28 nm bulk CMOS;cryo-CMOS;subthreshold swing;freeze-out;cryoelectronics;cryogenic;interface charge traps;MOS transistor modeling;slope factor;4.2 K}
-    \endentry
-    \entry{Beckers2020}{article}{}
-      \name{author}{3}{}{%
-        {{hash=0e1d3955291d25599338063450b3cc37}{%
-           family={Beckers},
-           familyi={B\bibinitperiod},
-           given={Arnout},
-           giveni={A\bibinitperiod}}}%
-        {{hash=2211b577f306f32b381f3ab5624b0156}{%
-           family={Jazaeri},
-           familyi={J\bibinitperiod},
-           given={Farzan},
-           giveni={F\bibinitperiod}}}%
-        {{hash=73c287f1195124aac0229abc3b58e7ac}{%
-           family={Enz},
-           familyi={E\bibinitperiod},
-           given={Christian},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{f1519a0728e776dc2970987fcb0a4764}
-      \strng{fullhash}{e37566e6b5d88dfbde03f088a7a7e447}
-      \strng{bibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
-      \strng{authorbibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
-      \strng{authornamehash}{f1519a0728e776dc2970987fcb0a4764}
-      \strng{authorfullhash}{e37566e6b5d88dfbde03f088a7a7e447}
-      \field{extraname}{2}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Electron Device Letters}
-      \field{number}{2}
-      \field{title}{Theoretical Limit of Low Temperature Subthreshold Swing in Field-Effect Transistors}
-      \field{volume}{41}
-      \field{year}{2020}
-      \field{pages}{276\bibrangedash 279}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1109/LED.2019.2963379
-      \endverb
-      \keyw{Temperature measurement;MOSFET;Temperature;Logic gates;Temperature dependence;Silicon;Photonic band gap;Band tail;cryogenic;MOSFET;modeling;subthreshold slope;subthreshold swing}
-    \endentry
+  \datalist[entry]{none/global//global/global}
     \entry{Blais2021}{article}{}
       \name{author}{4}{}{%
         {{hash=760f3979cb2de6f22bc87f3ee4d52150}{%
@@ -264,8 +51,8 @@
       \strng{authorbibnamehash}{46728eee29178d1ed38b6aca5b46a568}
       \strng{authornamehash}{46728eee29178d1ed38b6aca5b46a568}
       \strng{authorfullhash}{de5b064a2b6224ee03566c54b8bb70bb}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{2}
@@ -284,163 +71,6 @@
       \endverb
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/RevModPhys.93.025005
-      \endverb
-    \endentry
-    \entry{Faine2026}{inproceedings}{}
-      \name{author}{5}{}{%
-        {{hash=da8e99bc4cd451da5205f3038cbfee84}{%
-           family={Fainé},
-           familyi={F\bibinitperiod},
-           given={Xavier\bibnamedelima Íñiguez},
-           giveni={X\bibinitperiod\bibinitdelim Í\bibinitperiod}}}%
-        {{hash=ca500e24320eafa9a1d7406df0760ccd}{%
-           family={Alarcón},
-           familyi={A\bibinitperiod},
-           given={Eduard},
-           giveni={E\bibinitperiod}}}%
-        {{hash=c1d689cdbf7540d9d9777a96ee2647f4}{%
-           family={Sebastiano},
-           familyi={S\bibinitperiod},
-           given={Fabio},
-           giveni={F\bibinitperiod}}}%
-        {{hash=bafc29f3438687d7d8832b8ddebf4901}{%
-           family={Fanals-i-Batllori},
-           familyi={F\bibinithyphendelim i\bibinithyphendelim B\bibinitperiod},
-           given={Llorenç},
-           giveni={L\bibinitperiod}}}%
-        {{hash=6c8c7c923c0bdddb7712e3f6b901c59f}{%
-           family={Perez},
-           familyi={P\bibinitperiod},
-           given={Aldo\bibnamedelima Pena},
-           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-      }
-      \strng{namehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
-      \strng{fullhash}{16ef8c59f0c6e46e1bd00973d0bb8644}
-      \strng{bibnamehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
-      \strng{authorbibnamehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
-      \strng{authornamehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
-      \strng{authorfullhash}{16ef8c59f0c6e46e1bd00973d0bb8644}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2026 IEEE International Symposium on Circuits and Systems (ISCAS)}
-      \field{title}{A 40 nm integrated cryo-CMOS 120 MHz switching power converter for power management at 4 K aiming large-scale quantum computers}
-      \field{year}{2026}
-      \field{pages}{2505\bibrangedash 2509}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.1109/ISCAS66217.2026.11562983
-      \endverb
-      \keyw{Converters;Printing;Switches;Voltage;Temperature;Inductors;Modeling;Current;Design methodology;Capacitors}
-    \endentry
-    \entry{Huang2020}{article}{}
-      \name{author}{3}{}{%
-        {{hash=017e2ee2a0a52eddb02efff304b65e18}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Mo},
-           giveni={M\bibinitperiod}}}%
-        {{hash=08e0f77a6aa32f09026f20a6f67da4a0}{%
-           family={Lu},
-           familyi={L\bibinitperiod},
-           given={Yan},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=635bd6c5b3ef24cba5c293cafd6200eb}{%
-           family={Martins},
-           familyi={M\bibinitperiod},
-           given={Rui\bibnamedelima P.},
-           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Institute of Electrical}%
-        {Electronics Engineers (IEEE)}%
-      }
-      \strng{namehash}{caaa8f95cf7111775fd39d66d7d4b63a}
-      \strng{fullhash}{b8be88cac2423731f328538fc013eada}
-      \strng{bibnamehash}{b8be88cac2423731f328538fc013eada}
-      \strng{authorbibnamehash}{b8be88cac2423731f328538fc013eada}
-      \strng{authornamehash}{caaa8f95cf7111775fd39d66d7d4b63a}
-      \strng{authorfullhash}{b8be88cac2423731f328538fc013eada}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1558-173X}
-      \field{journaltitle}{IEEE Journal of Solid-State Circuits}
-      \field{title}{An Analog-Proportional Digital-Integral Multiloop Digital LDO With PSR Improvement and LCO Reduction}
-      \field{year}{2020}
-      \field{pages}{1\bibrangedash 14}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1109/jssc.2020.2967540
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1109/JSSC.2020.2967540
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1109/JSSC.2020.2967540
-      \endverb
-    \endentry
-    \entry{Kundu2019}{article}{}
-      \name{author}{5}{}{%
-        {{hash=a99b391359768270cf02aa3275f5cfc5}{%
-           family={Kundu},
-           familyi={K\bibinitperiod},
-           given={Somnath},
-           giveni={S\bibinitperiod}}}%
-        {{hash=c1c0ca81d253c08dd2daac7e2c9ed586}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Muqing},
-           giveni={M\bibinitperiod}}}%
-        {{hash=6621f4c24bd1bbce3d7f805f2276c786}{%
-           family={Wen},
-           familyi={W\bibinitperiod},
-           given={Shi-Jie},
-           giveni={S\bibinithyphendelim J\bibinitperiod}}}%
-        {{hash=3c1b326cdc7eadf8ca4f5118d35101a6}{%
-           family={Wong},
-           familyi={W\bibinitperiod},
-           given={Richard},
-           giveni={R\bibinitperiod}}}%
-        {{hash=fa13c46efa699ce2d577d1264e23cd06}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Chris\bibnamedelima H.},
-           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Institute of Electrical}%
-        {Electronics Engineers (IEEE)}%
-      }
-      \strng{namehash}{621f257571aa2c575083d9dd4f857c4d}
-      \strng{fullhash}{a832f7b210013092b35eeb10aefe4bb9}
-      \strng{bibnamehash}{621f257571aa2c575083d9dd4f857c4d}
-      \strng{authorbibnamehash}{621f257571aa2c575083d9dd4f857c4d}
-      \strng{authornamehash}{621f257571aa2c575083d9dd4f857c4d}
-      \strng{authorfullhash}{a832f7b210013092b35eeb10aefe4bb9}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1558-173X}
-      \field{journaltitle}{IEEE Journal of Solid-State Circuits}
-      \field{month}{1}
-      \field{number}{1}
-      \field{title}{A Fully Integrated Digital LDO With Built-In Adaptive Sampling and Active Voltage Positioning Using a Beat-Frequency Quantizer}
-      \field{volume}{54}
-      \field{year}{2019}
-      \field{pages}{109\bibrangedash 120}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1109/jssc.2018.2870558
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1109/JSSC.2018.2870558
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1109/JSSC.2018.2870558
       \endverb
     \endentry
     \entry{Patra2018}{article}{}
@@ -509,8 +139,8 @@
       \strng{authorbibnamehash}{aed020f9f0f062458fff48a4c6ef397b}
       \strng{authornamehash}{aed020f9f0f062458fff48a4c6ef397b}
       \strng{authorfullhash}{9bb6704eb45276f5261445371ade0e21}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Journal of Solid-State Circuits}
@@ -524,6 +154,135 @@
       \verb 10.1109/JSSC.2017.2737549
       \endverb
       \keyw{Cryogenics;Quantum computing;CMOS technology;Process control;Temperature;Oscillators;Class-F oscillator;CMOS characterization;cryo-CMOS;low-noise amplifier (LNA);noise canceling;phase noise (PN);quantum bit (qubit);quantum computing;qubit control;single-photon avalanche diode (SPAD)}
+    \endentry
+    \entry{Faine2026}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=da8e99bc4cd451da5205f3038cbfee84}{%
+           family={Fainé},
+           familyi={F\bibinitperiod},
+           given={Xavier\bibnamedelima Íñiguez},
+           giveni={X\bibinitperiod\bibinitdelim Í\bibinitperiod}}}%
+        {{hash=ca500e24320eafa9a1d7406df0760ccd}{%
+           family={Alarcón},
+           familyi={A\bibinitperiod},
+           given={Eduard},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c1d689cdbf7540d9d9777a96ee2647f4}{%
+           family={Sebastiano},
+           familyi={S\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=bafc29f3438687d7d8832b8ddebf4901}{%
+           family={Fanals-i-Batllori},
+           familyi={F\bibinithyphendelim i\bibinithyphendelim B\bibinitperiod},
+           given={Llorenç},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6c8c7c923c0bdddb7712e3f6b901c59f}{%
+           family={Perez},
+           familyi={P\bibinitperiod},
+           given={Aldo\bibnamedelima Pena},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
+      \strng{fullhash}{16ef8c59f0c6e46e1bd00973d0bb8644}
+      \strng{bibnamehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
+      \strng{authorbibnamehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
+      \strng{authornamehash}{f6b7e2fbaf69bde1cb505270a8b382c7}
+      \strng{authorfullhash}{16ef8c59f0c6e46e1bd00973d0bb8644}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2026 IEEE International Symposium on Circuits and Systems (ISCAS)}
+      \field{title}{A 40 nm integrated cryo-CMOS 120 MHz switching power converter for power management at 4 K aiming large-scale quantum computers}
+      \field{year}{2026}
+      \field{pages}{2505\bibrangedash 2509}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ISCAS66217.2026.11562983
+      \endverb
+      \keyw{Converters;Printing;Switches;Voltage;Temperature;Inductors;Modeling;Current;Design methodology;Capacitors}
+    \endentry
+    \entry{Beckers2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0e1d3955291d25599338063450b3cc37}{%
+           family={Beckers},
+           familyi={B\bibinitperiod},
+           given={Arnout},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2211b577f306f32b381f3ab5624b0156}{%
+           family={Jazaeri},
+           familyi={J\bibinitperiod},
+           given={Farzan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=73c287f1195124aac0229abc3b58e7ac}{%
+           family={Enz},
+           familyi={E\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1519a0728e776dc2970987fcb0a4764}
+      \strng{fullhash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{bibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{authorbibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{authornamehash}{f1519a0728e776dc2970987fcb0a4764}
+      \strng{authorfullhash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Journal of the Electron Devices Society}
+      \field{title}{Characterization and Modeling of 28-nm Bulk CMOS Technology Down to 4.2 K}
+      \field{volume}{6}
+      \field{year}{2018}
+      \field{pages}{1007\bibrangedash 1018}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/JEDS.2018.2817458
+      \endverb
+      \keyw{MOS devices;Semiconductor device modeling;Temperature;Integrated circuit modeling;CMOS technology;Cryogenics;28 nm bulk CMOS;cryo-CMOS;subthreshold swing;freeze-out;cryoelectronics;cryogenic;interface charge traps;MOS transistor modeling;slope factor;4.2 K}
+    \endentry
+    \entry{Beckers2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0e1d3955291d25599338063450b3cc37}{%
+           family={Beckers},
+           familyi={B\bibinitperiod},
+           given={Arnout},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2211b577f306f32b381f3ab5624b0156}{%
+           family={Jazaeri},
+           familyi={J\bibinitperiod},
+           given={Farzan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=73c287f1195124aac0229abc3b58e7ac}{%
+           family={Enz},
+           familyi={E\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1519a0728e776dc2970987fcb0a4764}
+      \strng{fullhash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{bibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{authorbibnamehash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \strng{authornamehash}{f1519a0728e776dc2970987fcb0a4764}
+      \strng{authorfullhash}{e37566e6b5d88dfbde03f088a7a7e447}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Electron Device Letters}
+      \field{number}{2}
+      \field{title}{Theoretical Limit of Low Temperature Subthreshold Swing in Field-Effect Transistors}
+      \field{volume}{41}
+      \field{year}{2020}
+      \field{pages}{276\bibrangedash 279}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/LED.2019.2963379
+      \endverb
+      \keyw{Temperature measurement;MOSFET;Temperature;Logic gates;Temperature dependence;Silicon;Photonic band gap;Band tail;cryogenic;MOSFET;modeling;subthreshold slope;subthreshold swing}
     \endentry
     \entry{Sansen2006}{book}{}
       \name{author}{1}{}{%
@@ -545,8 +304,8 @@
       \strng{authorbibnamehash}{010d2b7955acb31fc1227309ce4fb30c}
       \strng{authornamehash}{010d2b7955acb31fc1227309ce4fb30c}
       \strng{authorfullhash}{010d2b7955acb31fc1227309ce4fb30c}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-0-387-25746-4}
@@ -556,64 +315,6 @@
       \field{year}{2006}
       \verb{doi}
       \verb 10.1007/b135984
-      \endverb
-    \endentry
-    \entry{Song2021}{article}{}
-      \name{author}{5}{}{%
-        {{hash=4e47687d325fb99e2fdb9afd73b21af5}{%
-           family={Song},
-           familyi={S\bibinitperiod},
-           given={Yoonho},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=a6e4ec0117be0737c39081fb8bf77346}{%
-           family={Oh},
-           familyi={O\bibinitperiod},
-           given={Jonghyun},
-           giveni={J\bibinitperiod}}}%
-        {{hash=b1088df014b181dbe17ce97a2e5f67eb}{%
-           family={Cho},
-           familyi={C\bibinitperiod},
-           given={Sung-Yong},
-           giveni={S\bibinithyphendelim Y\bibinitperiod}}}%
-        {{hash=788023d403948d3233644d02a7318b90}{%
-           family={Jeong},
-           familyi={J\bibinitperiod},
-           given={Deog-Kyoon},
-           giveni={D\bibinithyphendelim K\bibinitperiod}}}%
-        {{hash=bdbd62909e7e0cad766e923dec7f2a0e}{%
-           family={Park},
-           familyi={P\bibinitperiod},
-           given={Jun-Eun},
-           giveni={J\bibinithyphendelim E\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Institute of Electrical}%
-        {Electronics Engineers (IEEE)}%
-      }
-      \strng{namehash}{a02380747f0c16fe844f77be7e5f4183}
-      \strng{fullhash}{b58a5a207f254dd9920d70169bc26d3f}
-      \strng{bibnamehash}{a02380747f0c16fe844f77be7e5f4183}
-      \strng{authorbibnamehash}{a02380747f0c16fe844f77be7e5f4183}
-      \strng{authornamehash}{a02380747f0c16fe844f77be7e5f4183}
-      \strng{authorfullhash}{b58a5a207f254dd9920d70169bc26d3f}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1941-0107}
-      \field{journaltitle}{IEEE Transactions on Power Electronics}
-      \field{title}{A Fast Droop-Recovery Event-Driven Digital LDO With Adaptive Linear/Binary Two-Step Search for Voltage Regulation in Advanced Memory}
-      \field{year}{2021}
-      \field{pages}{1\bibrangedash 1}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1109/tpel.2021.3103611
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1109/TPEL.2021.3103611
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1109/TPEL.2021.3103611
       \endverb
     \endentry
     \entry{underwood2023}{misc}{}
@@ -730,8 +431,8 @@
       \strng{authorbibnamehash}{a8e0b2f32676014d7ee2eec611c95a79}
       \strng{authornamehash}{a8e0b2f32676014d7ee2eec611c95a79}
       \strng{authorfullhash}{d20e6dba70638632fc800ad90a33e22d}
-      \field{sortinit}{U}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{quant-ph}
@@ -746,6 +447,305 @@
       \endverb
       \verb{url}
       \verb https://arxiv.org/abs/2302.11538
+      \endverb
+    \endentry
+    \entry{ashok2025}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=e8441ff5fadd30f69af880a7d8400b5f}{%
+           family={Ashok},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ddcc3a95102961fa5ff34ae1cf9f9125}{%
+           family={Cabrera},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d753a38f81fb470b140799e136c2b681}{%
+           family={Baje},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0fc4465f6ef745ca925619fd328403ca}{%
+           family={Zambanini},
+           familyi={Z\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=17c5346e8ff70b965388e5c054b91da7}{%
+           family={Allinger},
+           familyi={A\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f9f72bb47961b641737bf739c1f8cb28}{%
+           family={Bahr},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=96f1c622cf28b65a78faf1efa7b09468}{%
+           family={Waasen},
+           familyi={W\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3741ff4416ef2b5d33fbccd3bbbabd5}
+      \strng{fullhash}{c7af47196b5cd8f664005cef1ab9eac2}
+      \strng{bibnamehash}{d3741ff4416ef2b5d33fbccd3bbbabd5}
+      \strng{authorbibnamehash}{d3741ff4416ef2b5d33fbccd3bbbabd5}
+      \strng{authornamehash}{d3741ff4416ef2b5d33fbccd3bbbabd5}
+      \strng{authorfullhash}{c7af47196b5cd8f664005cef1ab9eac2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{quant-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Self Clocked Digital LDO for Cryogenic Power Management in 22nm FDSOI with 98 Percent Efficiency}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2505.10234
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2505.10234
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2505.10234
+      \endverb
+    \endentry
+    \entry{Andrade2021}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{hash=2c1a0e5a606db017c1c450684c83c102}{%
+           family={Andrade-Miceli},
+           familyi={A\bibinithyphendelim M\bibinitperiod},
+           given={Dennis},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4b3ddb4d444c211245167e92b576aab4}{%
+           family={Esmailiyan},
+           familyi={E\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fae2dbf44706c03b0609e6e1d7766429}{%
+           family={Bisiaux},
+           familyi={B\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d0b0fd0eefeba24e1ba346d1e7b1c954}{%
+           family={Blokhina},
+           familyi={B\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod}}}%
+        {{hash=76844708c567daff960915d4aacd3a05}{%
+           family={Siriburanon},
+           familyi={S\bibinitperiod},
+           given={Teerachot},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ffbcec82817fb5a6264623c2669d6f44}{%
+           family={Bashir},
+           familyi={B\bibinitperiod},
+           given={Imran},
+           giveni={I\bibinitperiod}}}%
+        {{hash=6f0c732da85d1a1544f6a642ddc45a34}{%
+           family={Asker},
+           familyi={A\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5d3e6745dfc8ce88d9200e0cbc129698}{%
+           family={Leipold},
+           familyi={L\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+        {{hash=cb075b70bc1ebeb568a2385ddf2b57f0}{%
+           family={Staszewski},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi Bogdan},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{644dda3867e75636544b8b6d99b091ef}
+      \strng{fullhash}{da94cd3eeecd1199620a6dfda07656c8}
+      \strng{bibnamehash}{644dda3867e75636544b8b6d99b091ef}
+      \strng{authorbibnamehash}{644dda3867e75636544b8b6d99b091ef}
+      \strng{authornamehash}{644dda3867e75636544b8b6d99b091ef}
+      \strng{authorfullhash}{da94cd3eeecd1199620a6dfda07656c8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 IEEE MTT-S International Microwave Symposium (IMS)}
+      \field{title}{Cryogenic Low-Drop-Out Regulators Fully Integrated with Quantum Dot Array in 22-nm FD-SOI CMOS}
+      \field{year}{2021}
+      \field{pages}{635\bibrangedash 637}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1109/IMS19712.2021.9574910
+      \endverb
+      \keyw{Temperature distribution;Regulators;Voltage measurement;Digital-analog conversion;Quantum dots;Silicon-on-insulator;Cryogenics;Cryogenic CMOS;FD-SOI;LDO;single-electron detector;position-based qubits;charge qubits;quantum dot (QD);quantum dot array (QDA);quantum processing unit (QPU)}
+    \endentry
+    \entry{Huang2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=017e2ee2a0a52eddb02efff304b65e18}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Mo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=08e0f77a6aa32f09026f20a6f67da4a0}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=635bd6c5b3ef24cba5c293cafd6200eb}{%
+           family={Martins},
+           familyi={M\bibinitperiod},
+           given={Rui\bibnamedelima P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{caaa8f95cf7111775fd39d66d7d4b63a}
+      \strng{fullhash}{b8be88cac2423731f328538fc013eada}
+      \strng{bibnamehash}{b8be88cac2423731f328538fc013eada}
+      \strng{authorbibnamehash}{b8be88cac2423731f328538fc013eada}
+      \strng{authornamehash}{caaa8f95cf7111775fd39d66d7d4b63a}
+      \strng{authorfullhash}{b8be88cac2423731f328538fc013eada}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1558-173X}
+      \field{journaltitle}{IEEE Journal of Solid-State Circuits}
+      \field{title}{An Analog-Proportional Digital-Integral Multiloop Digital LDO With PSR Improvement and LCO Reduction}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/jssc.2020.2967540
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/JSSC.2020.2967540
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/JSSC.2020.2967540
+      \endverb
+    \endentry
+    \entry{Kundu2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a99b391359768270cf02aa3275f5cfc5}{%
+           family={Kundu},
+           familyi={K\bibinitperiod},
+           given={Somnath},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c1c0ca81d253c08dd2daac7e2c9ed586}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Muqing},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6621f4c24bd1bbce3d7f805f2276c786}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Shi-Jie},
+           giveni={S\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=3c1b326cdc7eadf8ca4f5118d35101a6}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=fa13c46efa699ce2d577d1264e23cd06}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Chris\bibnamedelima H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{621f257571aa2c575083d9dd4f857c4d}
+      \strng{fullhash}{a832f7b210013092b35eeb10aefe4bb9}
+      \strng{bibnamehash}{621f257571aa2c575083d9dd4f857c4d}
+      \strng{authorbibnamehash}{621f257571aa2c575083d9dd4f857c4d}
+      \strng{authornamehash}{621f257571aa2c575083d9dd4f857c4d}
+      \strng{authorfullhash}{a832f7b210013092b35eeb10aefe4bb9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1558-173X}
+      \field{journaltitle}{IEEE Journal of Solid-State Circuits}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{A Fully Integrated Digital LDO With Built-In Adaptive Sampling and Active Voltage Positioning Using a Beat-Frequency Quantizer}
+      \field{volume}{54}
+      \field{year}{2019}
+      \field{pages}{109\bibrangedash 120}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/jssc.2018.2870558
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/JSSC.2018.2870558
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/JSSC.2018.2870558
+      \endverb
+    \endentry
+    \entry{Song2021}{article}{}
+      \name{author}{5}{}{%
+        {{hash=4e47687d325fb99e2fdb9afd73b21af5}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Yoonho},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a6e4ec0117be0737c39081fb8bf77346}{%
+           family={Oh},
+           familyi={O\bibinitperiod},
+           given={Jonghyun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b1088df014b181dbe17ce97a2e5f67eb}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Sung-Yong},
+           giveni={S\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=788023d403948d3233644d02a7318b90}{%
+           family={Jeong},
+           familyi={J\bibinitperiod},
+           given={Deog-Kyoon},
+           giveni={D\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=bdbd62909e7e0cad766e923dec7f2a0e}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jun-Eun},
+           giveni={J\bibinithyphendelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{a02380747f0c16fe844f77be7e5f4183}
+      \strng{fullhash}{b58a5a207f254dd9920d70169bc26d3f}
+      \strng{bibnamehash}{a02380747f0c16fe844f77be7e5f4183}
+      \strng{authorbibnamehash}{a02380747f0c16fe844f77be7e5f4183}
+      \strng{authornamehash}{a02380747f0c16fe844f77be7e5f4183}
+      \strng{authorfullhash}{b58a5a207f254dd9920d70169bc26d3f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1941-0107}
+      \field{journaltitle}{IEEE Transactions on Power Electronics}
+      \field{title}{A Fast Droop-Recovery Event-Driven Digital LDO With Adaptive Linear/Binary Two-Step Search for Voltage Regulation in Advanced Memory}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 1}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1109/tpel.2021.3103611
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/TPEL.2021.3103611
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/TPEL.2021.3103611
       \endverb
     \endentry
   \enddatalist

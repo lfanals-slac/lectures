@@ -44,7 +44,7 @@
 \usepackage{filecontents} % read csvs
 % \usepackage[natbib=true,backend=bibtex,sorting=none]{biblatex}
 % \bibliography{./bibliography.bib}
-\usepackage[style=numeric, backend=biber, maxcitenames=1, mincitenames=1]{biblatex}
+\usepackage[style=numeric, backend=biber, maxcitenames=1, mincitenames=1,sorting=none]{biblatex}
 \renewbibmacro*{name:andothers}{}
 \addbibresource{./bibliography.bib}
   \DeclareCiteCommand{\cite}[\mkbibbrackets]
@@ -954,7 +954,7 @@ The transition is at $ \frac{g_{m\text{,wi}}}{I_\text{DS,wi}} = \frac{g_{m\text{
 \node at (9,14.5) {$V_G$};
 \node at (6,12.25) {$V_{GP}$};
 \node at (6,6.75) {$V_{GN}$};
-\draw (-4.5,10) to[isource,l=$\SI{100}{\nA}$] (-4.5,8.5);
+\draw (-4.5,10) to[isource,l=$\SI{200}{\nA}$] (-4.5,8.5);
 \draw (M4.S) to[short] (M3.S);
 \draw (M3.G) to[short] (M4.G);
 \draw (-4.5,13) to[short] (-4.5,12);
@@ -963,7 +963,7 @@ The transition is at $ \frac{g_{m\text{,wi}}}{I_\text{DS,wi}} = \frac{g_{m\text{
 \draw (-5.5,11) to[short] (M1.bulk);
 \draw (M5.G) to[short] (5,6.5);
 \draw (8,8) to[short] (9,8);
-\draw (3.5,10) to[isource,l=$\SI{100}{\nA}$] (3.5,8.5);
+\draw (3.5,10) to[isource,l=$\SI{200}{\nA}$] (3.5,8.5);
 \draw (M8.G) to[short] (M9.G);
 \draw (M9.S) to[short] (M8.S);
 \draw (3.5,13) to[short] (3.5,12);
@@ -1048,9 +1048,9 @@ The transition is at $ \frac{g_{m\text{,wi}}}{I_\text{DS,wi}} = \frac{g_{m\text{
 \setlength{\tabcolsep}{2.2pt}
 \renewcommand{\arraystretch}{0.8}
 \begin{tabular}{@{}l|c|c|c|c|c|c@{}}
-\toprule
+\hline
 & \textbf{This work (sim.)} & \cite{Andrade2021} & \cite{ashok2025} & \cite{Huang2020} & \cite{Kundu2019} & \cite{Song2021} \\
-\midrule \hline
+\hline
 Technology & \SI{22}{\nano\meter} FDSOI & \SI{22}{\nano\meter} FDSOI & \SI{22}{\nano\meter} FDSOI & \SI{65}{\nano\meter} bulk & \SI{65}{\nano\meter} LP & \SI{40}{\nano\meter} bulk \\
 \hline
 Architecture & analog & analog & digital & mixed & mixed & mixed \\
@@ -1070,7 +1070,7 @@ $I_\text{Q}$ & \textbf{\SI{1.65}{\micro\ampere}} & $\sim$\SI{10}{\micro\ampere}$
 $\eta_\text{I}$ & \textbf{\SI{99.985}{\percent}} & --- & \SI{98.03}{\percent} & --- & \SI{99.5}{\percent} & --- \\
 \hline
 $C_\text{out}$ & \textbf{\SI{10}{\pico\farad}} & \textbf{none} & --- & --- & \SI{40}{\pico\farad} & --- \\
-\midrule \hline
+\hline
 $\Delta I_\text{load}$ & \SI{1}{}$\to$\SI{10}{\milli\ampere} & dc sweep & \SI{0.1}{}$\to$\SI{10}{\milli\ampere} & \SI{0}{}$\to$\SI{10}{\milli\ampere} & \SI{50}{\milli\ampere} & \textbf{\SI{104}{\milli\ampere}} \\
 \hline
 $\Delta V_\text{OUT}$ & \SI{81}{\milli\volt} & \SI{1.76}{\percent} & --- & \SI{65}{\milli\volt} & \SI{108}{\milli\volt} & --- \\
@@ -1086,13 +1086,11 @@ PM & \SI{61}{\degree} & --- & --- & --- & --- & --- \\
 Area & n/a & \textbf{\SI{706}{\micro\meter\squared}} & --- & --- & \SI{37400}{\micro\meter\squared} & --- \\
 \hline
 FoM$^{\S}$ (\si{\pico\second}) & \textbf{0.014} & --- & --- & 0.37 & 1.38 & --- \\
-\bottomrule
 \end{tabular}
 \caption{$^{\dagger}$internal current reference; total $I_\text{Q}$ not reported. $^{\ddagger}$back-calculated from the reported FoM. $^{\S}$FoM${}=C_\text{out}\,\Delta V_\text{OUT}\,I_\text{Q}/\Delta I_\text{load}^{2}$; lower is better.}
 \label{tab:ldo-comparison}
 \end{table}
 \end{frame}
-
 
 
 
