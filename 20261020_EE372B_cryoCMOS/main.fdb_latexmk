@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1792378021.35193 "main.bcf" "main.bbl" "main" 1792378176.83666 0
+["biber main"] 1792378021.35193 "main.bcf" "main.bbl" "main" 1792378415.63057 0
   "./bibliography.bib" 1792369136.47862 21564 4df71f384dfacfcac9d1e20ed1bdf2f7 ""
-  "main.bcf" 1792378176.55568 108478 598abdf0b00a164ee785fe996c18fdf4 "pdflatex"
+  "main.bcf" 1792378415.32633 108478 598abdf0b00a164ee785fe996c18fdf4 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1792378169.31392 "main.tex" "main.pdf" "main" 1792378176.83692 0
+["pdflatex"] 1792378407.92791 "main.tex" "main.pdf" "main" 1792378415.63082 0
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lato/a_rt66h3.enc" 1561498483 3345 f5bff336afd6959239b79815a9c623d1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lato/a_vc7epu.enc" 1561498483 2837 71470f4f1f9e810bb7f97954be46f052 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lato/a_y72t7m.enc" 1561498483 2827 edb6577ce87a761a903cb37772e591dd ""
@@ -413,13 +413,13 @@
   "images/julich_digital_fine.png" 1790794966.57252 138804 d1ded41da6749bf11e592272b5fb6254 ""
   "images/julich_transient.png" 1790795018.33596 235801 10863890c7721bcbabfbccb33f6e3fa8 ""
   "images/portrait_.jpeg" 1788124900.63485 169872 6f334e29c90f8b5693a38341bb141a6e ""
-  "main.aux" 1792378176.54413 10853 b017aa5c767e56f6b7eccbe89c52d4f0 "pdflatex"
+  "main.aux" 1792378415.31644 10853 b017aa5c767e56f6b7eccbe89c52d4f0 "pdflatex"
   "main.bbl" 1792378022.90064 30342 ae28d9eee3096a4e98ac1e8cb008ffbf "biber main"
-  "main.nav" 1792378176.55699 5361 a483ac32ee1aa85d52e426c6bedb7f5f "pdflatex"
-  "main.out" 1792378176.54938 648 e7beaa9418f365b9a9e66776fb967cbf "pdflatex"
-  "main.run.xml" 1792378176.55692 2309 968fe0b259f196f408ba1baa0cf346d4 "pdflatex"
-  "main.tex" 1792378168.52029 48351 8d40396d2c1a08390550cdd59a51f83e ""
-  "main.toc" 1792378176.55702 220 075af25fe429355d91d5946e8904b6e6 "pdflatex"
+  "main.nav" 1792378415.32747 5361 a483ac32ee1aa85d52e426c6bedb7f5f "pdflatex"
+  "main.out" 1792378415.32199 648 e7beaa9418f365b9a9e66776fb967cbf "pdflatex"
+  "main.run.xml" 1792378415.32739 2309 968fe0b259f196f408ba1baa0cf346d4 "pdflatex"
+  "main.tex" 1792378402.40137 48350 db879dcbb99c413d69f1812690a158cf ""
+  "main.toc" 1792378415.32751 220 075af25fe429355d91d5946e8904b6e6 "pdflatex"
   "svg-inkscape/DOE_svg-tex.pdf" 1756762059.21085 33993 ed74ce7ce82ea2aa7c8de720b0d3219f ""
   "svg-inkscape/DOE_svg-tex.pdf_tex" 1756762059.21103 2075 1c801a41a5635cb31c8eeb2435a63510 ""
   "svg-inkscape/SLAC_TID_white_svg-tex.pdf" 1756762058.0955 66257 8f1ae154d2caa693c47c33a847a2f3a9 ""
